@@ -1,7 +1,7 @@
 import React from "react";
 
-function test() {
+function Nav() {
     return <div></div>;
 }
 
-export default test;
+export default Nav;
