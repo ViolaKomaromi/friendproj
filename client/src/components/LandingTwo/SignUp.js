@@ -1,16 +1,14 @@
 import React from "react";
 
-
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import FormWrapper from "../Wrapers/wraper";
 import Login from "../LandingTwo/Login";
 
-export default function LandingPage() {
-
+export default function SignUp() {
     const [fullname, setFullname] = useState("");
-   
+
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -23,32 +21,30 @@ export default function LandingPage() {
         e.preventDefault();
 
         var userToRegister = {
-           fullname:fullname,
+            fullname: fullname,
             username: username,
             email: email,
             password: password,
             rePassword: rePassword,
             birthday: birthday,
             location: location,
-
         };
 
         // axios.post("http://localhost:4001/user/register", JSON.stringify(userToRegister)).then(res => {
         //     console.log(res);
         // })
 
-        fetch('http://localhost:4001/user/register', {
-            method: 'POST',
-            headers: { 'content-type': 'application/json' },
+        fetch("http://localhost:4001/user/register", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
             body: JSON.stringify(userToRegister),
-
         })
-            .then(res => {
+            .then((res) => {
                 return res.json();
             })
-            .then(err => {
-                console.log(err)
-            })
+            .then((err) => {
+                console.log(err);
+            });
 
         try {
             var res = await axios.post("/user/register", userToRegister);
@@ -61,13 +57,11 @@ export default function LandingPage() {
         }
     };
 
-
     return (
         <div className="container">
             <div className="row g-2">
                 {/* 1st Pop Up */}
                 <div className="col-6">
-
                     <button type="button" className="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Register
                     </button>
@@ -80,7 +74,6 @@ export default function LandingPage() {
                                 </div>
                                 <div className="modal-body">
                                     <FormWrapper>
-
                                         <form
                                             onSubmit={(e) => {
                                                 handleSubmitForm(e);
@@ -97,7 +90,7 @@ export default function LandingPage() {
                                                     placeholder="Full Name"
                                                 />
                                             </div>
-                                            
+
                                             <div className="form-group">
                                                 <label>Username</label>
                                                 <input
@@ -158,7 +151,6 @@ export default function LandingPage() {
                                                     placeholder="Enter password"
                                                 />
                                             </div>
-                                            
 
                                             <div class="form-check">
                                                 <label htmlFor=""> I'm a/an: </label>
@@ -176,30 +168,18 @@ export default function LandingPage() {
                                             <button type="submit" className="btn btn-primary btn-block">
                                                 Sign Up
                                             </button>
-
                                         </form>
                                     </FormWrapper>
 
-                                    <div className="row g-3 align-items-center">
-
-                                    </div>
-
-
-
+                                    <div className="row g-3 align-items-center"></div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <Login></Login>
-
             </div>
         </div>
     );
-
-};
-
-
-
+}

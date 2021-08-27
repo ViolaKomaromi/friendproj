@@ -1,5 +1,3 @@
-
-
 import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import FormWrapper from "../../components/Wrapers/wraper";
@@ -17,29 +15,26 @@ export default function Login() {
 
     const handleSubmitForm = async (e) => {
         e.preventDefault();
-        var userToLogin = {         
+        var userToLogin = {
             email: email,
             password: password,
         };
 
-        fetch('http://localhost:4001/user/register', {
-            method: 'POST',
-            headers: {'content-type': 'application/json'}, 
+        fetch("http://localhost:4001/user/register", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
             body: JSON.stringify(userToLogin),
-
-                })
-                .then (res => {
-                    return res.json();
-                })
-                .then(err => {
-                    console.log(err)
-                })
+        })
+            .then((res) => {
+                return res.json();
+            })
+            .then((err) => {
+                console.log(err);
+            });
     };
     return (
-
-        <div className="col-6">
-
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        <div className="col-12 ">
+            <button type="button" className="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 Sign in
             </button>
 
@@ -48,10 +43,11 @@ export default function Login() {
                     <div className="modal-content">
                         <div className="modal-header">
                             {/* <h5 className="sign-in" id="exampleModalLabel2">Sign In</h5> */}
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                Close
+                            </button>
                         </div>
                         <div className="modal-body">
-
                             <FormWrapper>
                                 <form
                                     onSubmit={(e) => {
@@ -79,31 +75,17 @@ export default function Login() {
                                             placeholder="Enter password"
                                         />
                                     </div>
-                                    
-                                   
+
                                     <ErrorMessage isVisible={isError} errorMessage={errorMessage} />
                                     <button type="submit" className="btn btn-primary btn-block">
                                         Submit
                                     </button>
-                                    
                                 </form>
                             </FormWrapper>
-
-
                         </div>
-
-                        
                     </div>
                 </div>
             </div>
         </div>
     );
 }
-
-
-
-
-
-
-
-

@@ -1,0 +1,28 @@
+body {
+    background-color: blueviolet;
+}
+
+main {
+    width: 200px;
+    border: 1px solid #2d2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+h2 {
+    font-family: "Amatic SC", cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7rem;
+    line-height: 108.6%;
+    /* or 167px */
+
+    /* text-align: center; */
+
+    color: #ffffff;
+
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
