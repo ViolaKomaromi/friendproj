@@ -3,10 +3,10 @@ import axiosApiInstance from '../../util/axios';
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
-import FormWrapper from "../../components/Wrapers/wraper";
+import FormWrapper from "../Wrapers/wraper";
 import Login from "../Landing/Login";
 
-function LandingPage() {
+export default function LandingPage() {
 
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("");
