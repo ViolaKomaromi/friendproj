@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import FormWrapper from "../Wrapers/wraper";
-import Login from "../Landing/Login";
+import Login from "../LandingTwo/Login";
 
 export default function LandingPage() {
 
@@ -152,7 +152,7 @@ export default function LandingPage() {
         </div>
     );
 
-}
+};
 
-export default LandingPage;
+
 

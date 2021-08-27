@@ -3,7 +3,7 @@ import axios from "../../util/axios";
 import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import FormWrapper from "../../components/Wrapers/wraper";
-import ErrorMessage from "../../Pages/Landing/Error";
+import ErrorMessage from "../LandingTwo/Error";
 
 import { AuthContext } from "../../App";
 
@@ -39,7 +39,7 @@ export default function Login() {
     };
     return (
 
-        <div classNameName="col-6">
+        <div className="col-6">
 
             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 Sign in
