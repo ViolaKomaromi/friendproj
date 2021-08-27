@@ -1,5 +1,6 @@
 import React from "react";
-import axiosApiInstance from '../../util/axios';
+
+
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
@@ -8,27 +9,52 @@ import Login from "../LandingTwo/Login";
 
 export default function LandingPage() {
 
-    const [firstname, setFirstname] = useState("");
-    const [lastname, setLastname] = useState("");
+    const [fullname, setFullname] = useState("");
+   
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [birthday, setBirthday] = useState("");
+    const [location, setLocation] = useState("");
     const [rePassword, setRePassword] = useState("");
     const history = useHistory();
+
     const handleSubmitForm = async (e) => {
         e.preventDefault();
+
         var userToRegister = {
-            firstname: firstname,
-            lastname: lastname,
+           fullname:fullname,
             username: username,
             email: email,
             password: password,
+            rePassword: rePassword,
+            birthday: birthday,
+            location: location,
+
         };
+
+        // axios.post("http://localhost:4001/user/register", JSON.stringify(userToRegister)).then(res => {
+        //     console.log(res);
+        // })
+
+        fetch('http://localhost:4001/user/register', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(userToRegister),
+
+        })
+            .then(res => {
+                return res.json();
+            })
+            .then(err => {
+                console.log(err)
+            })
+
         try {
-            var res = await axios.post("/register", userToRegister);
+            var res = await axios.post("/user/register", userToRegister);
             if (res.status == 200) {
                 console.log("yaaay the user was added!");
-                history.push("/sign-in");
+                history.push("/sign-up"); // ?
             }
         } catch (error) {
             console.log("Error happened", error);
@@ -62,25 +88,16 @@ export default function LandingPage() {
                                         >
                                             <h3>Sign Up</h3>
                                             <div className="form-group">
-                                                <label>First name</label>
+                                                <label>Full name</label>
                                                 <input
                                                     type="text"
-                                                    value={firstname}
-                                                    onChange={(e) => setFirstname(e.target.value)}
+                                                    value={fullname}
+                                                    onChange={(e) => setFullname(e.target.value)}
                                                     className="form-control"
-                                                    placeholder="First name"
+                                                    placeholder="Full Name"
                                                 />
                                             </div>
-                                            <div className="form-group">
-                                                <label>Last name</label>
-                                                <input
-                                                    type="text"
-                                                    value={lastname}
-                                                    onChange={(e) => setLastname(e.target.value)}
-                                                    className="form-control"
-                                                    placeholder="Last name"
-                                                />
-                                            </div>
+                                            
                                             <div className="form-group">
                                                 <label>Username</label>
                                                 <input
@@ -89,6 +106,26 @@ export default function LandingPage() {
                                                     onChange={(e) => setUsername(e.target.value)}
                                                     className="form-control"
                                                     placeholder="Username"
+                                                />
+                                            </div>
+                                            <div className="form-group">
+                                                <label>Birthday</label>
+                                                <input
+                                                    type="date"
+                                                    value={birthday}
+                                                    onChange={(e) => setBirthday(e.target.value)}
+                                                    className="form-control"
+                                                    placeholder="Birthday"
+                                                />
+                                            </div>
+                                            <div className="form-group">
+                                                <label>Location</label>
+                                                <input
+                                                    type="location"
+                                                    value={location}
+                                                    onChange={(e) => setLocation(e.target.value)}
+                                                    className="form-control"
+                                                    placeholder="City"
                                                 />
                                             </div>
                                             <div className="form-group">
@@ -121,6 +158,8 @@ export default function LandingPage() {
                                                     placeholder="Enter password"
                                                 />
                                             </div>
+                                            
+
                                             <div class="form-check">
                                                 <label htmlFor=""> I'm a/an: </label>
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
@@ -131,7 +170,7 @@ export default function LandingPage() {
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
                                                 <label class="form-check-label" for="flexRadioDefault2">
-                                                   Expat
+                                                    Expat
                                                 </label>
                                             </div>
                                             <button type="submit" className="btn btn-primary btn-block">

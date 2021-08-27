@@ -1,5 +1,5 @@
 
-import axios from "../../util/axios";
+
 import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import FormWrapper from "../../components/Wrapers/wraper";
@@ -17,25 +17,23 @@ export default function Login() {
 
     const handleSubmitForm = async (e) => {
         e.preventDefault();
-        var userToLogin = {
+        var userToLogin = {         
             email: email,
             password: password,
         };
-        try {
-            var res = await axios.post("/login", userToLogin);
-            if (res.status == 200) {
-                console.log("Yaay! The user signed in :", res.data);
-                handleLogin(true, res.data.token);
-            }
-        } catch (error) {
-            console.log("Error happened", error.response.data);
-            if (error.response.data != null) {
-                
-                setIsError(true);
-                setErrorMessage(error.response.data.message);
-            }
-            handleLogin(false, null);
-        }
+
+        fetch('http://localhost:4001/user/register', {
+            method: 'POST',
+            headers: {'content-type': 'application/json'}, 
+            body: JSON.stringify(userToLogin),
+
+                })
+                .then (res => {
+                    return res.json();
+                })
+                .then(err => {
+                    console.log(err)
+                })
     };
     return (
 
