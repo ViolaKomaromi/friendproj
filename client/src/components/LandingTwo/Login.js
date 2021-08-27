@@ -49,7 +49,7 @@ export default function Login() {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="sign-in" id="exampleModalLabel2">Sign In</h5>
+                            {/* <h5 className="sign-in" id="exampleModalLabel2">Sign In</h5> */}
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
                         </div>
                         <div className="modal-body">
@@ -81,35 +81,20 @@ export default function Login() {
                                             placeholder="Enter password"
                                         />
                                     </div>
-                                    <div className="form-group">
-                                        <div className="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                id="customCheck1"
-                                            />
-                                            <label className="custom-control-label" htmlFor="customCheck1">
-                                                Remember me
-                                            </label>
-                                        </div>
-                                    </div>
+                                    
+                                   
                                     <ErrorMessage isVisible={isError} errorMessage={errorMessage} />
                                     <button type="submit" className="btn btn-primary btn-block">
                                         Submit
                                     </button>
-                                    <p className="forgot-password text-right">
-                                        Forgot <a href="#">password?</a>
-                                    </p>
+                                    
                                 </form>
                             </FormWrapper>
 
 
                         </div>
 
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" className="btn btn-primary">Save changes</button>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
