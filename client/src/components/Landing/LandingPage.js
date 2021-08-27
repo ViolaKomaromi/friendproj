@@ -3,6 +3,7 @@ import Nav from "./Navigation/Nav";
 import SignUp from "../LandingTwo/SignUp";
 import "../Landing/landingPage.css";
 
+
 function LandingPage() {
     return (
         <>

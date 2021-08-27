@@ -12,7 +12,7 @@ export const AuthContext = createContext({});
 function App() {
     return (
         <div className="App">
-            {/* <h1>HIIIIIIII 😆</h1> */}
+           
             <LandingPage />
         </div>
     );
