@@ -61,7 +61,7 @@ export default function SignUp() {
         <div className="container">
             <div className="row g-2">
                 {/* 1st Pop Up */}
-                <div className="col-6">
+                <div className="col-12">
                     <button type="button" className="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Register
                     </button>
@@ -178,7 +178,7 @@ export default function SignUp() {
                     </div>
                 </div>
 
-                <Login></Login>
+                {/* <Login></Login> */}
             </div>
         </div>
     );

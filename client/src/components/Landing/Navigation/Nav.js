@@ -2,11 +2,12 @@
 
 import React from "react";
 import Login from "../../LandingTwo/Login";
+import "../../Landing/Navigation/landingNav.css";
 
 function Nav() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light ">
                 <div className="container-fluid ">
                     <a className="navbar-brand" href="#">
                         FriendJa Logo
