@@ -24,7 +24,7 @@ const FriendsList = () => {
                             />
                           </div>
                           <div class='friend-info'>
-                            <h4>Sancho Aldo</h4>
+                            <h4>Uwe Thieme</h4>
                             <p>392 friends</p>
                           </div>
                         </a>
@@ -38,7 +38,7 @@ const FriendsList = () => {
                             />
                           </div>
                           <div class='friend-info'>
-                            <h4>Jonty Augusto</h4>
+                            <h4>Steffanie Winkel</h4>
                             <p>128 friends</p>
                           </div>
                         </a>
@@ -52,7 +52,7 @@ const FriendsList = () => {
                             />
                           </div>
                           <div class='friend-info'>
-                            <h4>Androkles Allen</h4>
+                            <h4>Martin Lanz</h4>
                             <p>12 friends</p>
                           </div>
                         </a>
@@ -66,7 +66,7 @@ const FriendsList = () => {
                             />
                           </div>
                           <div class='friend-info'>
-                            <h4>Ithamar Silvio</h4>
+                            <h4>Sören Kruse</h4>
                             <p>1,923 friends</p>
                           </div>
                         </a>
@@ -80,7 +80,7 @@ const FriendsList = () => {
                             />
                           </div>
                           <div class='friend-info'>
-                            <h4>Denzel Annas</h4>
+                            <h4>Claudia Scheffel</h4>
                             <p>893 friends</p>
                           </div>
                         </a>
@@ -122,7 +122,7 @@ const FriendsList = () => {
                             />
                           </div>
                           <div class='friend-info'>
-                            <h4>Sushil Trygve</h4>
+                            <h4>Frank Zander</h4>
                             <p>921 friends</p>
                           </div>
                         </a>
