@@ -2,7 +2,8 @@ import React from "react";
 
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
+import axios from '../../util/axios';
 import FormWrapper from "../Wrapers/wraper";
 import Login from "../LandingTwo/Login";
 
@@ -34,23 +35,23 @@ export default function SignUp() {
         //     console.log(res);
         // })
 
-        fetch("http://localhost:4001/user/register", {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify(userToRegister),
-        })
-            .then((res) => {
-                return res.json();
-            })
-            .then((err) => {
-                console.log(err);
-            });
+        // fetch("http://localhost:4001/user/register", {
+        //     method: "POST",
+        //     headers: { "content-type": "application/json" },
+        //     body: JSON.stringify(userToRegister),
+        // })
+        //     .then((res) => {
+        //         return res.json();
+        //     })
+        //     .then((err) => {
+        //         console.log(err);
+        //     });
 
         try {
             var res = await axios.post("/user/register", userToRegister);
             if (res.status == 200) {
-                console.log("yaaay the user was added!");
-                history.push("/sign-up"); // ?
+                console.log("yaaay the user was added! 🟢");
+                history.push("/register"); // ?
             }
         } catch (error) {
             console.log("Error happened", error);

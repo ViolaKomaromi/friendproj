@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import FormWrapper from "../../components/Wrapers/wraper";
 import ErrorMessage from "../LandingTwo/Error";
-
+import axios from '../../util/axios';
 import { AuthContext } from "../../App";
 
 export default function Login() {
@@ -20,18 +20,29 @@ export default function Login() {
             password: password,
         };
 
-        fetch("http://localhost:4001/user/register", {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify(userToLogin),
-        })
-            .then((res) => {
-                return res.json();
-            })
-            .then((err) => {
-                console.log(err);
-            });
+        try {
+            var res = await axios.post("/user/login", userToLogin);
+            if (res.status == 200) {
+                console.log("yaaay the user has signed! 🟢");
+                history.push("/login"); // ?
+            }
+        } catch (error) {
+            console.log("Error happened", error);
+        }
+
+        // fetch("http://localhost:4001/user/login", {
+        //     method: "POST",
+        //     headers: { "content-type": "application/json" },
+        //     body: JSON.stringify(userToLogin),
+        // })
+        //     .then((res) => {
+        //         return res.json();
+        //     })
+        //     .then((err) => {
+        //         console.log(err);
+        //     });
     };
+
     return (
         <div className="col-12 ">
             <button type="button" className="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal2">
