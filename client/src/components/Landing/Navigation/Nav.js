@@ -1,7 +1,6 @@
 // import axios from "../../../util/axios";
 
 import React from "react";
-import Login from "../../LandingTwo/Login";
 import "../../Landing/Navigation/landingNav.css";
 
 function Nav() {
@@ -25,20 +24,12 @@ function Nav() {
                     </button>
                     <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
                         <div className="navbar-nav ms-auto ">
-                            {/* <a className="nav-link active" aria-current="page" href="#">
-                                Home
+                            <a className="nav-link" href="#">
+                                About
                             </a>
                             <a className="nav-link" href="#">
-                                Features
+                                Contact
                             </a>
-                            <a className="nav-link" href="#">
-                                Pricing
-                            </a>
-                            <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
-                                Disabled
-                            </a> */}
-
-                            <Login />
                         </div>
                     </div>
                 </div>

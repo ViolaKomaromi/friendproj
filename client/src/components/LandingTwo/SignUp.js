@@ -60,27 +60,28 @@ export default function SignUp() {
 
     return (
         <div className="container">
-            <div className="row g-2">
-                {/* 1st Pop Up */}
-                <div className="col-12">
-                    <button type="button" className="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Register
-                    </button>
-                    <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div className="modal-dialog">
-                            <div className="modal-content">
-                                <div className="modal-header">
-                                    {/* <h5 className="modal-title register" id="exampleModalLabel">Register</h5> */}
-                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div className="modal-body">
-                                    <FormWrapper>
-                                        <form
-                                            onSubmit={(e) => {
-                                                handleSubmitForm(e);
-                                            }}
-                                        >
-                                            <h3>Sign Up</h3>
+            {/* <div className="row g-2"> */}
+            {/* 1st Pop Up */}
+            <div className="col-12">
+                <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign up
+                </button>
+                <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                {/* <h5 className="modal-title register" id="exampleModalLabel">Register</h5> */}
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                                <FormWrapper>
+                                    <form
+                                        onSubmit={(e) => {
+                                            handleSubmitForm(e);
+                                        }}
+                                    >
+                                        <h3 className="mb-4">Your next friend is waiting</h3>
+                                        <div className="d-grid gap-4">
                                             <div className="form-group">
                                                 <label>Full name</label>
                                                 <input
@@ -152,34 +153,37 @@ export default function SignUp() {
                                                     placeholder="Enter password"
                                                 />
                                             </div>
-
-                                            <div class="form-check">
+                                            <div className="d-flex flex-column justify-content-around">
                                                 <label htmlFor=""> I'm a/an: </label>
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                    Native
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                    Expat
-                                                </label>
-                                            </div>
-                                            <button type="submit" className="btn btn-primary btn-block">
-                                                Sign Up
-                                            </button>
-                                        </form>
-                                    </FormWrapper>
 
-                                    <div className="row g-3 align-items-center"></div>
-                                </div>
+                                                <div className="d-flex justify-content-around">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                            Native
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                            Expat
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" className="btn btn-primary btn-block mt-5 mb-3 ">
+                                            Sign Up
+                                        </button>
+                                    </form>
+                                </FormWrapper>
+
+                                <div className="row g-3 align-items-center"></div>
                             </div>
                         </div>
                     </div>
+                    {/* </div> */}
                 </div>
-
-                {/* <Login></Login> */}
             </div>
         </div>
     );
