@@ -3,7 +3,7 @@ import Nav from "./Navigation/Nav";
 import SignUp from "../LandingTwo/SignUp";
 import Login from "../LandingTwo/Login";
 import "../Landing/landingPage.css";
-import Login from'../LandingTwo/Login';
+
 
 
 function LandingPage() {
