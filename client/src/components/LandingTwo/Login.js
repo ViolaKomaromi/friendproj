@@ -33,55 +33,55 @@ export default function Login() {
             });
     };
     return (
-        <div className="col-12 ">
-            <button type="button" className="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                Sign in
-            </button>
+        <div className="container">
+            <div className="col-12 ">
+                <button type="button" className="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    Log in
+                </button>
 
-            <div className="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            {/* <h5 className="sign-in" id="exampleModalLabel2">Sign In</h5> */}
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                Close
-                            </button>
-                        </div>
-                        <div className="modal-body">
-                            <FormWrapper>
-                                <form
-                                    onSubmit={(e) => {
-                                        handleSubmitForm(e);
-                                    }}
-                                >
-                                    <h3>Sign In</h3>
-                                    <div className="form-group">
-                                        <label>Email address</label>
-                                        <input
-                                            type="email"
-                                            value={email}
-                                            onChange={(e) => setEmail(e.target.value)}
-                                            className="form-control"
-                                            placeholder="Enter email"
-                                        />
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Password</label>
-                                        <input
-                                            type="password"
-                                            value={password}
-                                            onChange={(e) => setPassword(e.target.value)}
-                                            className="form-control"
-                                            placeholder="Enter password"
-                                        />
-                                    </div>
+                <div className="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                {/* <h5 className="sign-in" id="exampleModalLabel2">Sign In</h5> */}
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                                <FormWrapper>
+                                    <form
+                                        onSubmit={(e) => {
+                                            handleSubmitForm(e);
+                                        }}
+                                    >
+                                        <h3 className="mb-4">You're back!</h3>
+                                        <div className="form-group mb-4">
+                                            <label>Email address</label>
+                                            <input
+                                                type="email"
+                                                value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
+                                                className="form-control"
+                                                placeholder="Enter email"
+                                            />
+                                        </div>
+                                        <div className="form-group ">
+                                            <label>Password</label>
+                                            <input
+                                                type="password"
+                                                value={password}
+                                                onChange={(e) => setPassword(e.target.value)}
+                                                className="form-control"
+                                                placeholder="Enter password"
+                                            />
+                                        </div>
 
-                                    <ErrorMessage isVisible={isError} errorMessage={errorMessage} />
-                                    <button type="submit" className="btn btn-primary btn-block">
-                                        Submit
-                                    </button>
-                                </form>
-                            </FormWrapper>
+                                        <ErrorMessage isVisible={isError} errorMessage={errorMessage} />
+                                        <button type="submit" className="btn btn-primary btn-block mt-5">
+                                            Log In
+                                        </button>
+                                    </form>
+                                </FormWrapper>
+                            </div>
                         </div>
                     </div>
                 </div>
