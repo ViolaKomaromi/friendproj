@@ -16,6 +16,8 @@ const UserSchema = new Schema({
   },
   birthday: { type: Date, required: true, },
   location: { type: String, required: true },
+  avatar: { type: String },
+  interests: { type: String },
   gender:{type: String, enum: ["male", "female", "other"]},
   native: {type: Boolean, required: true}
 
