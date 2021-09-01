@@ -1,3 +1,4 @@
+
 import Profile from './components/Profile/Profile-settings';
 
 //import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,6 +20,7 @@ function App() {
       </div>
     </Router>
   );
+
 }
 
 export default App;
