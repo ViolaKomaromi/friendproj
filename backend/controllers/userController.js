@@ -28,19 +28,26 @@ exports.login = async (req, res) => {
 
 exports.registerUser = async (req, res) => {
   try {
+    console.log(req.body);
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
     await User.create({
-      firstname: req.body.firstname,
-      lastname: req.body.lastname,
+      
+      fullname: req.body.fullname,
+      birthday: req.body.birthday,
+      location: req.body.location,
+     
       username: req.body.username,
       email: req.body.email,
-      password: hashedPassword,
+      password: hashedPassword
+
     });
     res.status(200).json({ message: "User Created" });
+   
   } catch (error) {
     console.log("the error is", error);
     res
       .status(400)
       .json({ message: "Something went wrong creating user", error: error });
+      
   }
 };
