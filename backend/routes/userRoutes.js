@@ -20,7 +20,7 @@ router.put('/edit/:id', async (req, res) => {
 
   try {
     const user = await User.findByIdAndUpdate(
-      req.body.user_id,
+      req.params.id,
       {
         location: req.body.location,
         interests: req.body.interests,
@@ -28,7 +28,7 @@ router.put('/edit/:id', async (req, res) => {
       },
       { new: true }
     );
-    if (user == null) {
+    if (user === null) {
       res.status(404).json('user not edited 🔴');
       return;
     }
