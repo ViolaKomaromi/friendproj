@@ -1,6 +1,3 @@
-import './App.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Profile from './components/Profile/Profile-settings';
 
 //import "bootstrap/dist/css/bootstrap.min.css";

@@ -1,5 +1,8 @@
 import React from 'react';
 import logo from './profilephotoplaceholder.png';
+import './components/Profile/profile.css';
+//import axios from '../../util/axios';
+//import { AuthContext } from '../../App';
 
 export const Profile = () => {
   return (
