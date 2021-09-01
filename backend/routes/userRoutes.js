@@ -24,6 +24,7 @@ router.put('/edit/:id', async (req, res) => {
       {
         location: req.body.location,
         interests: req.body.interests,
+        gender: req.body.gender,
       },
       { new: true }
     );

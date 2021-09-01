@@ -16,6 +16,9 @@ export default function SignUp() {
     const [birthday, setBirthday] = useState("");
     const [location, setLocation] = useState("");
     const [rePassword, setRePassword] = useState("");
+    const [native, setNative] = useState("");
+    const [expat, setExpat] = useState("");
+
     const history = useHistory();
 
     const handleSubmitForm = async (e) => {
@@ -29,6 +32,7 @@ export default function SignUp() {
             rePassword: rePassword,
             birthday: birthday,
             location: location,
+            native: native
         };
 
         // axios.post("http://localhost:4001/user/register", JSON.stringify(userToRegister)).then(res => {
@@ -157,15 +161,15 @@ export default function SignUp() {
                                                 <label htmlFor=""> I'm a/an: </label>
 
                                                 <div className="d-flex justify-content-around">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                                        <label className="form-check-label" value={native}for="flexRadioDefault1">
                                                             Native
                                                         </label>
                                                     </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="radio" name="flexRadioDefault" value={native} id="flexRadioDefault2" checked />
+                                                        <label className="form-check-label" for="flexRadioDefault2">
                                                             Expat
                                                         </label>
                                                     </div>
