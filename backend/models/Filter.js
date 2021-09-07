@@ -1,16 +1,14 @@
-const { Schema, model } = require("mongoose");
 
-const FilterSchema = new Schema ({ 
-
-  intrestName: { type: String, required: true},
-  intrestScore: { type: Number, required: true},
+const mockData = require('../MOCK_DATA(1).json');
+const express = require('express');
 
 
-//   third Schema: user:{objectId}, Intrest:{ObjectId}, 
-//    
-})
 
+ const randomFilter = (array) => {
+  const range = array.length;
 
+  return array[Math.floor(Math.random() * range)];
+};
 
 
 
@@ -18,6 +16,8 @@ const FilterSchema = new Schema ({
 
 
 
-const Filter = model("Filter", FilterSchema);
+
+
+const Filter = model("Filter", randomFilter);
 module.exports = Filter;
 
