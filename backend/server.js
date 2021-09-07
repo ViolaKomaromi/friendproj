@@ -11,8 +11,6 @@ initializePassport(passport);
 // ejs
 const path = require('path');
 
-
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 mongoose
@@ -37,6 +35,6 @@ const messageRoutes = require('./routes/messageRoutes');
 app.use('/user', userRoutes);
 app.use('/contact', messageRoutes);
 
-app.listen(4001, () => {
-  console.log('the webserver is running on port 4001 💚 💌');
+app.listen(3001, () => {
+  console.log('the webserver is running on port 3001 💚 💌');
 });
