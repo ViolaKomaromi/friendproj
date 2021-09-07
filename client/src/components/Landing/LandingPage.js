@@ -4,8 +4,6 @@ import SignUp from "../LandingTwo/SignUp";
 import Login from "../LandingTwo/Login";
 import "../Landing/landingPage.css";
 
-
-
 function LandingPage() {
     return (
         <>
@@ -23,13 +21,6 @@ function LandingPage() {
                         <Login />
                     </div>
                 </section>
-                {/* <section className="signUp">
-                    <h3>based on you</h3>
-                    <div className="landing-page-btns">
-                        <SignUp />
-                        <Login />
-                    </div>
-                </section> */}
             </main>
         </>
     );
