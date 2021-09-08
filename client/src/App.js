@@ -1,9 +1,8 @@
-
 import Profile from './components/Profile/Profile-settings';
 
 //import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { createContext, useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { createContext } from 'react';
 import LandingPage from './components/Landing/LandingPage';
 
 export const AuthContext = createContext({});
@@ -20,7 +19,6 @@ function App() {
       </div>
     </Router>
   );
-
 }
 
 export default App;

@@ -2,3 +2,26 @@
     background-color: green;
     z-index: 1;
 } */
+
+/* .nav-btn {
+    background: none;
+    border: none;
+}
+.nav-btn:hover {
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: black;
+} */
+
+.nav-btns {
+    display: flex;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
