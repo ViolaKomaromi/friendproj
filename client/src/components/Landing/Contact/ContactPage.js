@@ -5,7 +5,7 @@ function ContactPage() {
     return (
         <>
             {/* <!-- Button trigger modal --> */}
-            <button type="button" className="btn btn-primary nav-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <button type="button" className="btn  nav-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
                 Contact
             </button>
             {/* <!-- Modal --> */}

@@ -17,8 +17,11 @@
 .nav-btns {
     display: flex;
     justify-content: center;
-
     gap: 1rem;
+}
+
+.nav-btn:hover {
+    color: white;
 }
 
 h2,
