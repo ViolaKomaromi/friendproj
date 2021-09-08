@@ -19,7 +19,7 @@ const UserSchema = new Schema({
   avatar: { type: String },
   interests: { type: String },
   gender:{type: String, enum: ["male", "female", "other"]},
-  native: {type: Boolean, required: true}
+  native: {type: Boolean}
 
   // image: { type: String, required: true },
   // interests: { type: String   }
