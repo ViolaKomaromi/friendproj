@@ -7,6 +7,7 @@ import "../Landing/landingPage.css";
 
 
 function LandingPage() {
+    
     return (
         <>
             <Nav />

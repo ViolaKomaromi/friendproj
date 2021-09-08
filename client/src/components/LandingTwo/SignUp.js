@@ -1,3 +1,5 @@
+
+
 import React from "react";
 
 import { useState } from "react";
@@ -5,7 +7,7 @@ import { useHistory } from "react-router-dom";
 // import axios from "axios";
 import axios from '../../util/axios';
 import FormWrapper from "../Wrapers/wraper";
-import Login from "../LandingTwo/Login";
+// import Login from "../LandingTwo/Login";
 
 export default function SignUp() {
     const [fullname, setFullname] = useState("");
@@ -35,25 +37,25 @@ export default function SignUp() {
             native: native
         };
 
-        // axios.post("http://localhost:4001/user/register", JSON.stringify(userToRegister)).then(res => {
-        //     console.log(res);
-        // })
+        axios.post("http://localhost:4001/user/register", JSON.stringify(userToRegister)).then(res => {
+            console.log(res);
+        })
 
-        // fetch("http://localhost:4001/user/register", {
-        //     method: "POST",
-        //     headers: { "content-type": "application/json" },
-        //     body: JSON.stringify(userToRegister),
-        // })
-        //     .then((res) => {
-        //         return res.json();
-        //     })
-        //     .then((err) => {
-        //         console.log(err);
-        //     });
+        fetch("http://localhost:4001/user/register", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(userToRegister),
+        })
+            .then((res) => {
+                return res.json();
+            })
+            .then((err) => {
+                console.log(err);
+            });
 
         try {
             var res = await axios.post("/user/register", userToRegister);
-            if (res.status == 200) {
+            if (res.status === 200) {
                 console.log("yaaay the user was added! 🟢");
                 history.push("/register"); // ?
             }
@@ -158,21 +160,21 @@ export default function SignUp() {
                                                 />
                                             </div>
                                             <div className="d-flex flex-column justify-content-around">
-                                                <label htmlFor=""> I'm a/an: </label>
+                                                <label htmlFor="name"> I'm a/an: </label>
 
                                                 <div className="d-flex justify-content-around">
-                                                    <div className="form-check">
+                                                    {/* <div className="form-check">
                                                         <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                         <label className="form-check-label" value={native}for="flexRadioDefault1">
                                                             Native
                                                         </label>
-                                                    </div>
-                                                    <div className="form-check">
+                                                    </div> */}
+                                                    {/* <div className="form-check">
                                                         <input className="form-check-input" type="radio" name="flexRadioDefault" value={native} id="flexRadioDefault2" checked />
                                                         <label className="form-check-label" for="flexRadioDefault2">
                                                             Expat
                                                         </label>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </div>

@@ -1,16 +1,19 @@
+/* eslint-disable no-unused-vars */
 // import axios from "../../../util/axios";
 
 import React from "react";
 import "../../Landing/Navigation/landingNav.css";
+import { BrowserRouter, Route, Link, useHistory } from "react-router-dom";
 
-function Nav() {
+function Nav(props) {
+    const history = useHistory();
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light ">
                 <div className="container-fluid ">
-                    <a className="navbar-brand" href="#">
+                    <button className="navbar-brand" href="#">
                         FriendJa Logo
-                    </a>
+                    </button>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -24,12 +27,10 @@ function Nav() {
                     </button>
                     <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
                         <div className="navbar-nav ms-auto ">
-                            <a className="nav-link" href="#">
+                            <button className="nav-link" href="#">
                                 About
-                            </a>
-                            <a className="nav-link" href="#">
-                                Contact
-                            </a>
+                            </button>
+                            <button onClick={() => history.push('/contact/message')}>Contact</button>
                         </div>
                     </div>
                 </div>
