@@ -1,13 +1,17 @@
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
 import "./App.css";
 
 =======
+=======
+>>>>>>> master
 import Profile from './components/Profile/Profile-settings';
 >>>>>>> c4a344fdf4ee5528ec34edae81acec7167a9a270
 
 //import "bootstrap/dist/css/bootstrap.min.css";
+<<<<<<< HEAD
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { createContext } from "react";
 import LandingPage from "./components/Landing/LandingPage";
@@ -16,6 +20,11 @@ import LandingPage from "./components/Landing/LandingPage";
 // import Navi from "./components/Navbar/Navi";
 // import About from "./pages/about/About";
 // import Profile from "./components/Profile/Profile";
+=======
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { createContext } from 'react';
+import LandingPage from './components/Landing/LandingPage';
+>>>>>>> master
 
 export const AuthContext = createContext({});
 
@@ -56,8 +65,11 @@ function App() {
       </div>
     </Router>
   );
+<<<<<<< HEAD
 
 >>>>>>> c4a344fdf4ee5528ec34edae81acec7167a9a270
+=======
+>>>>>>> master
 }
 
 export default App;

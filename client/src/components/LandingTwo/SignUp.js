@@ -18,8 +18,8 @@ export default function SignUp() {
     const [birthday, setBirthday] = useState("");
     const [location, setLocation] = useState("");
     const [rePassword, setRePassword] = useState("");
-    const [native, setNative] = useState("");
-    const [expat, setExpat] = useState("");
+    // const [native, setNative] = useState("");
+    // const [expat, setExpat] = useState("");
 
     const history = useHistory();
 
@@ -163,18 +163,18 @@ export default function SignUp() {
                                                 <label htmlFor="name"> I'm a/an: </label>
 
                                                 <div className="d-flex justify-content-around">
-                                                    {/* <div className="form-check">
+                                                    <div className="form-check">
                                                         <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                         <label className="form-check-label" value={native}for="flexRadioDefault1">
                                                             Native
                                                         </label>
-                                                    </div> */}
-                                                    {/* <div className="form-check">
+                                                    </div>
+                                                    <div className="form-check">
                                                         <input className="form-check-input" type="radio" name="flexRadioDefault" value={native} id="flexRadioDefault2" checked />
                                                         <label className="form-check-label" for="flexRadioDefault2">
                                                             Expat
                                                         </label>
-                                                    </div> */}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
