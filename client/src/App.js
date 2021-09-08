@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createContext } from 'react';
 import LandingPage from './components/Landing/LandingPage';
 
+
+
 export const AuthContext = createContext({});
 
 function App() {
