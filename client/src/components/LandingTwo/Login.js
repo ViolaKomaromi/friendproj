@@ -2,8 +2,9 @@ import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import FormWrapper from "../../components/Wrapers/wraper";
 import ErrorMessage from "../LandingTwo/Error";
-import axios from '../../util/axios';
+import axios from "../../util/axios";
 import { AuthContext } from "../../App";
+import "../LandingTwo/Login.css";
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -64,26 +65,36 @@ export default function Login() {
                                             handleSubmitForm(e);
                                         }}
                                     >
-                                        <h3 className="mb-4">You're back!</h3>
-                                        <div className="form-group mb-4">
-                                            <label>Email address</label>
-                                            <input
-                                                type="email"
-                                                value={email}
-                                                onChange={(e) => setEmail(e.target.value)}
-                                                className="form-control"
-                                                placeholder="Enter email"
-                                            />
-                                        </div>
-                                        <div className="form-group ">
-                                            <label>Password</label>
-                                            <input
-                                                type="password"
-                                                value={password}
-                                                onChange={(e) => setPassword(e.target.value)}
-                                                className="form-control"
-                                                placeholder="Enter password"
-                                            />
+                                        <div>
+                                            <div>
+                                                <img
+                                                    className="login_img"
+                                                    src="https://images.unsplash.com/photo-1607749111659-e1c8e05f5f24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                                                    alt=""
+                                                />
+                                            </div>
+
+                                            <h3 className="mb-4">You're back!</h3>
+                                            <div className="form-group mb-4">
+                                                <label>Email address</label>
+                                                <input
+                                                    type="email"
+                                                    value={email}
+                                                    onChange={(e) => setEmail(e.target.value)}
+                                                    className="form-control"
+                                                    placeholder="Enter email"
+                                                />
+                                            </div>
+                                            <div className="form-group ">
+                                                <label>Password</label>
+                                                <input
+                                                    type="password"
+                                                    value={password}
+                                                    onChange={(e) => setPassword(e.target.value)}
+                                                    className="form-control"
+                                                    placeholder="Enter password"
+                                                />
+                                            </div>
                                         </div>
 
                                         <ErrorMessage isVisible={isError} errorMessage={errorMessage} />
