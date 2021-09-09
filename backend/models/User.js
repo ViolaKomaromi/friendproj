@@ -2,8 +2,8 @@ const { Schema, model } = require("mongoose");
 
 const UserSchema = new Schema({
   dateCreated: { type: Date, required: true, default: Date.now },
-  firstname: { type: String, required: true },
-  lastname: { type: String, required: true },
+  fullname: { type: String, required: true },
+
   username: { type: String, required: true, unique: true },
   email: {
     type: String,
@@ -16,10 +16,43 @@ const UserSchema = new Schema({
   },
   birthday: { type: Date, required: true, },
   location: { type: String, required: true },
+  avatar: { type: String },
+  interests: { type: String },
+  gender:{type: String, enum: ["male", "female", "other"]},
+  native: {type: Boolean}
+
   // image: { type: String, required: true },
-  interests: { type: String   }
+  // interests: { type: String   }
 });
 
+// import { useEffect, useState } from "react";
+
+// function App() {
+//   const [gender, setGender] = useState("");
+
+//   useEffect(() => {
+//     console.log(gender);
+//   }, [gender]);
+
+//   const handleGenderSelect = (event) => {
+//     setGender(event.target.value);
+//   };
+
+//   return (
+//     <form onSubmit={handleFormSubmit}>
+//       <label>
+//         Gender
+//         <select onChange={handleGenderSelect}>
+//           <option value="male">Male</option>
+//           <option value="female">Female</option>
+//           <option value="other">Other</option>
+//         </select>
+//       </label>
+//     </form>
+//   );
+// }
+
+// export default App;
 
 const User = model("User", UserSchema);
 module.exports = User;
