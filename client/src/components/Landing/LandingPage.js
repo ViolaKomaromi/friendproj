@@ -3,6 +3,7 @@ import Nav from "./Navigation/Nav";
 import SignUp from "../LandingTwo/SignUp";
 import Login from "../LandingTwo/Login";
 import "../Landing/landingPage.css";
+import Carousel from "./Carousel/Carousel";
 
 function LandingPage() {
     return (
@@ -22,6 +23,9 @@ function LandingPage() {
                     </div>
                 </section>
             </main>
+            <div>
+                <Carousel />
+            </div>
         </>
     );
 }

@@ -4,7 +4,7 @@ function AboutPage() {
     return (
         <>
             {/* <!-- Button trigger modal --> */}
-            <button type="button" className="btn btn-primary nav-btn" data-bs-toggle="modal" data-bs-target="#aboutModal">
+            <button type="button" className="btn  nav-btn" data-bs-toggle="modal" data-bs-target="#aboutModal">
                 About
             </button>
 
