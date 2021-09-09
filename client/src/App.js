@@ -1,5 +1,5 @@
 import Profile from './components/Profile/Profile-settings';
-
+//import './components/404/404.css';
 //import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createContext } from 'react';
