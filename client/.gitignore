@@ -21,3 +21,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+MOCK_DATA(2).json

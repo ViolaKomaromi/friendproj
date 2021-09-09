@@ -4,4 +4,5 @@ function CultureTips() {
     return <div></div>;
 }
 
+
 export default CultureTips;
