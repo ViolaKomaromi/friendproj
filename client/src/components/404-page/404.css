@@ -1,13 +1,16 @@
-body {
+/* .container {
+  position: absolute;
   background-color: #ff4459;
-}
+} */
 
 img {
+  margin-top: 30px;
   max-width: 100%;
   height: auto;
 }
 
 .error-template {
+  font-size: 20px;
   padding: 40px 15px;
   text-align: center;
 }
@@ -17,4 +20,21 @@ img {
 }
 .error-actions .btn {
   margin-right: 10px;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 0.25rem;
+}
+
+.card .card-header {
+  background-color: #fff;
+  border-bottom: none;
 }
