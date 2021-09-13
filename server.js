@@ -13,8 +13,6 @@ const mockData = require('./MOCK_DATA(2).json');
 // ejs
 const path = require('path');
 
-
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 mongoose
@@ -41,8 +39,11 @@ app.use('/user', userRoutes);
 app.use('/contact', messageRoutes);
 app.use('/random', randomRoutes);
 
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-
+app.get('*', (_, res) => {
+  res.sendFile(path.join(__dirname, 'client/build/index.html'));
+});
 
 app.listen(4001, () => {
   console.log('the webserver is running on port 4001 💚 💌');
