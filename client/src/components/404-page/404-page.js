@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import image from './54a170c2dd0895dd408b4592.jpeg';
 //import './404.css';
 
