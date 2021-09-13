@@ -3,11 +3,15 @@ import ResultCard from "./ResultCard";
 
 function ResultsList() {
     return (
-        <>
+        <div className="result-list">
             <h3>Your future friend(s)</h3>
-
-            <ResultCard />
-        </>
+            <div className="result-list-cards">
+                <ResultCard />
+                <ResultCard />
+                <ResultCard />
+                <ResultCard />
+            </div>
+        </div>
     );
 }
 
