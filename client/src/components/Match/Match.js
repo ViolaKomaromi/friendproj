@@ -28,7 +28,7 @@ export default function randomMatch() {
     // const history = useHistory();
 
     return (
-        <div>
+        <div className="match_page">
             <header className="matchHeader">
                 <Filter />
                 <div className="culture_jokes_btns">

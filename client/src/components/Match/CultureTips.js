@@ -3,7 +3,7 @@ import React from "react";
 function CultureTips() {
     return (
         <div>
-            <button>Culture Tips</button>
+            <button className="culture_btn">Culture Tips</button>
         </div>
     );
 }
