@@ -1,0 +1,24 @@
+.matchHeader {
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+}
+
+.filterComponent {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: 5rem 1rem;
+    gap: 5rem;
+}
+
+/* .filterText {
+    background-color: antiquewhite;
+} */
+
+.culture_jokes_btns {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

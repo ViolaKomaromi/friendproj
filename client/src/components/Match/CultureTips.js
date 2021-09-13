@@ -1,7 +1,11 @@
 import React from "react";
 
 function CultureTips() {
-    return <div></div>;
+    return (
+        <div>
+            <button>Culture Tips</button>
+        </div>
+    );
 }
 
 

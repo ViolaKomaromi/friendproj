@@ -1,7 +1,11 @@
 import React from "react";
 
 function Jokes() {
-    return <div></div>;
+    return (
+        <div>
+            <button>Jokes</button>
+        </div>
+    );
 }
 
 export default Jokes;

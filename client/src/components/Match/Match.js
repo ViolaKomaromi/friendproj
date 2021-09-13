@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+
+import CultureTips from "./CultureTips";
 import Filter from "./Filter";
+import Jokes from "./Jokes";
+import ResultsList from "./ResultsList";
 
 import axios from "../../util/axios";
 import FormWrapper from "../Wrapers/wraper";
@@ -33,12 +37,24 @@ export default function RandomMatch() {
                 setExpat(res.data.expat);
             })
             .catch((err) => console.log(err));
-    });
+
+    }
+
+
+    )
 
 
     return (
         <div>
-            <Filter />
+            <header className="matchHeader">
+                <Filter />
+                <div className="culture_jokes_btns">
+                    <CultureTips />
+                    <Jokes />
+                </div>
+            </header>
+            <ResultsList />
         </div>
     );
-}
+
+};
