@@ -1,18 +1,16 @@
-
 const express = require('express');
-const mockData = require('../MOCK_DATA(2).json');
-const axios = require('axios');
-
+const User = require('../models/User');
 const router = express.Router();
 
 
+router.get('/', async(req, res) => {
 
-router.get('/', (req, res)=> {
+  const allUsers = await User.find({native: Boolean(req.query.native)});
+  const oneUser = allUsers[Math.round(Math.random() * allUsers.length)];
 
-    const dataFound = mockData[Math.round(Math.random() * mockData.length)];
-    
-    return res.json(dataFound);
-  })
+
+  return res.json(oneUser);
+})
 
 
 
