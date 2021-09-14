@@ -64,13 +64,13 @@ function Filter() {
                     <p>Random</p>
                 </button>
             </div>
-            <h3>Random</h3>
+            {/* <h3>Random</h3>
             <button onSubmit={(e) => {
                 random(e)
             }}
             value={native}
             onClick={(e) => setNative(e.target.value)}
-            >Random</button>
+            >Random</button> */}
         </div>
     );
 }
