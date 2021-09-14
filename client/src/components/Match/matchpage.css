@@ -17,7 +17,7 @@
     align-items: center;
 
     /* background-color: antiquewhite; */
-    padding: 3rem 3rem;
+    padding: 2rem 2rem;
     margin: 3rem 1rem;
     gap: 5rem;
     border: 3px solid white;
@@ -34,7 +34,7 @@
 }
 
 .filterComponent img {
-    width: 7rem;
+    width: 4rem;
 }
 
 .filter_btns {
@@ -52,6 +52,12 @@
 .filter_btns button {
     background: none;
     border: none;
+}
+
+.filter_btns .randomBtn {
+    background: rgba(255, 255, 255, 0.359);
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .culture_jokes_btns {

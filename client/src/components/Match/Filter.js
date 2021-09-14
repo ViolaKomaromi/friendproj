@@ -55,7 +55,7 @@ function Filter() {
                     <img src={activity} alt="" />
                     <p>Activity</p>
                 </button>
-                <button>
+                <button className="randomBtn">
                     <img src={randomButton} alt="" />
                     <p>Match Me</p>
                 </button>
