@@ -17,7 +17,7 @@ export default function RandomMatch() {
     const [birthday, setBirthday] = useState("");
     const [location, setLocation] = useState("");
     const [native, setNative] = useState("");
-    const [expat, setExpat] = useState("");
+    
 
     const history = useHistory();
 
