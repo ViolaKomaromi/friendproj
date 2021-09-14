@@ -13,6 +13,13 @@
     font-weight: bold;
     color: black;
 } */
+.navbar {
+    padding: 0;
+}
+
+.navbar img {
+    width: 8rem;
+}
 
 .nav-btns {
     display: flex;
