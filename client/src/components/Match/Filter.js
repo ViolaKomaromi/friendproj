@@ -57,10 +57,9 @@ function Filter() {
                 </button>
                 <button>
                     <img src={randomButton} alt="" />
-                    <p>Random</p>
+                    <p>Match Me</p>
                 </button>
             </div>
-            
         </div>
     );
 }
