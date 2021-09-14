@@ -41,6 +41,9 @@ app.use('/user', userRoutes);
 app.use('/contact', messageRoutes);
 app.use('/random', randomRoutes);
 
+app.get('*', (_, res) => {
+  res.send('sadasd')
+})
 
 
 

@@ -27,4 +27,5 @@ function CultureTips() {
     );
 }
 
+
 export default CultureTips;
