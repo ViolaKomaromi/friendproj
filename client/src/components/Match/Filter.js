@@ -1,4 +1,3 @@
-
 import "./matchpage.css";
 import axios from "../../util/axios";
 import React, { useEffect } from "react";
@@ -9,7 +8,7 @@ import passion from "../../image/drum.png";
 import drink from "../../image/beer.png";
 import food from "../../image/sausage.png";
 import activity from "../../image/tent.png";
-import random from "../../image/lobster.png";
+import randomButton from "../../image/lobster.png";
 
 function Filter() {
     const [native, setNative] = useState("");
@@ -18,21 +17,18 @@ function Filter() {
         e.preventDefault();
 
         var newRandom = {
-
-            native: native
+            native: native,
         };
 
         try {
             var res = await axios.post("/random", newRandom);
             if (res.status == 200) {
                 console.log("there is your match 🟢");
-               
             }
         } catch (error) {
             console.log("Error happened", error);
         }
-    }
-
+    };
 
     return (
         <div className="filterComponent">
@@ -60,17 +56,20 @@ function Filter() {
                     <p>Activity</p>
                 </button>
                 <button>
-                    <img src={random} alt="" />
+                    <img src={randomButton} alt="" />
                     <p>Random</p>
                 </button>
             </div>
             <h3>Random</h3>
-            <button onSubmit={(e) => {
-                random(e)
-            }}
-            value={native}
-            onClick={(e) => setNative(e.target.value)}
-            >Random</button>
+            <button
+                onSubmit={(e) => {
+                    random(e);
+                }}
+                value={native}
+                onClick={(e) => setNative(e.target.value)}
+            >
+                Random
+            </button>
         </div>
     );
 }
