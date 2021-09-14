@@ -24,7 +24,7 @@ export default function SignUp() {
     const handleSubmitForm = async (e) => {
         e.preventDefault();
 
-        var userToRegister = {
+        const userToRegister = {
             fullname: fullname,
             username: username,
             email: email,

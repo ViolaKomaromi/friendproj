@@ -1,7 +1,38 @@
-import React from "react";
+import React,  { useEffect } from "react";
 import * as Icon from "react-bootstrap-icons";
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
+import axios from "../../util/axios";
 
-function ResultCard() {
+
+function ResultCard({ name }) {
+
+    const [fullname, setFullname] = useState("");
+    const [username, setUsername] = useState("");
+    const [birthday, setBirthday] = useState("");
+    const [location, setLocation] = useState("");
+    const [native, setNative] = useState("");
+    const [expat, setExpat] = useState("");
+
+    const history = useHistory();
+
+    const random = useEffect(() => {
+    
+        axios
+            .get("/random")
+            .then((res) => {
+                console.log(res);
+                setUsername(res.data.username);
+                setBirthday(res.data.birthday);
+                setLocation(res.data.location);
+                setNative(res.data.native);
+                
+            })
+            .catch((err) => console.log(err));
+
+    }, []);
+
+
     return (
         <>
             <div className="card" style={{ width: "20rem" }}>
@@ -11,7 +42,7 @@ function ResultCard() {
                         alt="..."
                     />
                     <div className="card-user-headline">
-                        <h5>Alfonso</h5>
+                        <h5>{name}</h5>
                         <div>
                             <p>24</p>
                             <p>Berlin</p>

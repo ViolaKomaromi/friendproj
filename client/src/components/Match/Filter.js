@@ -13,18 +13,22 @@ import randomButton from "../../image/lobster.png";
 function Filter() {
     const [native, setNative] = useState("");
 
+    // 1. Create some state for the returned match
+    // 2. Update that state with the res.data object from your request to the random endpoint
+    // 3. Render the state into your ResultCard / ResultList component
+    // 4. Handle the request for  native speakers /random?native=native and /random non native speakers
+
     const random = async (e) => {
         e.preventDefault();
 
-        var newRandom = {
-            native: native,
-        };
 
         try {
-            var res = await axios.post("/random", newRandom);
-            if (res.status == 200) {
+            const res = await axios.get("/random");
+          
                 console.log("there is your match 🟢");
-            }
+                console.log(res.data);
+
+            
         } catch (error) {
             console.log("Error happened", error);
         }
@@ -55,7 +59,7 @@ function Filter() {
                     <img src={activity} alt="" />
                     <p>Activity</p>
                 </button>
-                <button>
+                <button onClick={random}>
                     <img src={randomButton} alt="" />
                     <p>Random</p>
                 </button>

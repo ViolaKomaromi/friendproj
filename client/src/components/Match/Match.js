@@ -9,7 +9,7 @@ import ResultsList from "./ResultsList";
 
 import axios from "../../util/axios";
 import FormWrapper from "../Wrapers/wraper";
-// import mockData from "../../../../backend/MOCK_DATA(2).json";
+
 
 export default function RandomMatch() {
     const [fullname, setFullname] = useState("");
@@ -23,9 +23,7 @@ export default function RandomMatch() {
 
 
     const random = useEffect(() => {
-        // axios.get('../../../../backend/MOCK_DATA(2).json')
-        // .then (res => console.log(res))
-        // .catch (err => console.log(err))
+    
         axios
             .get("/random")
             .then((res) => {
@@ -34,14 +32,11 @@ export default function RandomMatch() {
                 setBirthday(res.data.birthday);
                 setLocation(res.data.location);
                 setNative(res.data.native);
-                setExpat(res.data.expat);
+                
             })
             .catch((err) => console.log(err));
 
-    }
-
-
-    )
+    }, []);
 
 
     return (
