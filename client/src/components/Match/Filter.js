@@ -61,10 +61,9 @@ function Filter() {
                 </button>
                 <button onClick={random}>
                     <img src={randomButton} alt="" />
-                    <p>Random</p>
+                    <p>Match Me</p>
                 </button>
             </div>
-            
         </div>
     );
 }
