@@ -37,10 +37,11 @@ function App() {
                 <Switch>
                     
                     <Route exact path="/" component={LandingPage}></Route>
+                    {/* route after the login/register... takes you to the Match Page */}
                     <Route exact path="/profile" component={Profile}></Route>
                     <Route exact path="/random" component={Match}></Route>
                 </Switch>
-                {/* <LandingPage /> */}
+                
             </div>
         </Router>
         </AuthContext.Provider>
