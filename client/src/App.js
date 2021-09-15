@@ -17,9 +17,9 @@ function App() {
           {/* <Route exact path='/' component={LandingPage}></Route> */}
           {/* <Route exact path='/profile' component={Profile}></Route> */}
           {/* <Contact /> */}
+          {/* <LandingPage /> */}
           <Route component={PageNotFound} />
         </Switch>
-        {/* <LandingPage /> */}
       </div>
     </Router>
   );
