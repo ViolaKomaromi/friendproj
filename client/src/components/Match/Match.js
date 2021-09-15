@@ -24,17 +24,17 @@ export default function RandomMatch() {
 
     const random = useEffect(() => {
     
-        axios
-            .get("/random")
-            .then((res) => {
-                console.log(res);
-                setUsername(res.data.username);
-                setBirthday(res.data.birthday);
-                setLocation(res.data.location);
-                setNative(res.data.native);
+        // axios
+        //     .get("/random")
+        //     .then((res) => {
+        //         console.log(res);
+        //         setUsername(res.data.username);
+        //         setBirthday(res.data.birthday);
+        //         setLocation(res.data.location);
+        //         setNative(res.data.native);
                 
-            })
-            .catch((err) => console.log(err));
+        //     })
+        //     .catch((err) => console.log(err));
 
     }, []);
 

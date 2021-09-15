@@ -26,6 +26,7 @@ exports.login = async (req, res) => {
   }
 };
 
+
 exports.registerUser = async (req, res) => {
   try {
     console.log(req.body);
