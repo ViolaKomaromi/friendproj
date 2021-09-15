@@ -1,12 +1,12 @@
 import React from "react";
-import * as Icon from "react-bootstrap-icons";
+// import * as Icon from "react-bootstrap-icons";
 
 function Jokes() {
     return (
         <div>
             {/* <!-- Button trigger modal --> */}
             <button type="button" className="btn joke_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <Icon.EmojiLaughingFill size={30} />
+                {/* <Icon.EmojiLaughingFill size={30} /> */}
                 <div>
                     <p>Jokes</p>
                 </div>
