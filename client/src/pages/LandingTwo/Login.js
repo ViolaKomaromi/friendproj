@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
-import FormWrapper from "../../components/Wrapers/wraper";
+import FormWrapper from "../../components/Wrappers/wrapper";
 import ErrorMessage from "../LandingTwo/Error";
 import axios from '../../util/axios';
 import { AuthContext } from "../../App";

@@ -4,8 +4,8 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 // import axios from "axios";
 import axios from '../../util/axios';
-import FormWrapper from "../Wrapers/wraper";
-import Login from "../LandingTwo/Login";
+import FormWrapper from "../../components/Wrappers/wrapper";
+import Login from "./Login";
 
 export default function SignUp() {
     const [fullname, setFullname] = useState("");

@@ -1,9 +1,9 @@
-import Profile from './components/Profile/Profile-settings';
+import Profile from './pages/Profile/Profile-settings';
 
 //import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createContext } from 'react';
-import LandingPage from './components/Landing/LandingPage';
+import LandingPage from './pages/Landing/LandingPage';
 
 
 
