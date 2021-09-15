@@ -1,27 +1,36 @@
-import React,  { useEffect } from "react";
-import * as Icon from "react-bootstrap-icons";
+import React, { useEffect } from "react";
+// import * as Icon from "react-bootstrap-icons";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "../../util/axios";
 
-
 function ResultCard({ name }) {
-
     const [fullname, setFullname] = useState("");
     const [username, setUsername] = useState("");
     const [birthday, setBirthday] = useState("");
     const [location, setLocation] = useState("");
     const [native, setNative] = useState("");
-    
 
     const history = useHistory();
 
     const random = useEffect(() => {
+<<<<<<< HEAD
+        axios
+            .get("/random")
+            .then((res) => {
+                console.log(res);
+                setUsername(res.data.username);
+                setBirthday(res.data.birthday);
+                setLocation(res.data.location);
+                setNative(res.data.native);
+            })
+            .catch((err) => console.log(err));
+=======
     
       
 
+>>>>>>> ec51b95d3b39dc346c915ea19179b1abf5f02d53
     }, []);
-
 
     return (
         <>
@@ -44,8 +53,8 @@ function ResultCard({ name }) {
                     <p className="card-text">Rerum qui et. Est delectus neque eaque ullam voluptatem impedit sint.</p>
                 </div>
                 <footer>
-                    <Icon.PlusCircleFill size={30} className="card-footer-btn" />
-                    <Icon.ChatLeftTextFill size={30} className="card-footer-btn" />
+                    {/* <Icon.PlusCircleFill size={30} className="card-footer-btn" /> */}
+                    {/* <Icon.ChatLeftTextFill size={30} className="card-footer-btn" /> */}
                 </footer>
             </div>
         </>

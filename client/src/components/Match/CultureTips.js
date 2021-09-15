@@ -1,12 +1,12 @@
 import React from "react";
-import * as Icon from "react-bootstrap-icons";
+// import * as Icon from "react-bootstrap-icons";
 
 function CultureTips() {
     return (
         <div>
             {/* <!-- Button trigger modal --> */}
             <button type="button" className="btn culture_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <Icon.ChatLeftQuoteFill size={30} />
+                {/* <Icon.ChatLeftQuoteFill size={30} /> */}
                 <div>
                     <p>Cultural Tips</p>
                 </div>
@@ -26,6 +26,5 @@ function CultureTips() {
         </div>
     );
 }
-
 
 export default CultureTips;
