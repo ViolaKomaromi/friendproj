@@ -21,19 +21,6 @@ export default function RandomMatch() {
     const history = useHistory();
 
     const random = useEffect(() => {
-<<<<<<< HEAD
-        axios
-            .get("/random")
-            .then((res) => {
-                console.log(res);
-                setUsername(res.data.username);
-                setBirthday(res.data.birthday);
-                setLocation(res.data.location);
-                setNative(res.data.native);
-            })
-            .catch((err) => console.log(err));
-=======
-    
         // axios
         //     .get("/random")
         //     .then((res) => {
@@ -42,11 +29,8 @@ export default function RandomMatch() {
         //         setBirthday(res.data.birthday);
         //         setLocation(res.data.location);
         //         setNative(res.data.native);
-                
         //     })
         //     .catch((err) => console.log(err));
-
->>>>>>> ec51b95d3b39dc346c915ea19179b1abf5f02d53
     }, []);
 
     return (
