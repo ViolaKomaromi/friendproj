@@ -2,20 +2,22 @@ import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import FormWrapper from "../../components/Wrapers/wraper";
 import ErrorMessage from "../LandingTwo/Error";
-import axios from '../../util/axios';
+import axios from "../../util/axios";
 import { AuthContext } from "../../App";
 
 export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isError, setIsError] = useState(false);
+    
+
     const [errorMessage, setErrorMessage] = useState("");
     const { handleLogin } = useContext(AuthContext);
     const history = useHistory();
 
     const handleSubmitForm = async (e) => {
         e.preventDefault();
-        var userToLogin = {
+        let userToLogin = {
             email: email,
             password: password,
         };
@@ -24,7 +26,10 @@ export default function Login() {
             var res = await axios.post("/user/login", userToLogin);
             if (res.status == 200) {
                 console.log("yaaay the user has signed! 🟢");
-                history.push("/login"); // ?
+                handleLogin(true, res.data.token);
+                history.push("/login"); 
+                console.log(res.data.token);
+                
             }
         } catch (error) {
             console.log("Error happened", error);
