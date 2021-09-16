@@ -4,15 +4,10 @@ import Profile from "./components/Profile/Profile-settings";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createContext, useState } from "react";
 import LandingPage from "./components/Landing/LandingPage";
-<<<<<<< HEAD
 import Match from "./components/Match/Match";
 import MatchPage from './components/FriendMatch/MatchPage';
 import Filters from './components/FriendMatch/Filters';
 
-=======
-// import Match from "./components/Match/Match";
-import MatchPage from "./components/FriendMatch/MatchPage";
->>>>>>> e1a7334d4d4b8301d099a53448a267e7962551fe
 
 export const AuthContext = createContext({});
 
