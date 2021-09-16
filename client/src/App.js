@@ -1,5 +1,7 @@
-import Profile from './components/Profile/Profile-settings';
-import './components/404-page/404.css';
+// import Profile from './components/Profile/Profile-settings';
+import Profile from './pages/Profile/Profile-settings';
+import LandingPage from './pages/Landing/LandingPage'; 
+import './pages/404-page/404.css';
 //import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -8,9 +10,9 @@ import {
   Route,
 } from 'react-router-dom';
 import { createContext, useState } from 'react';
-import LandingPage from './components/Landing/LandingPage';
-import Match from './components/Match/Match';
-import PageNotFound from './components/404-page/404-page';
+// import LandingPage from './components/Landing/LandingPage';
+import Match from './pages/FriendMatch/MatchPage';
+import PageNotFound from './pages/404-page/404-page';
 
 export const AuthContext = createContext({});
 
@@ -45,7 +47,7 @@ function App() {
               exact
               path='/'
               render={(props) =>
-                loggedIn === false ? (
+                loggedIn === null ? (
                   <LandingPage {...props} />
                 ) : (
                   <Redirect to='/random' />
@@ -65,12 +67,4 @@ function App() {
   );
 }
 
-const GuardedRoute = ({ component: Component, auth, ...rest }) => (
-  <Route
-    {...rest}
-    render={(props) =>
-      auth === true ? <Component {...props} /> : <Redirect to='/' />
-    }
-  />
-);
 export default App;
