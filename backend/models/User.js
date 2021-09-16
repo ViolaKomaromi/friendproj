@@ -25,34 +25,7 @@ const UserSchema = new Schema({
   // interests: { type: String   }
 });
 
-// import { useEffect, useState } from "react";
 
-// function App() {
-//   const [gender, setGender] = useState("");
-
-//   useEffect(() => {
-//     console.log(gender);
-//   }, [gender]);
-
-//   const handleGenderSelect = (event) => {
-//     setGender(event.target.value);
-//   };
-
-//   return (
-//     <form onSubmit={handleFormSubmit}>
-//       <label>
-//         Gender
-//         <select onChange={handleGenderSelect}>
-//           <option value="male">Male</option>
-//           <option value="female">Female</option>
-//           <option value="other">Other</option>
-//         </select>
-//       </label>
-//     </form>
-//   );
-// }
-
-// export default App;
 
 const User = model("User", UserSchema);
 module.exports = User;
