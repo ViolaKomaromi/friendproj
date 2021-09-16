@@ -1,9 +1,9 @@
 import React from "react";
-import Nav from "./Navigation/Nav";
+import Nav from "../../components/Header/LandingNav";
 import SignUp from "../LandingTwo/SignUp";
 import Login from "../LandingTwo/Login";
 import "../Landing/landingPage.css";
-import Carousel from "./Carousel/Carousel";
+import Carousel from "../../components/Carousel/Carousel";
 
 function LandingPage() {
     return (

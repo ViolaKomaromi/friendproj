@@ -1,9 +1,9 @@
 // import axios from "../../../util/axios";
 
 import React from "react";
-import AboutPage from "../About/AboutPage";
-import ContactPage from "../Contact/ContactPage";
-import "../../Landing/Navigation/landingNav.css";
+import AboutPage from "../AboutButton/AboutPage";
+import ContactPage from "../ContactButton/ContactPage";
+import "./landingNav.css";
 
 function Nav() {
     return (
