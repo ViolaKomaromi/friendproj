@@ -1,20 +1,24 @@
 import Profile from "./components/Profile/Profile-settings";
 
 //import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Redirect, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createContext, useState } from "react";
 import LandingPage from "./components/Landing/LandingPage";
+<<<<<<< HEAD
 import Match from "./components/Match/Match";
 import MatchPage from './components/FriendMatch/MatchPage';
 import Filters from './components/FriendMatch/Filters';
 
+=======
+// import Match from "./components/Match/Match";
+import MatchPage from "./components/FriendMatch/MatchPage";
+>>>>>>> e1a7334d4d4b8301d099a53448a267e7962551fe
 
 export const AuthContext = createContext({});
 
 function App() {
-
-    const [loggedIn, setLoggedIn] = useState(window.localStorage.getItem('loggedIn'));
-    const [token, setToken] = useState(window.localStorage.getItem('token'));
+    const [loggedIn, setLoggedIn] = useState(window.localStorage.getItem("loggedIn"));
+    const [token, setToken] = useState(window.localStorage.getItem("token"));
 
     const handleLogin = (booleanState, token) => {
         if (booleanState) {
@@ -23,16 +27,13 @@ function App() {
             window.localStorage.setItem("token", token);
             window.localStorage.setItem("loggedIn", "loggedIn");
             setToken(token);
-
-
         } else {
-            // logout
             setLoggedIn(false);
             window.localStorage.removeItem("loggedIn");
             window.localStorage.removeItem("token");
-            setToken(null)
+            setToken(null);
         }
-    }
+    };
 
     return (
         <AuthContext.Provider value={{ handleLogin, loggedIn, token }}>
@@ -48,14 +49,13 @@ function App() {
                         <Route exact path="/" component={LandingPage}></Route>
 
                         <Route exact path="/profile" component={Profile}></Route>
-                        <Route exact path="/random" component={Match}></Route>
+                        <Route exact path="/random" component={MatchPage}></Route>
                     </Switch>
-
+                    {/* <LandingPage /> */}
                 </div>
             </Router>
         </AuthContext.Provider>
     );
 }
-
 
 export default App;

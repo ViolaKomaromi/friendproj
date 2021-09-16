@@ -20,11 +20,7 @@ export default function RandomMatch() {
 
     const history = useHistory();
 
-    const random = useEffect(() => {
-    
-       
-
-    }, []);
+    const random = useEffect(() => {}, []);
 
     return (
         // <div className="match_page">

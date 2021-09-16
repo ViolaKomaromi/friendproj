@@ -1,5 +1,6 @@
 import React from "react";
 import "../../components/Match/matchpage.css";
+import * as Icon from "react-bootstrap-icons";
 
 function Friends({ items }) {
     return (
@@ -23,10 +24,8 @@ function Friends({ items }) {
                             <p className="card-text">{desc}</p>
                         </div>
                         <footer>
-                            <p>Add Icon</p>
-                            <p>Message Icon</p>
-                            {/* <Icon.PlusCircleFill size={30} className="card-footer-btn" /> */}
-                            {/* <Icon.ChatLeftTextFill size={30} className="card-footer-btn" /> */}
+                            <Icon.PlusCircleFill size={30} className="card-footer-btn" />
+                            <Icon.ChatLeftTextFill size={30} className="card-footer-btn" />
                         </footer>
                     </div>
                 );
