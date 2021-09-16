@@ -20,18 +20,7 @@ export default function RandomMatch() {
 
     const history = useHistory();
 
-    const random = useEffect(() => {
-        // axios
-        //     .get("/random")
-        //     .then((res) => {
-        //         console.log(res);
-        //         setUsername(res.data.username);
-        //         setBirthday(res.data.birthday);
-        //         setLocation(res.data.location);
-        //         setNative(res.data.native);
-        //     })
-        //     .catch((err) => console.log(err));
-    }, []);
+    const random = useEffect(() => {}, []);
 
     return (
         // <div className="match_page">
