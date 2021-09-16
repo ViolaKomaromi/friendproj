@@ -4,8 +4,8 @@ import "../../components/Match/matchpage.css";
 import Filters from "./Filters";
 import Friends from "./Friends";
 import items from "../../data/data";
-import CultureTips from "../Match/CultureTips";
-import Jokes from "../Match/Jokes";
+import CultureTips from "../../components/Match/CultureTips";
+import Jokes from "../../components/Match/Jokes";
 
 function MatchPage() {
     const [friends, setFriends] = useState(items);
