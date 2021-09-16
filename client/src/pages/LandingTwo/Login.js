@@ -27,7 +27,7 @@ export default function Login() {
             if (res.status == 200) {
                 console.log("yaaay the user has signed! 🟢");
                 handleLogin(true, res.data.token);
-                history.push("/login"); 
+                history.push("/random"); 
                 console.log(res.data.token);
                 
             }
