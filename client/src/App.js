@@ -1,7 +1,7 @@
 import Profile from "./components/Profile/Profile-settings";
 
 //import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { createContext, useState } from "react";
 import LandingPage from "./components/Landing/LandingPage";
 import Match from "./components/Match/Match";
