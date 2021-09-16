@@ -55,7 +55,7 @@ export default function SignUp() {
             var res = await axios.post("/user/register", userToRegister);
             if (res.status == 200) {
                 console.log("yaaay the user was added! 🟢");
-                history.push("/register"); // ?
+                history.push("/random"); // ?
             }
         } catch (error) {
             console.log("Error happened", error);

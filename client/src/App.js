@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Redirect, Route } from "react-router-d
 import { createContext, useState } from "react";
 import LandingPage from "./components/Landing/LandingPage";
 import Match from "./components/Match/Match";
+import MatchPage from './components/FriendMatch/MatchPage';
+import Filters from './components/FriendMatch/Filters';
 
 
 export const AuthContext = createContext({});
@@ -37,14 +39,14 @@ function App() {
             <Router>
                 <div className="App">
                     <Switch >
-                        <Route  exact path='/' render={(props) => (
-                            loggedIn === false
+                        <Route exact path='/' render={(props) => (
+                         loggedIn == null
                                 ? <LandingPage {...props} />
                                 : <Redirect to='/random' />
                         )} />
+                            {/* its or not showing the landing page, or the Match Page or its empty or it stayes on login route */}
+                        <Route exact path="/" component={LandingPage}></Route>
 
-                        {/* <Route exact path="/" component={LandingPage}></Route> */}
-                        {/* route after the login/register... takes you to the Match Page */}
                         <Route exact path="/profile" component={Profile}></Route>
                         <Route exact path="/random" component={Match}></Route>
                     </Switch>
@@ -55,11 +57,5 @@ function App() {
     );
 }
 
-const GuardedRoute = ({ component: Component, auth, ...rest }) => (
-    <Route {...rest} render={(props) => (
-        auth === true
-            ? <Component {...props} />
-            : <Redirect to='/' />
-    )} />
-)
+
 export default App;
