@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 // import axios from "axios";
 import axios from '../../util/axios';
 import FormWrapper from '../Wrapers/wraper';
-//import Login from "../LandingTwo/Login";
+import Login from '../LandingTwo/Login';
 
 export default function SignUp() {
   const [fullname, setFullname] = useState('');
@@ -16,15 +16,14 @@ export default function SignUp() {
   const [birthday, setBirthday] = useState('');
   const [location, setLocation] = useState('');
   const [rePassword, setRePassword] = useState('');
-  //const [native, setNative] = useState('');
-  //const [expat, setExpat] = useState('');
+  const [native, setNative] = useState(false);
 
   const history = useHistory();
 
   const handleSubmitForm = async (e) => {
     e.preventDefault();
 
-    var userToRegister = {
+    const userToRegister = {
       fullname: fullname,
       username: username,
       email: email,
@@ -32,7 +31,7 @@ export default function SignUp() {
       rePassword: rePassword,
       birthday: birthday,
       location: location,
-      //native: native,
+      native: native,
     };
 
     // axios.post("http://localhost:4001/user/register", JSON.stringify(userToRegister)).then(res => {
@@ -53,7 +52,7 @@ export default function SignUp() {
 
     try {
       var res = await axios.post('/user/register', userToRegister);
-      if (res.status === 200) {
+      if (res.status == 200) {
         console.log('yaaay the user was added! 🟢');
         history.push('/register'); // ?
       }
@@ -61,6 +60,10 @@ export default function SignUp() {
       console.log('Error happened', error);
     }
   };
+
+  useEffect(() => {
+    console.log(native);
+  }, [native]);
 
   return (
     <div className='container'>
@@ -183,10 +186,11 @@ export default function SignUp() {
                               type='radio'
                               name='flexRadioDefault'
                               id='flexRadioDefault1'
+                              defaultChecked={native}
+                              onClick={() => setNative(true)}
                             />
                             <label
                               className='form-check-label'
-                              //value={native}
                               for='flexRadioDefault1'
                             >
                               Native
@@ -197,9 +201,9 @@ export default function SignUp() {
                               className='form-check-input'
                               type='radio'
                               name='flexRadioDefault'
-                              //value={native}
                               id='flexRadioDefault2'
-                              checked
+                              defaultChecked={!native}
+                              onClick={() => setNative(false)}
                             />
                             <label
                               className='form-check-label'

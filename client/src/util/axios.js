@@ -28,7 +28,7 @@ axiosApiInstance.interceptors.response.use(
         console.log("the error is: ", error.response);
         if (error.response.status === 401) {
             console.log("we hit 401, token must not be valid.");
-            window.location = "/logout";
+            // window.location = "/logout";
         }
         return Promise.reject(error);
     }

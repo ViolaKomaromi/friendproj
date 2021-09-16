@@ -8,6 +8,8 @@ app.use(cors());
 const initializePassport = require('./passport-config');
 initializePassport(passport);
 
+const mockData = require('./MOCK_DATA(2).json');
+
 // ejs
 const path = require('path');
 
@@ -33,9 +35,17 @@ mongoose
 
 const userRoutes = require('./routes/userRoutes');
 const messageRoutes = require('./routes/messageRoutes');
+const randomRoutes = require('./routes/randomRoutes');
 
 app.use('/user', userRoutes);
 app.use('/contact', messageRoutes);
+app.use('/random', randomRoutes);
+
+// app.get('*', (_, res) => {
+//   res.send('sadasd')
+// })
+
+
 
 app.listen(4001, () => {
   console.log('the webserver is running on port 4001 💚 💌');
