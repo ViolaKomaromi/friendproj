@@ -1,13 +1,16 @@
-import Profile from "./components/Profile/Profile-settings";
 
+import Profile from './pages/Profile/Profile-settings';
+import LandingPage from './pages/Landing/LandingPage';
+import './pages/404-page/404.css';
 //import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { createContext, useState } from "react";
-import LandingPage from "./components/Landing/LandingPage";
-import Match from "./components/Match/Match";
-import MatchPage from './components/FriendMatch/MatchPage';
-import Filters from './components/FriendMatch/Filters';
 
+import MatchPage from './pages/FriendMatch/Filters';
+
+
+
+import PageNotFound from './pages/404-page/404-page';
 
 export const AuthContext = createContext({});
 
@@ -36,11 +39,11 @@ function App() {
                 <div className="App">
                     <Switch >
                         <Route exact path='/' render={(props) => (
-                         loggedIn == null
+                            loggedIn == null
                                 ? <LandingPage {...props} />
                                 : <Redirect to='/random' />
                         )} />
-                            {/* its or not showing the landing page, or the Match Page or its empty or it stayes on login route */}
+                      
                         <Route exact path="/" component={LandingPage}></Route>
 
                         <Route exact path="/profile" component={Profile}></Route>
