@@ -14,7 +14,9 @@
     color: black;
 } */
 .navbar {
+    height: fit-content;
     padding: 0;
+    background-color: rgba(245, 245, 245, 0.386);
 }
 
 .navbar img {

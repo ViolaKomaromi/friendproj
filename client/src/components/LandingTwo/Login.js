@@ -48,7 +48,7 @@ export default function Login() {
     return (
         <div className="container">
             <div className="col-12 ">
-                <button type="button" className="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <button type="button" className="btn landing-btn-alt  " data-bs-toggle="modal" data-bs-target="#exampleModal2">
                     Log in
                 </button>
 
