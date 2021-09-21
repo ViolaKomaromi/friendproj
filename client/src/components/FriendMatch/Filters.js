@@ -6,6 +6,7 @@ import drink from "../../image/beer.png";
 import food from "../../image/sausage.png";
 import activity from "../../image/tent.png";
 import randomButton from "../../image/lobster.png";
+import Logout from '../LandingTwo/Logout';
 
 function Filters({ filterItems }) {
     return (
@@ -38,6 +39,7 @@ function Filters({ filterItems }) {
                     <p>Match Me</p>
                 </button>
             </div>
+            <Logout/>
         </div>
     );
 }
