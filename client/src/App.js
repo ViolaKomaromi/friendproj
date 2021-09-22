@@ -6,7 +6,7 @@ import './pages/404-page/404.css';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { createContext, useState } from "react";
 
-import MatchPage from './pages/FriendMatch/Filters';
+import MatchPage from './pages/FriendMatch/MatchPage';
 
 
 
@@ -49,7 +49,7 @@ function App() {
                         <Route exact path="/profile" component={Profile}></Route>
                         <Route exact path="/random" component={MatchPage}></Route>
                     </Switch>
-                    {/* <LandingPage /> */}
+                    
                 </div>
             </Router>
         </AuthContext.Provider>
