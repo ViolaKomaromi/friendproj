@@ -1,6 +1,7 @@
 import Profile from './components/Profile/Profile-settings';
+import './components/Footer/Footer.css';
 import './components/404-page/404.css';
-//import "bootstrap/dist/css/bootstrap.min.css";
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,6 +12,7 @@ import { createContext, useState } from 'react';
 import LandingPage from './components/Landing/LandingPage';
 import Match from './components/Match/Match';
 import PageNotFound from './components/404-page/404-page';
+import Footer from './components/Footer/Footer';
 
 export const AuthContext = createContext({});
 
@@ -57,8 +59,10 @@ function App() {
             {/* route after the login/register... takes you to the Match Page */}
             <Route exact path='/profile' component={Profile}></Route>
             <Route exact path='/random' component={Match}></Route>
+
             <Route component={PageNotFound} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     </AuthContext.Provider>
