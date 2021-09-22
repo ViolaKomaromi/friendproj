@@ -3,7 +3,7 @@
 import React from "react";
 import AboutPage from "../About/AboutPage";
 import ContactPage from "../Contact/ContactPage";
-import "../../Landing/Navigation/landingNav.css";
+import "../Navigation/";
 import logo from "../../images/FJ_friendja.png";
 
 function Nav() {

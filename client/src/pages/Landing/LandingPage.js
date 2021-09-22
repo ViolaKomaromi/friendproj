@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../../components/Nav/Navbar";
+import Nav from "../../components/Header/LandingNav";
 import SignUp from "../LandingTwo/SignUp";
 import Login from "../LandingTwo/Login";
 import "./landingPage.css";

@@ -43,8 +43,6 @@ function App() {
                                 ? <LandingPage {...props} />
                                 : <Redirect to='/random' />
                         )} />
-                      
-                        <Route exact path="/" component={LandingPage}></Route>
 
                         <Route exact path="/profile" component={Profile}></Route>
                         <Route exact path="/random" component={MatchPage}></Route>
