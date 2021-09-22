@@ -40,7 +40,7 @@ main {
     gap: 5rem;
 
     background-color: teal;
-    background-image: linear-gradient(rgba(42, 42, 42, 0.27), rgba(0, 0, 0, 0.263)), url("../images/landing-background.png");
+    background-image: linear-gradient(rgba(42, 42, 42, 0.27), rgba(0, 0, 0, 0.263)), url("../../image/landing-background.png");
 
     background-position: center;
     background-repeat: no-repeat;
