@@ -3,9 +3,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 // import axios from "axios";
-import axios from '../../util/axios';
+import axios from "../../util/axios";
 import FormWrapper from "../Wrapers/wraper";
-import Login from "../LandingTwo/Login";
+//import Login from "../LandingTwo/Login";
 
 export default function SignUp() {
     const [fullname, setFullname] = useState("");
@@ -32,7 +32,7 @@ export default function SignUp() {
             rePassword: rePassword,
             birthday: birthday,
             location: location,
-            native: native
+            native: native,
         };
 
         // axios.post("http://localhost:4001/user/register", JSON.stringify(userToRegister)).then(res => {
@@ -71,7 +71,7 @@ export default function SignUp() {
             {/* <div className="row g-2"> */}
             {/* 1st Pop Up */}
             <div className="col-12">
-                <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" className="btn landing-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Sign up
                 </button>
                 <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

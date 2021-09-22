@@ -1,8 +1,12 @@
-.body {
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+body {
     margin-top: 20px;
     color: #1a202c;
     text-align: left;
-    background-color: #ff9375;
+    /* background-color: #ff9375; */
+    background: radial-gradient(53.86% 75.87% at 58.54% 46.14%, #9ae2c9 0%, #5ebbb5 100%);
+    font-family: "Neucha", cursive;
 }
 .main-body {
     padding: 15px;
