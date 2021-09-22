@@ -3,7 +3,8 @@ import React from "react";
 import ContactPage from "../../components/ContactButton/ContactPage";
 import logo from "../../image/FJ_friendja.png";
 import Profile from "../../pages/Profile/Profile-settings";
-
+import './Navbar.css';
+import Logout from '../LandingTwo/Logout';
 
 
 export default function Navbar() {
@@ -14,7 +15,7 @@ export default function Navbar() {
         <div>
 
 
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg ">
                 <div className="container-fluid">
                 <img src={logo} alt="" />
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +33,7 @@ export default function Navbar() {
                                     ⬇️
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    
+                                     
                                     
                                     <li><a className="dropdown-item" href="/profile">Profile</a></li>
                                     <li><a className="dropdown-item" href="/contact">Contact</a></li>
