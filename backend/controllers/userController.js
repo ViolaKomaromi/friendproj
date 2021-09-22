@@ -26,6 +26,7 @@ exports.login = async (req, res) => {
   }
 };
 
+
 exports.registerUser = async (req, res) => {
   try {
     console.log(req.body);
@@ -38,6 +39,7 @@ exports.registerUser = async (req, res) => {
      
       username: req.body.username,
       email: req.body.email,
+      native:req.body.native,
       password: hashedPassword
 
     });
