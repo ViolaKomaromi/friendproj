@@ -11,6 +11,7 @@ import { Filter } from "react-bootstrap-icons";
 
 
 import { useState } from "react";
+import Navbar from "../../components/MainNav/Navbar";
 
 
 
@@ -29,6 +30,7 @@ function MatchPage() {
     return (
         <>
             <div className="match_page">
+                <Navbar/>
                 <header className="matchHeader">
                     <Filters filterItems={filterItems} />
                     <div className="culture_jokes_btns">
