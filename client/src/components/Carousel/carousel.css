@@ -3,14 +3,15 @@
 }
 
 .carousel-inner {
-    padding: 4rem;
+    padding: 1rem 0 3rem 0;
 }
 
 .carousel-h2 {
     text-align: center;
     font-size: clamp(5.5rem, 4.5vw, 4rem);
-    padding: 4rem 0 0 2rem;
+    padding: 4rem 0 0 0;
     color: #f37126;
+    margin-top: 0;
 }
 
 .carousel-item img {

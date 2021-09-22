@@ -10,7 +10,6 @@ export default function Login() {
     const [password, setPassword] = useState("");
     const [isError, setIsError] = useState(false);
 
-
     const [errorMessage, setErrorMessage] = useState("");
     const { handleLogin } = useContext(AuthContext);
     const history = useHistory();
@@ -27,20 +26,18 @@ export default function Login() {
             if (res.status == 200) {
                 console.log("yaaay the user has signed! 🟢");
                 handleLogin(true, res.data.token);
-                history.push("/random"); 
+                history.push("/random");
                 console.log(res.data.token);
-
             }
         } catch (error) {
             console.log("Error happened", error);
         }
-
     };
 
     return (
         <div className="container">
             <div className="col-12 ">
-                <button type="button" className="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <button type="button" className="btn landing-btn landing-btn-alt " data-bs-toggle="modal" data-bs-target="#exampleModal2">
                     Log in
                 </button>
 

@@ -16,17 +16,22 @@
 .navbar {
     height: fit-content;
     padding: 0;
-    background-color: rgba(245, 245, 245, 0.386);
+
+    /* background-color: rgba(245, 245, 245, 0.304); */
 }
 
-.navbar img {
+.navbar-img {
     width: 8rem;
+    margin: 0;
 }
 
 .nav-btns {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+.nav-btn {
+    font-size: 1.2rem;
 }
 
 .nav-btn:hover {
@@ -36,4 +41,8 @@
 h2,
 h3 {
     text-align: center;
+}
+
+.modal-backdrop {
+    position: relative;
 }
