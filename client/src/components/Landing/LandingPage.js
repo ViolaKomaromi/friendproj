@@ -11,7 +11,7 @@ function LandingPage() {
         <>
             <Nav />
             <main>
-                <div class="overlay"></div>
+                <div className="overlay"></div>
                 <div className="landingWrapper">
                     <header>
                         <h2>
