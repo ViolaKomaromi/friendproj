@@ -2,12 +2,12 @@
 
 import React from "react";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 // import axios from "axios";
-import axios from '../../util/axios';
+import axios from "../../util/axios";
 import FormWrapper from "../Wrapers/wraper";
-import Login from "../LandingTwo/Login";
+//import Login from "../LandingTwo/Login";
 
 export default function SignUp() {
     const [fullname, setFullname] = useState("");
@@ -18,15 +18,15 @@ export default function SignUp() {
     const [birthday, setBirthday] = useState("");
     const [location, setLocation] = useState("");
     const [rePassword, setRePassword] = useState("");
-    const [native, setNative] = useState("");
-    const [expat, setExpat] = useState("");
+    const [native, setNative] = useState(false);
+  
 
     const history = useHistory();
 
     const handleSubmitForm = async (e) => {
         e.preventDefault();
 
-        var userToRegister = {
+        const userToRegister = {
             fullname: fullname,
             username: username,
             email: email,
@@ -34,7 +34,7 @@ export default function SignUp() {
             rePassword: rePassword,
             birthday: birthday,
             location: location,
-            native: native
+            native: native,
         };
 
         axios.post("http://localhost:4001/user/profile", JSON.stringify(userToRegister)).then(res => {
@@ -57,19 +57,23 @@ export default function SignUp() {
             var res = await axios.post("/user/register", userToRegister);
             if (res.status === 200) {
                 console.log("yaaay the user was added! 🟢");
-                history.push("/register"); // ?
+                history.push("/random"); // ?
             }
         } catch (error) {
             console.log("Error happened", error);
         }
     };
 
+    useEffect(() => {
+        console.log(native)
+    }, [native])
+
     return (
         <div className="container">
             {/* <div className="row g-2"> */}
             {/* 1st Pop Up */}
             <div className="col-12">
-                <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" className="btn landing-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Sign up
                 </button>
                 <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -164,13 +168,13 @@ export default function SignUp() {
 
                                                 <div className="d-flex justify-content-around">
                                                     <div className="form-check">
-                                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                                        <label className="form-check-label" value={native}for="flexRadioDefault1">
+                                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" defaultChecked={native} onClick={() => setNative(true)} />
+                                                        <label className="form-check-label" for="flexRadioDefault1">
                                                             Native
                                                         </label>
                                                     </div>
                                                     <div className="form-check">
-                                                        <input className="form-check-input" type="radio" name="flexRadioDefault" value={native} id="flexRadioDefault2" checked />
+                                                        <input className="form-check-input" type="radio" name="flexRadioDefault"  id="flexRadioDefault2" defaultChecked={!native} onClick={() => setNative(false)} />
                                                         <label className="form-check-label" for="flexRadioDefault2">
                                                             Expat
                                                         </label>

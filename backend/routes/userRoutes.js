@@ -4,6 +4,7 @@ const User = require("../models/User");
 const {userMiddle, validateUserExists} = require('../middleware/middleware.js');
 
 
+
 const router = express.Router();
 
 router.post("/register", controller.registerUser);

@@ -1,0 +1,39 @@
+/* nav {
+    background-color: green;
+    z-index: 1;
+} */
+
+/* .nav-btn {
+    background: none;
+    border: none;
+}
+.nav-btn:hover {
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: black;
+} */
+.navbar {
+    height: fit-content;
+    padding: 0;
+    background-color: rgba(245, 245, 245, 0.386);
+}
+
+.navbar img {
+    width: 8rem;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-btn:hover {
+    color: white;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
