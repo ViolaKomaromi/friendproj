@@ -33,9 +33,12 @@ mongoose
 
 const userRoutes = require('./routes/userRoutes');
 const messageRoutes = require('./routes/messageRoutes');
+const userproRoutes = require("./routes/userproRoutes");
 
 app.use('/user', userRoutes);
 app.use('/contact', messageRoutes);
+app.use('/profile', userproRoutes);
+
 
 app.listen(4001, () => {
   console.log('the webserver is running on port 4001 💚 💌');

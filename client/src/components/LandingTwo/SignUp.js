@@ -1,4 +1,4 @@
-
+/* eslint-disable no-unused-vars */
 
 import React from "react";
 
@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
 // import axios from "axios";
 import axios from '../../util/axios';
 import FormWrapper from "../Wrapers/wraper";
-// import Login from "../LandingTwo/Login";
+import Login from "../LandingTwo/Login";
 
 export default function SignUp() {
     const [fullname, setFullname] = useState("");
@@ -18,8 +18,8 @@ export default function SignUp() {
     const [birthday, setBirthday] = useState("");
     const [location, setLocation] = useState("");
     const [rePassword, setRePassword] = useState("");
-    // const [native, setNative] = useState("");
-    // const [expat, setExpat] = useState("");
+    const [native, setNative] = useState("");
+    const [expat, setExpat] = useState("");
 
     const history = useHistory();
 
@@ -37,11 +37,11 @@ export default function SignUp() {
             native: native
         };
 
-        axios.post("http://localhost:4001/user/register", JSON.stringify(userToRegister)).then(res => {
+        axios.post("http://localhost:4001/user/profile", JSON.stringify(userToRegister)).then(res => {
             console.log(res);
         })
 
-        fetch("http://localhost:4001/user/register", {
+        fetch("http://localhost:4001/user/profile", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(userToRegister),

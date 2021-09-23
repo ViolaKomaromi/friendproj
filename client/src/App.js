@@ -1,75 +1,83 @@
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-
-import "./App.css";
-
-=======
-=======
->>>>>>> master
-import Profile from './components/Profile/Profile-settings';
->>>>>>> c4a344fdf4ee5528ec34edae81acec7167a9a270
-
-//import "bootstrap/dist/css/bootstrap.min.css";
-<<<<<<< HEAD
+// import "./App.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import { createContext } from "react";
-import LandingPage from "./components/Landing/LandingPage";
-// import Home from "./pages/home/Home";
-// import ContactForm from './pages/contactForm/ContactForm';
-// import Navi from "./components/Navbar/Navi";
-// import About from "./pages/about/About";
-// import Profile from "./components/Profile/Profile";
-=======
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { createContext } from 'react';
-import LandingPage from './components/Landing/LandingPage';
->>>>>>> master
+// import { createContext } from "react";
+// // import LandingPage from "./components/Landing/LandingPage";
+// // import Home from "./pages/home/Home";
+import Profile from "./components/Profile/Profile";
+import UserNavbar from "./components/UserNavbar/UserNavbar";
+import Inbox from "./components/Inbox/Inbox"
+import Notifications from "./components/Profile/Notifications";
 
-export const AuthContext = createContext({});
+// export const AuthContext = createContext({});
 
-function App() {
-<<<<<<< HEAD
-    
-    return (
-        <Router>
-            <div className="App">
-            {/* <Navi /> */}
-            {/* <Profile */}
-                <Switch>
-                   {/* <Route exact path='/'>
-                   <Home />
-                   </Route> */}
-                   
-                    <Route exact path='/'>
-                      <LandingPage />
-                    </Route>
-                    {/* <Route exact path='/about'>
-                      <About />
-                    </Route> */}
-                    {/* <Route exact path='/contact' component={ContactForm}></Route> */}
-                </Switch>
-                {/* <LandingPage /> */}
-            </div>
-        </Router>
-    );
-=======
+
+
+
+
+import { Grid, makeStyles } from '@material-ui/core'
+import Add from './components/Add/Add';
+import Feeds from './components/Feeds/Feeds';
+import Leftbar from './components/Leftbar/Leftbar';
+import Rightbar from './components/Rightbar/Rightbar';
+
+const useStyles = makeStyles((theme) => ({
+  right: {
+    [theme.breakpoints.down("sm")]: {
+      display: "none"
+    }
+  }
+}))
+
+const App = () => {
+  const classes = useStyles();
   return (
+    <>
     <Router>
-      <div className='App'>
-        <Switch>
-          <Route exact path='/' component={LandingPage}></Route>
-          <Route exact path='/profile' component={Profile}></Route>
-        </Switch>
-        {/* <LandingPage /> */}
-      </div>
-    </Router>
+    <div>
+      <UserNavbar/>
+    <Grid container>
+      <Grid item sm = {2} xs={2} >
+       <Leftbar />
+      </Grid>
+      <Grid item sm = {7} xs={10} >
+        <Feeds />       
+      </Grid>
+      <Grid item sm = {3} className={classes.right}>
+        <Rightbar />
+      </Grid>
+    </Grid>
+    <Add />
+    </div>
+     <Switch>
+     {/* <Route exact path='/'>
+     <Home />
+     </Route> */}
+     
+      {/* <Route exact path='/'>
+        <LandingPage />
+      </Route> */}
+      {/* <Route exact path='/about'>
+        <About />
+      </Route> */}
+      <Route exact path='/inbox'>
+        <Inbox />
+      </Route>
+      <Route exact path='/profile'>
+        <Profile />
+      </Route>
+      <Route exact path='/notifications'>
+        <Notifications />
+      </Route>
+      {/* <Route exact path='/contactlist'>
+        <ContactList/>
+      </Route> */}
+      {/* <Route exact path='/contact' component={ContactForm}></Route> */}
+  </Switch>
+  </Router>
+  </>
   );
-<<<<<<< HEAD
-
->>>>>>> c4a344fdf4ee5528ec34edae81acec7167a9a270
-=======
->>>>>>> master
 }
 
 export default App;
+
