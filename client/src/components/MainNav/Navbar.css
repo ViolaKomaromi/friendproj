@@ -1,0 +1,28 @@
+
+
+
+
+.navbar {
+    height: fit-content;
+    padding: 0;
+    background-color: rgba(185, 24, 24, 0.386);
+}
+
+.navbar img {
+    width: 6rem;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+
+.nav-btn:hover {
+    color: rgb(228, 24, 24);
+}
+
+h2,
+h3 {
+    text-align: center;
+}

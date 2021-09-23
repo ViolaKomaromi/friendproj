@@ -20,9 +20,8 @@
     /* background-color: rgba(245, 245, 245, 0.304); */
 }
 
-.navbar-img {
-    width: 8rem;
-    margin: 0;
+.navbar img {
+    width: 6rem;
 }
 
 .nav-btns {

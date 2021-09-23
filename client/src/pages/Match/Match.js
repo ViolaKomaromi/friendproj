@@ -11,6 +11,7 @@ import axios from "../../util/axios";
 import FormWrapper from "../../components/Wrappers/wrapper";
 import MatchPage from "../FriendMatch/MatchPage";
 
+
 export default function RandomMatch() {
   
 
@@ -21,6 +22,7 @@ export default function RandomMatch() {
     return (
        
         <>
+               
             <MatchPage />
         </>
     );
