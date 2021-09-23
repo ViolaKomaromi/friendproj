@@ -1,4 +1,7 @@
 import React from "react";
+import axios from "../../util/axios";
+import { useState } from "react";
+import RandomCard from './RandomCard';
 
 import "../../components/Match/matchpage.css";
 import passion from "../../image/drum.png";
@@ -11,6 +14,24 @@ import { Filter } from "react-bootstrap-icons";
 import MatchPage from './MatchPage';
 
 function Filters({ filterItems }) {
+
+    const [native, setNative] = useState("");
+    const [showResult, setShowResult] = useState(null);
+
+    const random = async (e) => {
+        e.preventDefault();
+
+        try {
+            const res = await axios.get("/random");
+
+            console.log("there is your match 🟢");
+            console.log(res.data);
+            setShowResult(res.data);
+        } catch (error) {
+            console.log("Error happened", error);
+        }
+    };
+
     return (
         <div className="filterComponent">
             <div className="filterText">
@@ -36,12 +57,19 @@ function Filters({ filterItems }) {
                     <img src={activity} alt="" />
                     <p>Activity</p>
                 </button>
-                <button onClick={() => filterItems("all")}>
+                {/* <button onClick={() => filterItems("all")}>
+                    <img src={randomButton} alt="" />
+                    <p>Match Me</p>
+                </button> */}
+
+                <button onClick={random}>
                     <img src={randomButton} alt="" />
                     <p>Match Me</p>
                 </button>
             </div>
-            <Logout/>
+            <Logout />
+            
+            {showResult != null ? <RandomCard randomMatch={showResult}/> : <p></p>}
         </div>
     );
 }
@@ -49,7 +77,7 @@ function Filters({ filterItems }) {
 export default Filters;
 
 
-    /* <div>
+/* <div>
 <button onClick={() => filterItems("all")}>all</button>
 <button onClick={() => filterItems("breakfast")}>Breakfast</button>
 </div> */

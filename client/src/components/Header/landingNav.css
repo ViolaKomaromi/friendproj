@@ -1,8 +1,7 @@
 .navbar {
     height: fit-content;
     padding: 0;
-
-    /* background-color: rgba(245, 245, 245, 0.304); */
+    background-color: rgba(247, 241, 241, 0.386);
 }
 
 .navbar img {
