@@ -11,6 +11,7 @@ router.post("/register", controller.registerUser);
 
 router.post("/login", controller.login);
 
+
 router.get('/profile/:id', async(req, res) => {
       const user = await User.find();
       res.status(200).json(user);

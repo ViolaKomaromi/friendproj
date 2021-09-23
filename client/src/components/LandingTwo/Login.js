@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import FormWrapper from "../../components/Wrapers/wraper";
@@ -24,7 +26,7 @@ export default function Login() {
 
         try {
             var res = await axios.post("/user/login", userToLogin);
-            if (res.status == 200) {
+            if (res.status === 200) {
                 console.log("yaaay the user has signed! 🟢");
                 history.push("/login"); // ?
             }

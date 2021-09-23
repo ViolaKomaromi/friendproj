@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // import axios from "../../../util/axios";
 
 import React from "react";
@@ -6,7 +7,8 @@ import ContactPage from "../Contact/ContactPage";
 import "../Navigation/";
 import logo from "../../images/FJ_friendja.png";
 
-function Nav() {
+function Nav(props) {
+    
     return (
         <div>
             <nav className="navbar fixed-top navbar-light  navbar-expand-lg ">
