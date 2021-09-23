@@ -1,12 +1,16 @@
 
-
-
-
-.navbar {
+.container-fluid{
     height: fit-content;
     padding: 0;
-    background-color: rgba(185, 24, 24, 0.386);
+    background-color: rgba(141, 17, 17, 0.386);
 }
+
+
+/* .navbar {
+    height: fit-content;
+    padding: 0;
+    background-color: rgba(116, 104, 104, 0.386);
+} */
 
 .navbar img {
     width: 6rem;
@@ -15,11 +19,12 @@
 .nav-btns {
     display: flex;
     justify-content: right;
-    gap: 1rem;
+    color: black;
+   
 }
 
 .nav-btn:hover {
-    color: rgb(228, 24, 24);
+    color: rgb(24, 228, 24);
 }
 
 h2,
