@@ -4,6 +4,7 @@ import FormWrapper from "../../components/Wrappers/wrapper";
 import ErrorMessage from "../LandingTwo/Error";
 import axios from "../../util/axios";
 import { AuthContext } from "../../App";
+import "./login.css";
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -42,22 +43,33 @@ export default function Login() {
                 </button>
 
                 <div className="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-                    <div className="modal-dialog modal-dialog-centered">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                {/* <h5 className="sign-in" id="exampleModalLabel2">Sign In</h5> */}
+                    <div className="modal-dialog modal-dialog-centered mx-auto">
+                        <div className="modal-content modal-box-style">
+                            {/* <div className="modal-header">
+                      
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
+                            </div> */}
                             <div className="modal-body">
+                                <div>
+                                    <img
+                                        className="login-img"
+                                        src="https://images.unsplash.com/photo-1607749111659-e1c8e05f5f24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJpZW5kc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                        alt=""
+                                    />
+                                </div>
                                 <FormWrapper>
+                                    <div className="btn-close-section">
+                                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
                                     <form
                                         onSubmit={(e) => {
                                             handleSubmitForm(e);
                                         }}
                                     >
-                                        <h3 className="mb-4">You're back!</h3>
+                                        <h3 className="mb-4 login-modal-title">You're back!</h3>
                                         <div className="form-group mb-4">
-                                            <label>Email address</label>
+                                            {/* <label>Email address</label> */}
                                             <input
                                                 type="email"
                                                 value={email}
@@ -67,7 +79,7 @@ export default function Login() {
                                             />
                                         </div>
                                         <div className="form-group ">
-                                            <label>Password</label>
+                                            {/* <label>Password</label> */}
                                             <input
                                                 type="password"
                                                 value={password}
@@ -78,7 +90,7 @@ export default function Login() {
                                         </div>
 
                                         <ErrorMessage isVisible={isError} errorMessage={errorMessage} />
-                                        <button type="submit" className="btn btn-primary btn-block mt-5">
+                                        <button type="submit" className="btn btn-primary btn-block mt-5 login-btn">
                                             Log In
                                         </button>
                                     </form>
