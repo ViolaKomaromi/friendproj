@@ -1,6 +1,9 @@
 import Profile from './components/Profile/Profile-settings';
+import About from './components/About/About';
 import './components/Footer/Footer.css';
 import './components/404-page/404.css';
+import './components/About/About.css';
+
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -54,7 +57,7 @@ function App() {
                 )
               }
             />
-
+            <About />
             {/* <Route exact path="/" component={LandingPage}></Route> */}
             {/* route after the login/register... takes you to the Match Page */}
             <Route exact path='/profile' component={Profile}></Route>
