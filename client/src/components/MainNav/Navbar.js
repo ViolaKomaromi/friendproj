@@ -37,7 +37,7 @@ export default function Navbar() {
                                     
                                     <li><a className="dropdown-item" href="/profile">Profile</a></li>
                                     <li><a className="dropdown-item" href="/contact">Contact</a></li>
-                                    <li><a className="dropdown-item" href="/friend-list">Friend List</a></li>
+                                    <li><a className="dropdown-item" href="/friendlist">Friend List</a></li>
                                     <li><a className="dropdown-item" href="/inbox">Inbox</a></li>
                                 </ul>
                             </li>
