@@ -45,10 +45,6 @@ export default function Login() {
                 <div className="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered mx-auto">
                         <div className="modal-content modal-box-style">
-                            {/* <div className="modal-header">
-                      
-                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div> */}
                             <div className="modal-body">
                                 <div>
                                     <img

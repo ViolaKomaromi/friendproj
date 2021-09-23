@@ -1,0 +1,39 @@
+.sign-up-body {
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding-right: 1rem;
+}
+
+.signUp-btn {
+    background: #2a2019;
+    border: none;
+    font-size: 1.4rem;
+}
+.signUp-btn:hover {
+    background: #f37126;
+    border: none;
+}
+
+.modal-dialog {
+    min-width: 800px;
+    /* min-width: 50rem; */
+}
+
+.signUpForm {
+    padding: 0 2rem;
+}
+
+.signUp-modal-title {
+    font-family: Amatic SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 108.6%;
+    /* or 124px */
+    margin: 0;
+    text-align: center;
+
+    color: #666575;
+
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
