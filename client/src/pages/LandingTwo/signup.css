@@ -14,7 +14,7 @@
     border: none;
 }
 
-.modal-dialog {
+.signUp-dialog {
     /* min-width: 800px; */
     width: min(700px, 90%);
     /* min-width: 400px;

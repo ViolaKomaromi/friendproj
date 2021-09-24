@@ -1,0 +1,93 @@
+.contact-body {
+    display: flex;
+}
+.modal-content {
+    background-color: #f4f2e9;
+    box-shadow: 0 0 200px #c4c4c4 inset;
+}
+
+.contact-modal-header {
+    /* background-color: coral; */
+    align-self: center;
+}
+
+.contact-modal-header h5 {
+    font-family: "Amatic SC", cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 108.6%;
+
+    color: #ffffff;
+
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-list-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.developer-cards {
+    display: flex;
+    flex-direction: row;
+
+    width: 80%;
+    justify-content: center;
+}
+
+.developer-card header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.developer-card {
+    background: rgba(255, 255, 255, 0.448);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    height: fit-content;
+    /* padding: 2.5rem; */
+}
+
+.developer-card header {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.developer-card img {
+    height: 11rem;
+    clip-path: circle(40% at 50% 50%);
+}
+
+/* .developer-card-user-headline {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: space-between;
+    gap: 1rem;
+} */
+
+.developer-card-user-headline h5 {
+    font-size: 1.8rem;
+}
+.developer-card-user-headline p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.developer-card-body {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.developer-card-text {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 1rem;
+}

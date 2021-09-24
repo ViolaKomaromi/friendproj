@@ -75,7 +75,7 @@ export default function SignUp() {
                     Sign up
                 </button>
                 <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div className="modal-dialog  modal-dialog-centered">
+                    <div className="modal-dialog signUp-dialog  modal-dialog-centered">
                         <div className="modal-content modal-box-style ">
                             {/* <div className="modal-header">
                               
@@ -173,7 +173,10 @@ export default function SignUp() {
                                                 />
                                             </div>
                                             <div className="d-flex flex-column justify-content-around">
-                                                <label htmlFor=""> I'm a/an: </label>
+                                                <label className="text-center" htmlFor="">
+                                                    {" "}
+                                                    I'm a/an:{" "}
+                                                </label>
 
                                                 <div className="d-flex justify-content-around">
                                                     <div className="form-check">
