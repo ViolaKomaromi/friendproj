@@ -72,8 +72,8 @@ function App() {
             <Route component={PageNotFound} />
           </Switch>
         </div>
-        <Footer />
       </Router>
+      <Footer />
     </AuthContext.Provider>
   );
 }
