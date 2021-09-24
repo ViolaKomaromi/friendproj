@@ -5,8 +5,6 @@ import image from './54a170c2dd0895dd408b4592.jpeg';
 
 const PageNotFound = () => {
   return (
-    // <div style={{ backgroundImage: `url(${image})` }}>Hello World</div>
-
     <div className='container'>
       <div className='row justify-content-center'>
         <div className='col-md-12 col-sm-12'>
@@ -27,7 +25,7 @@ const PageNotFound = () => {
               <a
                 type='button'
                 href='/'
-                className='btn btn-sm btn-primary text-white'
+                className='btn btn-sm btn-secondary text-white'
               >
                 Back To Home
               </a>
