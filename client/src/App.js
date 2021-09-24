@@ -61,6 +61,7 @@ function App() {
                 )
               }
             />
+            <Route exact path='/contact' component={Contact}></Route>
             <Contact />
             <About />
             {/* <Route exact path="/" component={LandingPage}></Route> */}
@@ -70,8 +71,8 @@ function App() {
 
             <Route component={PageNotFound} />
           </Switch>
-          <Footer />
         </div>
+        <Footer />
       </Router>
     </AuthContext.Provider>
   );
