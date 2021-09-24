@@ -1,8 +1,11 @@
 import Profile from './components/Profile/Profile-settings';
 import About from './components/About/About';
+
 import './components/Footer/Footer.css';
 import './components/404-page/404.css';
 import './components/About/About.css';
+import './components/Contact/Contact.css';
+import './components/Contact/Contact';
 
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -15,6 +18,7 @@ import { createContext, useState } from 'react';
 import LandingPage from './components/Landing/LandingPage';
 import Match from './components/Match/Match';
 import PageNotFound from './components/404-page/404-page';
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 export const AuthContext = createContext({});
@@ -57,6 +61,7 @@ function App() {
                 )
               }
             />
+            <Contact />
             <About />
             {/* <Route exact path="/" component={LandingPage}></Route> */}
             {/* route after the login/register... takes you to the Match Page */}
