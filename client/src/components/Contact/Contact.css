@@ -1,5 +1,5 @@
 body {
-  background: -webkit-linear-gradient(left, #7dcfc0, #7dcfbf);
+  background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
 }
 .contact-form {
   background: #fff;
@@ -32,25 +32,17 @@ body {
   color: #0062cc;
 }
 .contact-form .btnContact {
-  width: 50%;
+  width: 55%;
   border: none;
   border-radius: 1rem;
   padding: 1.5%;
-  background: #dc3545;
-  font-weight: 600;
+  /* background-color: #0062cc; */
+  background: #0062cc;
+  font-weight: 400;
   color: #fff;
-  cursor: pointer;
-}
-.btnContactSubmit {
-  width: 50%;
-  border-radius: 1rem;
-  padding: 1.5%;
-  color: #fff;
-  background-color: #0062cc;
-  border: none;
   cursor: pointer;
 }
 
-.contact-image {
-  size: 100px;
+.form-group {
+  margin: 10px;
 }
