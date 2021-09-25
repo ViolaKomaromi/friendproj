@@ -6,7 +6,8 @@ import items from "../../data/developers";
 function ContactDeveloperCard() {
     const [developers, setDevelopers] = useState(items);
     return (
-        <div className="developer-cards">
+        <div className="developer-list">
+            <h3>Meet the team</h3>
             <Developer items={developers} />
         </div>
     );

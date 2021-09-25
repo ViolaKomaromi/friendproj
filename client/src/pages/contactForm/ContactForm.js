@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import "./ContactForm.css";
 import axios from "axios";
+import "../../components/ContactButton/contactpage.css";
 
 const ContactForm = () => {
     const [status, setStatus] = useState("Submit");
@@ -32,8 +33,11 @@ const ContactForm = () => {
 
     return (
         <>
-            <div className="container  border-primary d-flex justify-content-center">
-                <form className="form" onSubmit={submitHandler}>
+            <div className="">
+                <h5 className="modal-title contact-title" id="contactModalLabel">
+                    Need a bit more? Contact us
+                </h5>
+                <form className="form contact-form" onSubmit={submitHandler}>
                     <div className="pt-2">
                         <div>
                             <label htmlFor="name" className="form-label">
