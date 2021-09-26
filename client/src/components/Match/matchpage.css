@@ -6,8 +6,10 @@
 .matchHeader {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     gap: 2rem;
+
     /* background-color: brown; */
 }
 
@@ -18,7 +20,7 @@
 
     /* background-color: antiquewhite; */
     padding: 2rem 2rem;
-    margin: 3rem 1rem;
+    margin: 10rem 1rem 0 0;
     gap: 5rem;
     border: 3px solid white;
     border-radius: 20px;
@@ -120,7 +122,7 @@
 
 .card img {
     height: 11rem;
-    clip-path: circle(40% at 50% 50%);
+    clip-path: circle(39% at 50% 50%);
 }
 
 .card-user-headline {

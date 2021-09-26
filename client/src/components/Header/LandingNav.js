@@ -14,7 +14,10 @@ function Nav() {
                     {/* <a className="navbar-brand" href="#">
                         FriendJa Logo
                     </a> */}
-                    <img className="navbar-img" src={logo} alt="" />
+                    <a className="nav-link active" aria-current="page" href="/">
+                        <img className="navbar-img" src={logo} alt="" />
+                    </a>
+                    {/* <img className="navbar-img" src={logo} alt="" /> */}
                     <button
                         className="navbar-toggler"
                         type="button"
