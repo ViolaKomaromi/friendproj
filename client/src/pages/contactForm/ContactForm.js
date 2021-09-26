@@ -33,7 +33,7 @@ const ContactForm = () => {
 
     return (
         <>
-            <div className="">
+            <div className="contact-form-main">
                 <h5 className="modal-title contact-title" id="contactModalLabel">
                     Need a bit more? Contact us
                 </h5>
