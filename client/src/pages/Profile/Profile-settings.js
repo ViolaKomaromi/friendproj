@@ -3,10 +3,15 @@ import logo from "./profilephotoplaceholder.png";
 import '../Profile/profile.css';
 //import axios from '../../util/axios';
 //import { AuthContext } from '../../App';
+import Navbar from "../../components/MainNav/Navbar";
+
 
 export const Profile = () => {
     return (
+        <>
+        <Navbar/>
         <div className="container">
+
             <div className="main-body">
                 <div className="row gutters-sm">
                     <div className="col-md-4 mb-3">
@@ -175,6 +180,7 @@ export const Profile = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
