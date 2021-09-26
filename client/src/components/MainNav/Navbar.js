@@ -1,10 +1,11 @@
 
 import React from "react";
-import ContactPage from "../../components/ContactButton/ContactPage";
+// import ContactForm from "../../pages/contactForm/ContactForm";
 import logo from "../../image/FJ_friendja.png";
 import Profile from "../../pages/Profile/Profile-settings";
 import './Navbar.css';
 import Logout from '../LandingTwo/Logout';
+import ContactPage from "../../components/ContactButton/ContactPage";
 
 
 export default function Navbar() {
@@ -35,13 +36,14 @@ export default function Navbar() {
 
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    ⬇️
+                                    
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
 
-                                    <li><a className="dropdown-item" href="/profile">Profile</a></li>
-                                    <li><a className="dropdown-item" href="/contact">Contact</a></li>
+                                    <li><a className="dropdown-item" onClick={Profile} href="/profile">Profile</a></li>
+                                    <li><a className="dropdown-item" onClick={ContactPage} href="/contact">Contact</a></li>
+                                    <li><a className="dropdown-item" href="/random">Match me</a></li>
 
                                     <li><a className="dropdown-item" onClick={logout} href="/">Log Out</a></li>
                                 </ul>

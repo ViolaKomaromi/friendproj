@@ -41,7 +41,7 @@ export const Profile = () => {
                                                         <option value="3">Other</option>
                                                     </select>
                                                 </form>
-                                                <div className="mt-3">
+                                                {/* <div className="mt-3">
                                                     <div className="row">
                                                         <div className="col-sm-12">
                                                             <form className="form-inline">
@@ -57,8 +57,8 @@ export const Profile = () => {
                                                             </form>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div className="mt-3">
+                                                </div> */}
+                                                {/* <div className="mt-3">
                                                     <div className="row">
                                                         <div className="col-sm-12">
                                                             <form className="form-inline">
@@ -74,7 +74,7 @@ export const Profile = () => {
                                                             </form>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                     </div>
@@ -86,13 +86,19 @@ export const Profile = () => {
                                 <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <form className="form-inline">
                                         <label className="my-1 mr-2" for="inlineFormCustomSelectPref">
-                                            My Passion is
+                                           My Hobbies
                                         </label>
                                         <select className="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                             <option selected>Choose...</option>
                                             <option value="1">Painting</option>
                                             <option value="2">Surfing</option>
                                             <option value="3">Dancing</option>
+                                            <option value="4">Jogging</option>
+                                            <option value="5">Dog walking</option>
+                                            <option value="6">Cooking</option>
+                                            <option value="7">Gym</option>
+                                            <option value="8">Traveling</option>
+                                            <option value="9">Skiing</option>
                                         </select>
                                     </form>
                                     <form className="form-inline">
@@ -101,9 +107,11 @@ export const Profile = () => {
                                         </label>
                                         <select className="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                             <option selected>Choose...</option>
-                                            <option value="1">Beer</option>
-                                            <option value="2">Vodka</option>
-                                            <option value="3">Coca Cola</option>
+                                            <option value="1">Coctails</option>
+                                            <option value="2">Non Alcoholic Drinks</option>
+                                            <option value="3">Soft Drinks</option>
+                                            <option value="4">Smoothies</option>
+                                            <option value="5">Coffee Addict</option>
                                         </select>
                                         <form className="form-inline">
                                             <label className="my-1 mr-2" for="inlineFormCustomSelectPref">
@@ -111,9 +119,11 @@ export const Profile = () => {
                                             </label>
                                             <select className="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                                 <option selected>Choose...</option>
-                                                <option value="1">Italian food</option>
-                                                <option value="2">Indian food</option>
-                                                <option value="3">Mexican food</option>
+                                                <option value="1">Italian</option>
+                                                <option value="2">Indian </option>
+                                                <option value="3">Mexican </option>
+                                                <option value="4">Asian</option>
+                                                <option value="5">German</option>
                                             </select>
                                         </form>
                                         <form className="form-inline">
