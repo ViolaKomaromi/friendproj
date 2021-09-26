@@ -16,7 +16,7 @@ function RandomCard({ randomMatch }) {
                         <header>
                             <img src={randomMatch.img} alt="..." />
                             <div className="card-user-headline">
-                                <h5>{randomMatch.username}</h5>
+                                <h5>{randomMatch.fullname}</h5>
                                 <div>
                                     <p>{randomMatch.date}</p>
                                     <p>{randomMatch.location}</p>
