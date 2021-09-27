@@ -1,11 +1,18 @@
 import React from "react";
-// import ContactForm from "../../pages/contactForm/ContactForm";
+import ContactPage from "../../components/ContactButton/ContactPage";
 import logo from "../../image/FJ_friendja.png";
 import Profile from "../../pages/Profile/Profile-settings";
 import "./Navbar.css";
 import Logout from "../LandingTwo/Logout";
 
 export default function Navbar() {
+
+   const logout = () => {
+        localStorage.clear();
+        localStorage.removeItem('Token');
+        window.location.href = "/";
+    }
+
     return (
         <div>
             <nav className="navbar fixed-top navbar-expand-lg navbar-light ">
@@ -53,6 +60,11 @@ export default function Navbar() {
                                         <li>
                                             <a className="dropdown-item" href="/inbox">
                                                 Inbox
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a className="dropdown-item" onClick={logout} href="/">
+                                               Logout
                                             </a>
                                         </li>
                                     </ul>
