@@ -3,16 +3,18 @@
 import React from "react";
 import AboutPage from "../About/AboutPage";
 import ContactPage from "../Contact/ContactPage";
-import "../../Landing/Navigation/landingNav.css";
+import "../Navigation/";
+import logo from "../../images/FJ_friendja.png";
 
 function Nav() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light ">
+            <nav className="navbar fixed-top navbar-light  navbar-expand-lg ">
                 <div className="container-fluid ">
-                    <a className="navbar-brand" href="#">
+                    {/* <a className="navbar-brand" href="#">
                         FriendJa Logo
-                    </a>
+                    </a> */}
+                    <img src={logo} alt="" />
                     <button
                         className="navbar-toggler"
                         type="button"
