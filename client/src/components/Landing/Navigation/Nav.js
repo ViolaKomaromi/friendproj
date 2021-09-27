@@ -4,15 +4,17 @@ import React from "react";
 import AboutPage from "../About/AboutPage";
 import ContactPage from "../Contact/ContactPage";
 import "../../Landing/Navigation/landingNav.css";
+import logo from "../../404-page/FJ_friendja.png";
 
 function Nav() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light ">
+            <nav className="navbar fixed-top navbar-expand-lg navbar-light ">
                 <div className="container-fluid ">
-                    <a className="navbar-brand" href="#">
-                        FriendJa Logo
+                    <a className="nav-link active" aria-current="page" href="/">
+                        <img className="navbar-img" src={logo} alt="" />
                     </a>
+
                     <button
                         className="navbar-toggler"
                         type="button"
