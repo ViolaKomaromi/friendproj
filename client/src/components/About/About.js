@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../About/friends_2.jpeg';
+import image1 from '../About/image1.png';
 
 const AboutMe = () => {
   return (
@@ -43,7 +44,7 @@ const AboutMe = () => {
           <div class='row'>
             <div class='col-lg-4 col-md-12 mb-4 mb-lg-0'>
               <img
-                src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg'
+                src={image1}
                 class='w-100 shadow-1-strong rounded mb-4'
                 alt=''
               />
