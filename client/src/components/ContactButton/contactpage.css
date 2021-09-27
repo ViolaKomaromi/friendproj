@@ -1,0 +1,146 @@
+.contact-body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    padding: 2rem;
+    align-items: center;
+    background: radial-gradient(53.86% 75.87% at 58.54% 46.14%, #fab690 0%, #ff7a5c 100%);
+}
+.modal-content {
+    background: whitesmoke;
+}
+.contact-content {
+    background: radial-gradient(53.86% 75.87% at 58.54% 46.14%, #fab690 0%, #ff7a5c 100%);
+}
+
+#contactModalLabel {
+    text-align: center;
+}
+
+.closeArea {
+    padding: 1rem 2rem 0 0;
+    text-align: end;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.submit-form-btn {
+    background-color: crimson;
+}
+
+.submit-form-btn {
+    position: relative;
+    top: 0;
+    width: 20rem;
+    background: #f37126;
+    color: whitesmoke;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+
+.submit-form-btn:hover {
+    color: whitesmoke;
+    top: -5px;
+    /* font-size: 1.8rem; */
+    transition: 0.2s ease-in-out;
+}
+
+.contact-title {
+    margin-top: 2rem;
+    font-family: "Amatic SC", cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 108.6%;
+
+    color: #ffffff;
+
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.developer-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    width: 350px;
+}
+.developer-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    border: antiquewhite 4px solid;
+    border-radius: 25px;
+    /* background-color: brown; */
+    padding: 1rem;
+    flex-wrap: wrap;
+    /* height: 100%; */
+    box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
+}
+
+.developer-list h3 {
+    font-family: "Amatic SC", cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 108.6%;
+    text-align: start;
+    color: #ffffff;
+
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.developer-card header {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+}
+
+.developer-card img {
+    height: 11rem;
+    clip-path: circle(40% at 50% 50%);
+}
+
+.developer-card-user-headline {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: space-between;
+    gap: 1rem;
+    /* color: whitesmoke; */
+}
+
+.developer-card-user-headline h5 {
+    font-size: 1.8rem;
+}
+.developer-card-user-headline p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.developer-card-body {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.developer-card-text {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 1rem;
+}

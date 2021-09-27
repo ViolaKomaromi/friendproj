@@ -1,21 +1,20 @@
-import Profile from './components/Profile/Profile-settings';
-import About from './components/About/About';
-import './components/Footer/Footer.css';
-import './components/404-page/404.css';
-import './components/About/About.css';
-
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import Profile from './pages/Profile/Profile-settings';
+import LandingPage from './pages/Landing/LandingPage';
+import './pages/404-page/404.css';
+//import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
   Switch,
-  Redirect,
   Route,
+  Redirect,
 } from 'react-router-dom';
 import { createContext, useState } from 'react';
-import LandingPage from './components/Landing/LandingPage';
-import Match from './components/Match/Match';
-import PageNotFound from './components/404-page/404-page';
-import Footer from './components/Footer/Footer';
+
+import Match from './pages/FriendMatch/MatchPage';
+import About from './components/About/About';
+
+import PageNotFound from './pages/404-page/404-page';
+import ContactPage from './components/ContactButton/ContactPage';
 
 export const AuthContext = createContext({});
 
@@ -33,7 +32,6 @@ function App() {
       window.localStorage.setItem('loggedIn', 'loggedIn');
       setToken(token);
     } else {
-      // logout
       setLoggedIn(false);
       window.localStorage.removeItem('loggedIn');
       window.localStorage.removeItem('token');
@@ -50,36 +48,27 @@ function App() {
               exact
               path='/'
               render={(props) =>
-                loggedIn === false ? (
+                loggedIn == null ? (
                   <LandingPage {...props} />
                 ) : (
                   <Redirect to='/random' />
                 )
               }
             />
-            <About />
 
             {/* <Route exact path="/" component={LandingPage}></Route> */}
             {/* route after the login/register... takes you to the Match Page */}
             <Route exact path='/about' component={About}></Route>
             <Route exact path='/profile' component={Profile}></Route>
             <Route exact path='/random' component={Match}></Route>
+            <Route exact path='/contact' component={ContactPage}></Route>
 
             <Route component={PageNotFound} />
           </Switch>
-          <Footer />
         </div>
       </Router>
     </AuthContext.Provider>
   );
 }
 
-const GuardedRoute = ({ component: Component, auth, ...rest }) => (
-  <Route
-    {...rest}
-    render={(props) =>
-      auth === true ? <Component {...props} /> : <Redirect to='/' />
-    }
-  />
-);
 export default App;

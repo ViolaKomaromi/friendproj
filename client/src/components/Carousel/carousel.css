@@ -1,0 +1,53 @@
+.carousel-container {
+    background-color: #f4f2e9;
+    box-shadow: 0 0 200px #c4c4c4 inset;
+}
+
+.carousel-inner {
+    padding: 1rem 0 3rem 0;
+}
+
+.carousel-h2 {
+    text-align: center;
+    font-size: clamp(5.5rem, 4.5vw, 4rem);
+    padding: 4rem 0 0 0;
+    color: #f37126;
+    margin-top: 0;
+}
+
+.carousel-item img {
+    object-fit: contain;
+    max-height: 75vh;
+}
+
+.carousel-caption {
+    margin: auto;
+    bottom: 30%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background: #5ebbb5c6;
+    border-radius: 10px;
+    padding: 3rem;
+
+    box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
+}
+
+.carousel-control-prev-icon {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+
+    border-right: 30px solid black;
+}
+.carousel-control-next-icon {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+
+    border-left: 30px solid black;
+}

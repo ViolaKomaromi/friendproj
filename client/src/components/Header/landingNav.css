@@ -1,0 +1,32 @@
+.navbar {
+    height: fit-content;
+    padding: 0;
+    background-color: rgba(247, 241, 241, 0.386);
+}
+
+.navbar img {
+    width: 8rem;
+    margin: 0;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.nav-btn {
+    font-size: 1.2rem;
+}
+
+.nav-btn:hover {
+    color: white;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.modal-backdrop {
+    position: relative;
+}

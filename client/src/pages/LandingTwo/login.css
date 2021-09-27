@@ -1,0 +1,69 @@
+.login-btn {
+    background: #2a2019;
+    border: none;
+    font-size: 1.4rem;
+}
+.login-btn:hover {
+    background: #f37126;
+    border: none;
+}
+.modal {
+    background: rgba(97, 97, 97, 0.5);
+}
+
+.log-dialog {
+    width: 90%;
+}
+
+.modal-body {
+    display: flex;
+    padding: 0;
+}
+
+.modal-box-style {
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.modal-header {
+    border: none;
+    width: fit-content;
+}
+
+.btn-close-section {
+    padding: 1rem;
+    text-align: right;
+}
+
+.login-img {
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px 0 0 25px;
+}
+
+.login-modal-title {
+    font-family: Amatic SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 114px;
+    line-height: 108.6%;
+    /* or 124px */
+
+    text-align: center;
+
+    color: #666575;
+
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.form-control {
+    background-color: #eeecec;
+    border: none;
+}
