@@ -63,6 +63,11 @@ export default function Navbar() {
                                             </a>
                                         </li>
                                         <li>
+                                            <a className="dropdown-item" href="/random">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
                                             <a className="dropdown-item" onClick={logout} href="/">
                                                Logout
                                             </a>
