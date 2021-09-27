@@ -4,8 +4,8 @@ import FormWrapper from "../../components/Wrapers/wraper";
 import ErrorMessage from "../LandingTwo/Error";
 import axios from "../../util/axios";
 import { AuthContext } from "../../App";
-// import "../LandingTwo/Login.css";
-import "../Landing/landingPage.css";
+
+// import "../Landing/landingPage.css";
 
 export default function Login() {
     const [email, setEmail] = useState("");

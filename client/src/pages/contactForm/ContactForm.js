@@ -1,7 +1,8 @@
 import { useState } from "react";
 // import "./ContactForm.css";
 import axios from "axios";
-import ContactDeveloperCard from "./ContactDeveloperCard";
+import "../../components/ContactButton/contactpage.css";
+import Navbar from '../../components/MainNav/Navbar';
 
 const ContactForm = () => {
     const [status, setStatus] = useState("Submit");
@@ -31,10 +32,31 @@ const ContactForm = () => {
         // alert(data.status);
     };
 
+    // let alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    let alertTrigger = document.getElementById('liveAlertBtn')
+
+    function alert(message, type) {
+        var wrapper = document.createElement('div')
+        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+        // alertPlaceholder.append(wrapper)
+    }
+
+    if (alertTrigger) {
+        alertTrigger.addEventListener('click', function () {
+            alert('Message sent', 'success')
+        })
+    }
+
+
     return (
         <>
-            <div className="container  border-primary d-flex justify-content-center">
-                <form className="form" onSubmit={submitHandler}>
+            <Navbar />
+            <div className="contact-form-main">
+                <h5 className="modal-title contact-title" id="contactModalLabel">
+                    Need a bit more? Contact us
+                </h5>
+                <form className="form contact-form" onSubmit={submitHandler}>
                     <div className="pt-2">
                         <div>
                             <label htmlFor="name" className="form-label">
@@ -72,16 +94,12 @@ const ContactForm = () => {
                         <br />
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={changeHandler}></textarea>
                     </div>
-
-                    <div className="d-flex justify-content-end">
-                        <button type="submit" value="Submit" className="btn btn-primary tada shake">
-                            {status}
-                        </button>
+                    <div className="col-auto">
+                        <button type="submit" className="btn btn-primary">Submit</button>
                     </div>
+
                 </form>
             </div>
-
-            <ContactDeveloperCard />
         </>
     );
 };

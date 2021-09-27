@@ -21,7 +21,7 @@ function Carousel() {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img
-                            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80"
+                            src="https://images.unsplash.com/photo-1582578598774-a377d4b32223?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
                             className="d-block w-75 mx-auto"
                             alt="..."
                         />
