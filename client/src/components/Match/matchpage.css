@@ -1,6 +1,6 @@
 .match_page {
     background: radial-gradient(53.86% 75.87% at 58.54% 46.14%, #9ae2c9 0%, #5ebbb5 100%);
-    height: 100vh;
+    /* height: 100%; */
 }
 
 .matchHeader {

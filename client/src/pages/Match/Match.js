@@ -2,42 +2,27 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-import CultureTips from "./CultureTips";
-import Filter from "./Filter";
-import Jokes from "./Jokes";
-import ResultsList from "./ResultsList";
+import CultureTips from "../../components/Match/CultureTips";
+import Filter from "../../components/Match/Filter";
+import Jokes from "../../components/Match/Jokes";
+import ResultsList from "../../components/Match/ResultsList";
 
 import axios from "../../util/axios";
-import FormWrapper from "../Wrapers/wraper";
+import FormWrapper from "../../components/Wrappers/wrapper";
 import MatchPage from "../FriendMatch/MatchPage";
 
+
 export default function RandomMatch() {
-    const [fullname, setFullname] = useState("");
-    const [username, setUsername] = useState("");
-    const [birthday, setBirthday] = useState("");
-    const [location, setLocation] = useState("");
-    const [native, setNative] = useState("");
+  
 
     const history = useHistory();
 
-    const random = useEffect(() => {
-    
-       
-
-    }, []);
+    const random = useEffect(() => { }, []);
 
     return (
-        // <div className="match_page">
-        //     <header className="matchHeader">
-        //         <Filter />
-        //         <div className="culture_jokes_btns">
-        //             <CultureTips />
-        //             <Jokes />
-        //         </div>
-        //     </header>
-        //     <ResultsList />
-        // </div>
+       
         <>
+               
             <MatchPage />
         </>
     );

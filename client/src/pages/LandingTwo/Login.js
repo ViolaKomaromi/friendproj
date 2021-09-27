@@ -9,7 +9,6 @@ export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isError, setIsError] = useState(false);
-    
 
     const [errorMessage, setErrorMessage] = useState("");
     const { handleLogin } = useContext(AuthContext);
@@ -27,31 +26,18 @@ export default function Login() {
             if (res.status == 200) {
                 console.log("yaaay the user has signed! 🟢");
                 handleLogin(true, res.data.token);
-                history.push("/random"); 
+                history.push("/random");
                 console.log(res.data.token);
-                
             }
         } catch (error) {
             console.log("Error happened", error);
         }
-
-        // fetch("http://localhost:4001/user/login", {
-        //     method: "POST",
-        //     headers: { "content-type": "application/json" },
-        //     body: JSON.stringify(userToLogin),
-        // })
-        //     .then((res) => {
-        //         return res.json();
-        //     })
-        //     .then((err) => {
-        //         console.log(err);
-        //     });
     };
 
     return (
         <div className="container">
             <div className="col-12 ">
-                <button type="button" className="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <button type="button" className="btn landing-btn landing-btn-alt " data-bs-toggle="modal" data-bs-target="#exampleModal2">
                     Log in
                 </button>
 
