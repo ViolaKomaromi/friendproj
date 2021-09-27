@@ -9,22 +9,24 @@ function FriendList() {
 
     return (
         <>
-        <div className="match_page">
+        <div className="frlist-bg">
+            <div className="match_page">
                 <Navbar/>
-        </div>
-        <div>
-            {value.length === 0 && <h1>Nobody in your friends list!?</h1>}
-        <div className="container">
-            <h2 className='title'>My Friends List</h2>
-            <div>
-                {value.map((item) => {
-                    return <ListOfFriends {...item} key={item.id} />;
-                })}
             </div>
-            <button type="button" className="btn" onclick={() => setValue([])}>
+            <div>
+                {value.length === 0 && <h1>Nobody in your friends list!?</h1>}
+            <div className="container-friendlist">
+                <h2 className='title'>My Friends List</h2>
+                <div>
+                    {value.map((item) => {
+                        return <ListOfFriends {...item} key={item.id} />;
+                    })}
+                </div>
+                <button type="button" className="btn2" onclick={() => setValue([])}>
                 Clear
-            </button>
-        </div>
+                </button>
+            </div>
+            </div>
         </div>
         </>
     );

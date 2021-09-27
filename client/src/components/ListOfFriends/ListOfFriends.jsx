@@ -12,7 +12,7 @@ const ListOfFriends = ({ id, full_name, location, image }) => {
                 </div>
                 <div className="imagetext">
                     <h3 className="full_name">{full_name}</h3>
-                    <p className="paragraph">{location}</p>
+                    <p className="location-friendlist">{location}</p>
                     
                     
                 </div>
