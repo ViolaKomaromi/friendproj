@@ -1,5 +1,5 @@
 import React from "react";
-// import ContactForm from "../../pages/contactForm/ContactForm";
+import ContactPage from "../../components/ContactButton/ContactPage";
 import logo from "../../image/FJ_friendja.png";
 import Profile from "../../pages/Profile/Profile-settings";
 import "./Navbar.css";

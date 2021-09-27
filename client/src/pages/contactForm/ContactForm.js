@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./ContactForm.css";
+// import "./ContactForm.css";
 import axios from "axios";
-// import "../../components/ContactButton/contactpage.css";
+import "../../components/ContactButton/contactpage.css";
 import Navbar from '../../components/MainNav/Navbar';
 
 const ContactForm = () => {
@@ -32,14 +32,14 @@ const ContactForm = () => {
         // alert(data.status);
     };
 
-    let alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    // let alertPlaceholder = document.getElementById('liveAlertPlaceholder')
     let alertTrigger = document.getElementById('liveAlertBtn')
 
     function alert(message, type) {
         var wrapper = document.createElement('div')
         wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
 
-        alertPlaceholder.append(wrapper)
+        // alertPlaceholder.append(wrapper)
     }
 
     if (alertTrigger) {
@@ -94,17 +94,10 @@ const ContactForm = () => {
                         <br />
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={changeHandler}></textarea>
                     </div>
-
-                    {/* <div className="d-flex justify-content-end">
-                        <button type="submit" onClick={null} value="Submit" className="btn btn-primary tada shake">
-                            {status}
-                        </button>
-                    </div> */}
                     <div className="col-auto">
-                        <button type="submit" onClick={random} className="btn btn-primary">Go Backt</button>
-                        <div id="liveAlertPlaceholder"></div>
-                        <button type="button" className="btn btn-primary" id="liveAlertBtn">Submit</button>
+                        <button type="submit" className="btn btn-primary">Submit</button>
                     </div>
+
                 </form>
             </div>
         </>

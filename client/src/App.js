@@ -11,7 +11,7 @@ import MatchPage from './pages/FriendMatch/MatchPage';
 
 
 import PageNotFound from './pages/404-page/404-page';
-import ContactForm from './pages/contactForm/ContactForm';
+import ContactPage from './components/ContactButton/ContactPage';
 
 export const AuthContext = createContext({});
 
@@ -47,7 +47,7 @@ function App() {
 
                         <Route exact path="/profile" component={Profile}></Route>
                         <Route exact path="/random" component={MatchPage}></Route>
-                        <Route exact path="/contact" component={ContactForm}></Route>
+                        <Route exact path="/contact" component={ContactPage}></Route>
                     </Switch>
                     
                 </div>
