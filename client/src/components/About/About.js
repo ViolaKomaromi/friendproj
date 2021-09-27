@@ -13,7 +13,17 @@ const AboutMe = () => {
         <div className='col-lg-6 col-xm-12'>
           <h1 className='about-heading'>About FriendJa</h1>
           <p>
-            Hello! We are the 'Chips' Sauce Team' the Makers of FriendJa.com. We
+            Are you new in Germany and haven't really found many friends yet? Do
+            you want to learn some more facts about german culture? Do you want
+            to be part of a new way of making friends? Then you have found the
+            perfect Application! At FriendJa you can register yourself as an
+            expat or as a local and start browsing through our website of many
+            other lovely people, all looking to find some new friends. After
+            logging in, you can bookmark a person and contact them by sending
+            them a message. To help you with filtering through our database, you
+            can read about tips and cultural facts about germans. Here you can
+            see how the website looks like after you have signed in.
+            {/* Hello! We are the 'Chips' Sauce Team' the Makers of FriendJa.com. We
             are Full-Stack Web Developers. Technologies we use is MERN(MongoDB,
             Express, ReactJS and NodeJS). We create responsive websites that are
             displayed on all devices desktops and smartphones. Of course, before
@@ -27,7 +37,7 @@ const AboutMe = () => {
             present it too, but better! After the website is finished and ready
             to deploy and sell a product or service. It is essential that your
             potential clients know about you. We will create an advertising
-            campaign for you in Google Adwords and Facebook!
+            campaign for you in Google Adwords and Facebook! */}
           </p>
         </div>
       </div>
