@@ -3,7 +3,7 @@ import "../../components/ContactButton/contactpage.css";
 
 function Developer({ items }) {
     return (
-        <div>
+        <div className="developer-cards">
             {items.map((developer) => {
                 const { id, img, name, github, email, role } = developer;
                 return (
