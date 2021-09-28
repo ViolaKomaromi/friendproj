@@ -19,7 +19,9 @@ function CultureTips() {
                         <div className="modal-header">
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div className="modal-body">Here's a cultural tip</div>
+                        <div className="modal-body">There are more than 23 million words in german language</div>
+                        <div className="modal-body">Punctuality is the key to success in Germany - it is considered impolite to not be 5-10 minutes earlier at a meeting</div>
+                        <div className="modal-body">If your neighbours see you throwing recyclable glass or paper in the general trash, your relationship with your neighbours could be forever strained</div>
                     </div>
                 </div>
             </div>
