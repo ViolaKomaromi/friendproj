@@ -3,10 +3,13 @@ import "../../components/Match/matchpage.css";
 import * as Icon from "react-bootstrap-icons";
 
 function Friends({ items }) {
+
     return (
+
         <div className="result-list-cards">
             {items.map((friend) => {
-                const { id, title, img, desc, price } = friend;
+                const { id, title, img, desc} = friend;
+
                 return (
                     <div className="card" style={{ width: "20rem" }} key={id}>
                         <header>
