@@ -42,6 +42,11 @@ export default function Navbar() {
                                         />
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li>
+                                            <a className="dropdown-item" href="/random">
+                                                Home
+                                            </a>
+                                        </li>
                                         <li>
                                             <a className="dropdown-item" href="/profile">
                                                 Profile
@@ -62,11 +67,7 @@ export default function Navbar() {
                                                 Inbox
                                             </a>
                                         </li>
-                                        <li>
-                                            <a className="dropdown-item" href="/random">
-                                                Home
-                                            </a>
-                                        </li>
+                                        
                                         <li>
                                             <a className="dropdown-item" onClick={logout} href="/">
                                                Logout
