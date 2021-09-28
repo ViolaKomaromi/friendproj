@@ -4,7 +4,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-   
+    padding: 10px;
     box-shadow: 0 0 200px #858484 inset;
 }
 
@@ -12,7 +12,7 @@
     box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
     -webkit-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
     -moz-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
-    background-color: #f4f2e9;
+    
     padding: 2rem;
     border-radius: 15px;
 
@@ -21,6 +21,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     /* background-color: cadetblue; */
+    background-color: rgba(127, 255, 212, 0.597);
 }
 
 .profile-page-title {
@@ -36,9 +37,9 @@
 
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
-/* .card {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-} */
+
+  
+
 
 .card {
     /* position: relative; */
@@ -50,7 +51,7 @@
     /* background-clip: border-box; */
     /* border: 0 solid rgba(0, 0, 0, 0.125); */
     /* border-radius: 0.25rem; */
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 1px 5px 5px rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.06);
     /* padding: 3rem; */
     /* height: 400px; */
     margin-bottom: 0;
@@ -58,7 +59,7 @@
 
 .profile-setting-cards {
     text-align: center;
-    /* background-color: brown; */
+   
 }
 
 .row,
@@ -69,17 +70,18 @@
 
 .main-body-title {
     padding-top: 2rem;
-    /* background-color: chocolate; */
+    
 }
 
-.card-body {
+.card-body2 {
     /* flex: 1 1 auto; */
     /* min-height: 1px; */
     /* text-align: center; */
     width: 10rem;
     font-size: 1.5rem;
+    
 
-    /* background-color: chartreuse; */
+    
 }
 
 .profile-settings-submit {
@@ -101,7 +103,10 @@ h3 {
     color:#1c1713b8;
 }
 h4{
-    color:crimson;
+    color:rgb(233, 57, 92);
+    font-weight: bold;
     font-size: 1.7rem;
+    /* box-shadow:4px 5px 8px rgba(90, 89, 89, 0.693); */
+    /* border-radius: 5px; */
 
 }

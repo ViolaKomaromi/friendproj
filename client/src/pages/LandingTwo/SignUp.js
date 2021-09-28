@@ -35,21 +35,7 @@ export default function SignUp() {
             native: native,
         };
 
-        // axios.post("http://localhost:4001/user/register", JSON.stringify(userToRegister)).then(res => {
-        //     console.log(res);
-        // })
-
-        // fetch("http://localhost:4001/user/register", {
-        //     method: "POST",
-        //     headers: { "content-type": "application/json" },
-        //     body: JSON.stringify(userToRegister),
-        // })
-        //     .then((res) => {
-        //         return res.json();
-        //     })
-        //     .then((err) => {
-        //         console.log(err);
-        //     });
+    
 
         try {
             var res = await axios.post("/user/register", userToRegister);

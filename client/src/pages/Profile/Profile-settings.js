@@ -22,10 +22,10 @@ export default function Profile({ profile }) {
                         <div className="card">
                             <h5 className="main-body-title"></h5>
                             <div className="d-flex flex-column align-items-center text-center">
-                                <img src={logo} alt="Admin" className="rounded-circle" width="150" />
+                                <img src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60' alt="Admin" className="rounded-circle" width="200" />
                                 <div className="row">
                                     <div className="col-sm-12">
-                                        <a className="btn profile-settings-submit " target="__blank" href="/">
+                                        <a className="btn profile-settings-submit " target="__blank" >
                                             Choose Image
                                         </a>
                                     </div>
@@ -35,7 +35,7 @@ export default function Profile({ profile }) {
                                         <div className="col-sm-12">
                                             <form className="form-inline">
                                                 <label className="my-1 mr-2" for="inlineFormCustomSelectPref">
-                                                    😃
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil delectus dolorum perspiciatis quisquam cupiditate assumenda, nisi quos ducimus doloremque dignissimos.
                                                 </label>
 
                                             </form>
