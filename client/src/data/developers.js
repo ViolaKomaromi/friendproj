@@ -24,9 +24,9 @@ const menu = [
     {
         id: 4,
         img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        name: "Liam",
-        github: "breakfast",
-        email: "l-email",
+        name: "William Timlin",
+        github: "github.com/LiamTimlin",
+        email: "williamtimlin@outlook.com",
     },
 ];
 export default menu;

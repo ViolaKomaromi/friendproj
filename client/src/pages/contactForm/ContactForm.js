@@ -33,21 +33,25 @@ const ContactForm = () => {
     };
 
     // let alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-    let alertTrigger = document.getElementById('liveAlertBtn')
+    let alertTrigger = document.getElementById("liveAlertBtn");
 
     function alert(message, type) {
-        var wrapper = document.createElement('div')
-        wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+        var wrapper = document.createElement("div");
+        wrapper.innerHTML =
+            '<div class="alert alert-' +
+            type +
+            ' alert-dismissible" role="alert">' +
+            message +
+            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
 
         // alertPlaceholder.append(wrapper)
     }
 
     if (alertTrigger) {
-        alertTrigger.addEventListener('click', function () {
-            alert('Message sent', 'success')
-        })
+        alertTrigger.addEventListener("click", function () {
+            alert("Message sent", "success");
+        });
     }
-
 
     return (
         <>
@@ -94,10 +98,11 @@ const ContactForm = () => {
                         <br />
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={changeHandler}></textarea>
                     </div>
-                    <div className="col-auto">
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                    <div className="submit-btn-section">
+                        <button type="submit" className="btn submit-form-btn">
+                            Submit
+                        </button>
                     </div>
-
                 </form>
             </div>
         </>

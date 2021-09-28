@@ -1,0 +1,50 @@
+
+.imagebox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.1px solid rgb(244, 250, 253);
+}
+.imagebox:hover {
+    opacity: 1;
+    color: rgb(56, 56, 56);
+    border-radius: 30px;
+  background:rgb(63, 168, 168);
+}
+
+.image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+.imagetext {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    padding-right: 20px;
+    margin-top: 20px;
+    font-family: "Amatic SC";
+}
+.full_name {
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(244, 250, 253);
+    margin-bottom: 0;
+}
+.location-friendlist {
+    color: rgb(197, 197, 196);
+    margin-top: -31px;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 400;
+}
+.card-footer-btn {
+    fill: currentColor;
+}
+.card-footer-btn:hover {
+    color: whitesmoke;
+}
