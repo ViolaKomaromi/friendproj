@@ -5,7 +5,7 @@ function Developer({ items }) {
     return (
         <div>
             {items.map((developer) => {
-                const { id, img, name, github, email } = developer;
+                const { id, img, name, github, email, role } = developer;
                 return (
                     <div className="developer-card">
                         <div key={id}>
@@ -16,6 +16,7 @@ function Developer({ items }) {
                                     <div>
                                         <p>{github}</p>
                                         <p>{email}</p>
+                                        <p>{role}</p>
                                     </div>
                                 </div>
                             </header>

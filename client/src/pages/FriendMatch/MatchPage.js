@@ -16,6 +16,7 @@ import Navbar from "../../components/MainNav/Navbar";
 function MatchPage() {
     const [friends, setFriends] = useState(items);
     // const [filter, setFilter] = useState([]);
+   
 
     const filterItems = (category) => {
         if (category === "all") {
@@ -40,7 +41,10 @@ function MatchPage() {
                     <h3 className="match-page-title">Your future friend(s)</h3>
                     <div className="result-list-cards">
                         <Friends items={friends} />
+                       
                     </div>
+          
+
                 </div>
             </div>
         </>
@@ -49,14 +53,4 @@ function MatchPage() {
 
 export default MatchPage;
 
-{
-    /* <div className="result-list">
-   
-    <div className="result-list-cards">
-        <ResultCard />
-        <ResultCard />
-        <ResultCard />
-        <ResultCard />
-    </div>
-</div>; */
-}
+
