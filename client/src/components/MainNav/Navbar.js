@@ -4,14 +4,14 @@ import logo from "../../image/FJ_friendja.png";
 import Profile from "../../pages/Profile/Profile-settings";
 import "./Navbar.css";
 import Logout from "../LandingTwo/Logout";
+import userIcon from "../../image/tyrolean.png";
 
 export default function Navbar() {
-
-   const logout = () => {
+    const logout = () => {
         localStorage.clear();
-        localStorage.removeItem('Token');
+        localStorage.removeItem("Token");
         window.location.href = "/";
-    }
+    };
 
     return (
         <div>
@@ -35,14 +35,10 @@ export default function Navbar() {
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false"
                                     >
-                                        <img
-                                            className="nav-profile"
-                                            src="https://images.unsplash.com/photo-1520295187453-cd239786490c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dXNlciUyMHByb2ZpbGV8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                                            alt="profile pic"
-                                        />
+                                        <img className="nav-profile" src={userIcon} />
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li>
+                                        <li>
                                             <a className="dropdown-item" href="/random">
                                                 Home
                                             </a>
@@ -72,10 +68,10 @@ export default function Navbar() {
                                                 About FriendJa
                                             </a>
                                         </li>
-                                        
+
                                         <li>
                                             <a className="dropdown-item" onClick={logout} href="/">
-                                               Logout
+                                                Logout
                                             </a>
                                         </li>
                                     </ul>
