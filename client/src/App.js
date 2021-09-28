@@ -21,10 +21,12 @@ import PageNotFound from './pages/404-page/404-page';
 import FriendListPage from './pages/FriendListPage/FriendListPage';
 import ContactPage from './components/ContactButton/ContactPage';
 
+import MailBox from './components/MailBox/MailBox';
+import './components/MailBox/MailBox.css';
+
 export const AuthContext = createContext({});
 
 function App() {
-
   const [loggedIn, setLoggedIn] = useState(
     window.localStorage.getItem('loggedIn')
   );
@@ -68,8 +70,9 @@ function App() {
             <Route exact path='/profile' component={Profile}></Route>
             <Route exact path='/random' component={Match}></Route>
             <Route exact path='/contact' component={ContactPage}></Route>
-            <Route exact path="/friendlist" component={FriendListPage}></Route>
-
+            <Route exact path='/friendlist' component={FriendListPage}></Route>
+            <Route exact path='/mailbox' component={MailBox}></Route>
+            {/* <MailBox /> */}
             <Route component={PageNotFound} />
           </Switch>
           <Footer />
