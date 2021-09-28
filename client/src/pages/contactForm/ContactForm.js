@@ -2,7 +2,7 @@ import { useState } from "react";
 // import "./ContactForm.css";
 import axios from "axios";
 import "../../components/ContactButton/contactpage.css";
-import Navbar from '../../components/MainNav/Navbar';
+// import Navbar from '../../components/MainNav/Navbar';
 
 const ContactForm = () => {
     const [status, setStatus] = useState("Submit");
@@ -51,7 +51,7 @@ const ContactForm = () => {
 
     return (
         <>
-            <Navbar />
+          
             <div className="contact-form-main">
                 <h5 className="modal-title contact-title" id="contactModalLabel">
                     Need a bit more? Contact us

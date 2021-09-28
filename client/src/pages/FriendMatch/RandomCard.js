@@ -1,17 +1,18 @@
 
 import React from "react";
 import * as Icon from "react-bootstrap-icons";
-
+import img from '../../data/data';
 
 
 function RandomCard({ randomMatch }) {
 
 
 
-    return (
-        <div className="result-list-cards">
-            
-              
+   
+
+                return (
+                    <>
+
                     <div className="card" style={{ width: "20rem" }}>
                         <header>
                             <img src={randomMatch.img} alt="..." />
@@ -31,11 +32,14 @@ function RandomCard({ randomMatch }) {
                             <Icon.PlusCircleFill size={30} className="card-footer-btn" />
                             <Icon.ChatLeftTextFill size={30} className="card-footer-btn" />
                         </footer>
+
                     </div>
+                    </>
                 
-           
-        </div>
-    );
+              
+       
+    
+                )
 }
 
 export default RandomCard;

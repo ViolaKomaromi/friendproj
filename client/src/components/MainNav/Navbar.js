@@ -67,6 +67,11 @@ export default function Navbar() {
                                                 Inbox
                                             </a>
                                         </li>
+                                        <li>
+                                            <a className="dropdown-item" href="/about">
+                                                About FriendJa
+                                            </a>
+                                        </li>
                                         
                                         <li>
                                             <a className="dropdown-item" onClick={logout} href="/">
