@@ -58,7 +58,7 @@ export default function Navbar() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="dropdown-item" href="/friend-list">
+                                            <a className="dropdown-item" href="/friendlist">
                                                 Friend List
                                             </a>
                                         </li>
