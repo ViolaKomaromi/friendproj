@@ -1,6 +1,9 @@
 import React from 'react';
 import image from '../About/friends_2.jpeg';
 import image1 from '../About/image1.png';
+import image2 from '../About/image2.png';
+import image3 from '../About/image3.png';
+import image4 from '../About/image4.png';
 
 const AboutMe = () => {
   return (
@@ -50,7 +53,7 @@ const AboutMe = () => {
               />
 
               <img
-                src='https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg'
+                src={image2}
                 class='w-100 shadow-1-strong rounded mb-4'
                 alt=''
               />
@@ -58,19 +61,19 @@ const AboutMe = () => {
 
             <div class='col-lg-4 mb-4 mb-lg-0'>
               <img
-                src='https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg'
+                src={image3}
                 class='w-100 shadow-1-strong rounded mb-4'
                 alt=''
               />
 
               <img
-                src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg'
+                src={image4}
                 class='w-100 shadow-1-strong rounded mb-4'
                 alt=''
               />
             </div>
 
-            <div class='col-lg-4 mb-4 mb-lg-0'>
+            {/* <div class='col-lg-4 mb-4 mb-lg-0'>
               <img
                 src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg'
                 class='w-100 shadow-1-strong rounded mb-4'
@@ -82,7 +85,7 @@ const AboutMe = () => {
                 class='w-100 shadow-1-strong rounded mb-4'
                 alt=''
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
