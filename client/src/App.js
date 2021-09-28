@@ -2,6 +2,8 @@ import Profile from './pages/Profile/Profile-settings';
 import LandingPage from './pages/Landing/LandingPage';
 import './pages/404-page/404.css';
 //import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from './components/Footer/Footer';
+import './components/Footer/Footer.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,6 +14,7 @@ import { createContext, useState } from 'react';
 
 import Match from './pages/FriendMatch/MatchPage';
 import About from './components/About/About';
+import './components/About/About.css';
 
 import PageNotFound from './pages/404-page/404-page';
 
@@ -69,6 +72,7 @@ function App() {
 
             <Route component={PageNotFound} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     </AuthContext.Provider>
