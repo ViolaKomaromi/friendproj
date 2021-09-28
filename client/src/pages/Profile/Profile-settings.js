@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./profilephotoplaceholder.png";
+import logo from "../../image/tyrolean.png";
 import "../Profile/profile.css";
 import { useState } from "react";
 import axios from "../../util/axios";
@@ -13,27 +13,27 @@ export default function Profile({ profile }) {
 
 
     return (
-        <div className="profile-page">
+        <div className="profile-page2">
             <Navbar />
-            <div className="container">
-                <h2 className="profile-page-title">Your Profile</h2>
-                <div className="main-body">
-                    <div className="card1 profile-setting-cards card-body ">
-                        <div className="card">
-                            <h5 className="main-body-title"></h5>
+            <div className="container2">
+                <h2 className="profile-page-title2">Your Profile</h2>
+                <div className="main-body2">
+                    <div className="card1 profile-setting-cards2 card-body2 ">
+                        <div className="card2">
+                            <h5 className="main-body-title2"></h5>
                             <div className="d-flex flex-column align-items-center text-center">
-                                <img src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60' alt="Admin" className="rounded-circle" width="200" />
-                                <div className="row">
+                                <img src={logo} alt="Admin" className="rounded-circle" width="200" />
+                                <div className="row2">
                                     <div className="col-sm-12">
-                                        <a className="btn profile-settings-submit " target="__blank" >
+                                        <a className="btn profile-settings-submit2 " target="__blank" >
                                             Choose Image
                                         </a>
                                     </div>
                                 </div>
                                 <div className="mt-3">
-                                    <div className="row">
+                                    <div className="row2">
                                         <div className="col-sm-12">
-                                            <form className="form-inline">
+                                            <form className="form-inline2">
                                                 <label className="my-1 mr-2" for="inlineFormCustomSelectPref">
                                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil delectus dolorum perspiciatis quisquam cupiditate assumenda, nisi quos ducimus doloremque dignissimos.
                                                 </label>
@@ -46,18 +46,18 @@ export default function Profile({ profile }) {
                         </div>
                     </div>
 
-                    <div className="card2 profile-setting-cards card-body">
-                        <div className="card ">
-                            <h3 className="main-body-title">About me</h3>
+                    <div className="card2 profile-setting-cards2 card-body2">
+                        <div className="card2 ">
+                            <h3 className="main-body-title2">About me</h3>
                              <p> I love to paint, read, travel and meet new people. </p>
                              <p>I live in Germany 6 months, would be awsome if i meet local people to improve my language skills and to have fun.  </p>
                         </div>
                     </div>
 
-                    <div className="card3 card-body">
-                        <div className="card profile-setting-cards">
-                            <h3 className="main-body-title">My Details</h3>
-                            <div className="profile-settings-forms">
+                    <div className="card3 card-body2">
+                        <div className="card2 profile-setting-cards2">
+                            <h3 className="main-body-title2">My Details</h3>
+                            <div className="profile-settings-forms2">
                              <h4>Name</h4>
                              <p>Viola Komaromi</p>
                              <h4>City</h4>

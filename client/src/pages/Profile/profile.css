@@ -1,5 +1,8 @@
-
-.profile-page {
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.profile-page2 {
     background-color: rgba(87, 187, 226, 0.768);
     height: 100vh;
     display: flex;
@@ -8,7 +11,7 @@
     box-shadow: 0 0 200px #858484 inset;
 }
 
-.main-body {
+.main-body2 {
     box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
     -webkit-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
     -moz-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
@@ -24,7 +27,7 @@
     background-color: rgba(127, 255, 212, 0.597);
 }
 
-.profile-page-title {
+.profile-page-title2 {
     font-family: Amatic SC;
     font-style: normal;
     font-weight: bold;
@@ -41,7 +44,7 @@
   
 
 
-.card {
+.card2 {
     /* position: relative; */
     /* display: flex; */
     /* flex-direction: column; */
@@ -57,18 +60,18 @@
     margin-bottom: 0;
 }
 
-.profile-setting-cards {
+.profile-setting-cards2 {
     text-align: center;
    
 }
 
-.row,
-.form-row,
-.form-group {
+.row2,
+.form-row2,
+.form-group2 {
     padding: 0.2rem;
 }
 
-.main-body-title {
+.main-body-title2 {
     padding-top: 2rem;
     
 }
@@ -77,24 +80,24 @@
     /* flex: 1 1 auto; */
     /* min-height: 1px; */
     /* text-align: center; */
-    width: 10rem;
+    /* width: 10rem; */
     font-size: 1.5rem;
     
 
     
 }
 
-.profile-settings-submit {
+.profile-settings-submit2 {
     background-color: crimson;
 }
 
-.profile-settings-submit {
+.profile-settings-submit2 {
     background: #2a2019;
     border: none;
     font-size: 1.4rem;
     color: white;
 }
-.profile-settings-submit:hover {
+.profile-settings-submit2:hover {
     background: #f37126;
     border: none;
 }
