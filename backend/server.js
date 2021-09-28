@@ -8,7 +8,7 @@ app.use(cors());
 const initializePassport = require('./passport-config');
 initializePassport(passport);
 
-const mockData = require('./MOCK_DATA(2).json');
+// const mockData = require('./MOCK_DATA(2).json');
 
 // ejs
 const path = require('path');

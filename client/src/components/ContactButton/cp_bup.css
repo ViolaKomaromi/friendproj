@@ -1,17 +1,16 @@
 .contact-body {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap-reverse;
-    padding: 2rem;
+    padding: 4.6rem;
     align-items: center;
-    background: radial-gradient(53.86% 75.87% at 58.54% 46.14%, #fab690 0%, #ff7a5c 100%);
-    height: 100vh;
 }
-.modal-content {
-    background: whitesmoke;
-}
+
 .contact-content {
-    background: radial-gradient(53.86% 75.87% at 58.54% 46.14%, #fab690 0%, #ff7a5c 100%);
+    background-color: #5ebbb5;
+
+    background: radial-gradient(53.86% 75.87% at 58.54% 46.14%, #9ae2c9 0%, #5ebbb5 100%);
+    /* box-shadow: 0 0 200px #55aba5 inset; */
 }
 
 #contactModalLabel {
@@ -21,21 +20,19 @@
 .closeArea {
     padding: 1rem 2rem 0 0;
     text-align: end;
-    background: #ff7a5c;
-}
-
-.btn-close:hover {
-    filter: invert();
 }
 
 .contact-form {
     background: rgba(255, 255, 255, 0.2);
     padding: 2rem;
     border-radius: 10px;
-    margin-bottom: 2rem;
 }
 
-/* .submit-form-btn {
+.submit-form-btn {
+    background-color: crimson;
+}
+
+.submit-form-btn {
     position: relative;
     top: 0;
     width: 20rem;
@@ -48,31 +45,14 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     transition: 0.2s ease-in-out;
-} */
-
-.submit-form-btn {
-    background: #2a2019;
-    color: whitesmoke;
-    border: none;
-    font-size: 1.4rem;
-    width: 10rem;
 }
+
 .submit-form-btn:hover {
-    background: #f37126;
-    color: whitesmoke;
-    border: none;
-}
-
-.submit-btn-section {
-    text-align: center;
-}
-
-/* .submit-form-btn:hover {
     color: whitesmoke;
     top: -5px;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     transition: 0.2s ease-in-out;
-} */
+}
 
 .contact-title {
     margin-top: 2rem;
@@ -94,34 +74,17 @@
     flex-direction: column;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    margin-bottom: 1.6rem;
-
-    width: 450px;
-    transition: 0.2s ease;
+    margin-bottom: 1.5rem;
+    width: 400px;
 }
-.developer-card:hover {
-    box-shadow: 0px 16px 17px -5px rgba(0, 0, 0, 0.106);
-    -webkit-box-shadow: 0px 16px 17px -5px rgba(0, 0, 0, 0.106);
-    -moz-box-shadow: 0px 16px 17px -5px rgba(0, 0, 0, 0.106);
-}
-
-/* .developer-cards {
-} */
-
 .developer-list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    /* border: antiquewhite 4px solid; */
-    border-radius: 25px;
     /* background-color: brown; */
-    padding: 1rem;
+    width: 50%;
     flex-wrap: wrap;
-    /* height: 100%; */
-    box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
-    -webkit-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
-    -moz-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
 }
 
 .developer-list h3 {
@@ -155,16 +118,13 @@
     justify-content: space-between;
     gap: 1rem;
     /* color: whitesmoke; */
-    background: rgba(255, 255, 255, 0.208);
-    border-radius: 10px;
-    padding: 1rem;
 }
 
 .developer-card-user-headline h5 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 .developer-card-user-headline p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
@@ -175,4 +135,5 @@
 .developer-card-text {
     background: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
+    padding: 1rem;
 }

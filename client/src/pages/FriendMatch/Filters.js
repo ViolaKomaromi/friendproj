@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "../../util/axios";
 import { useState } from "react";
-import RandomCard from './RandomCard';
+import RandomCard from "./RandomCard";
 
 import "../../components/Match/matchpage.css";
 import passion from "../../image/drum.png";
@@ -9,12 +9,11 @@ import drink from "../../image/beer.png";
 import food from "../../image/sausage.png";
 import activity from "../../image/tent.png";
 import randomButton from "../../image/lobster.png";
-import Logout from '../../components/LandingTwo/Logout';
+import Logout from "../../components/LandingTwo/Logout";
 import { Filter } from "react-bootstrap-icons";
-import MatchPage from './MatchPage';
+import MatchPage from "./MatchPage";
 
 function Filters({ filterItems }) {
-
     const [native, setNative] = useState("");
     const [showResult, setShowResult] = useState(null);
 
@@ -67,15 +66,14 @@ function Filters({ filterItems }) {
                     <p>Match Me</p>
                 </button>
             </div>
-            <Logout />
-            
-            {showResult != null ? <RandomCard randomMatch={showResult}/> : <p></p>}
+            {/* <Logout /> */}
+
+            {showResult != null ? <RandomCard randomMatch={showResult} /> : <p></p>}
         </div>
     );
 }
 
 export default Filters;
-
 
 /* <div>
 <button onClick={() => filterItems("all")}>all</button>

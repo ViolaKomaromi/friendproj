@@ -1,5 +1,6 @@
 .carousel-container {
     background-color: #f4f2e9;
+    box-shadow: 0 0 200px #c4c4c4 inset;
 }
 
 .carousel-inner {
@@ -25,9 +26,13 @@
     width: fit-content;
     display: flex;
     align-items: center;
-    background: rgba(42, 32, 24, 0.6);
+    background: #5ebbb5c6;
     border-radius: 10px;
     padding: 3rem;
+
+    box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 16px 17px -10px rgba(0, 0, 0, 0.55);
 }
 
 .carousel-control-prev-icon {
@@ -36,7 +41,7 @@
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
 
-    border-right: 30px solid #5ebbb5;
+    border-right: 30px solid black;
 }
 .carousel-control-next-icon {
     width: 0;
@@ -44,5 +49,5 @@
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
 
-    border-left: 30px solid #5ebbb5;
+    border-left: 30px solid black;
 }

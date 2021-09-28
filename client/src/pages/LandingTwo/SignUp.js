@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 import axios from "../../util/axios";
 import FormWrapper from "../../components/Wrappers/wrapper";
 import Login from "./Login";
+import "./signup.css";
 
 export default function SignUp() {
     const [fullname, setFullname] = useState("");
@@ -34,21 +35,7 @@ export default function SignUp() {
             native: native,
         };
 
-        // axios.post("http://localhost:4001/user/register", JSON.stringify(userToRegister)).then(res => {
-        //     console.log(res);
-        // })
-
-        // fetch("http://localhost:4001/user/register", {
-        //     method: "POST",
-        //     headers: { "content-type": "application/json" },
-        //     body: JSON.stringify(userToRegister),
-        // })
-        //     .then((res) => {
-        //         return res.json();
-        //     })
-        //     .then((err) => {
-        //         console.log(err);
-        //     });
+    
 
         try {
             var res = await axios.post("/user/register", userToRegister);
@@ -74,23 +61,34 @@ export default function SignUp() {
                     Sign up
                 </button>
                 <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div className="modal-dialog modal-dialog-centered">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                {/* <h5 className="modal-title register" id="exampleModalLabel">Register</h5> */}
+                    <div className="modal-dialog signUp-dialog  modal-dialog-centered">
+                        <div className="modal-content modal-box-style ">
+                            {/* <div className="modal-header">
+                              
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div className="modal-body">
+                            </div> */}
+                            <div className="modal-body sign-up-body">
+                                <div>
+                                    <img
+                                        className="login-img"
+                                        src="https://images.unsplash.com/photo-1477327665424-41aeff75a2e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
+                                        alt=""
+                                    />
+                                </div>
                                 <FormWrapper>
+                                    <div className="btn-close-section">
+                                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
                                     <form
+                                        className="signUpForm"
                                         onSubmit={(e) => {
                                             handleSubmitForm(e);
                                         }}
                                     >
-                                        <h3 className="mb-4">Your next friend is waiting</h3>
+                                        <h3 className="mb-4 signUp-modal-title">Your next friend is waiting</h3>
                                         <div className="d-grid gap-4">
                                             <div className="form-group">
-                                                <label>Full name</label>
+                                                {/* <label>Full name</label> */}
                                                 <input
                                                     type="text"
                                                     value={fullname}
@@ -101,7 +99,7 @@ export default function SignUp() {
                                             </div>
 
                                             <div className="form-group">
-                                                <label>Username</label>
+                                                {/* <label>Username</label> */}
                                                 <input
                                                     type="text"
                                                     value={username}
@@ -111,7 +109,7 @@ export default function SignUp() {
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <label>Birthday</label>
+                                                {/* <label>Birthday</label> */}
                                                 <input
                                                     type="date"
                                                     value={birthday}
@@ -121,7 +119,7 @@ export default function SignUp() {
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <label>Location</label>
+                                                {/* <label>Location</label> */}
                                                 <input
                                                     type="location"
                                                     value={location}
@@ -131,7 +129,7 @@ export default function SignUp() {
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <label>Email address</label>
+                                                {/* <label>Email address</label> */}
                                                 <input
                                                     type="email"
                                                     value={email}
@@ -141,7 +139,7 @@ export default function SignUp() {
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <label>Password</label>
+                                                {/* <label>Password</label> */}
                                                 <input
                                                     type="password"
                                                     value={password}
@@ -151,7 +149,7 @@ export default function SignUp() {
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <label>Re-Password</label>
+                                                {/* <label>Re-Password</label> */}
                                                 <input
                                                     type="password"
                                                     value={rePassword}
@@ -161,7 +159,10 @@ export default function SignUp() {
                                                 />
                                             </div>
                                             <div className="d-flex flex-column justify-content-around">
-                                                <label htmlFor=""> I'm a/an: </label>
+                                                <label className="text-center" htmlFor="">
+                                                    {" "}
+                                                    I'm a/an:{" "}
+                                                </label>
 
                                                 <div className="d-flex justify-content-around">
                                                     <div className="form-check">
@@ -193,7 +194,7 @@ export default function SignUp() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <button type="submit" className="btn btn-primary btn-block mt-5 mb-3 ">
+                                        <button type="submit" className="btn btn-primary btn-block mt-5 mb-3 signUp-btn">
                                             Sign Up
                                         </button>
                                     </form>

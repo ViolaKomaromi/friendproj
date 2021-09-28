@@ -1,7 +1,6 @@
 import React from "react";
-import RandomCard from './RandomCard';
+import RandomCard from "./RandomCard";
 import axios from "../../util/axios";
-
 
 import "../../components/Match/matchpage.css";
 import Filters from "./Filters";
@@ -11,17 +10,13 @@ import CultureTips from "../../components/Match/CultureTips";
 import Jokes from "../../components/Match/Jokes";
 import { Filter } from "react-bootstrap-icons";
 
-
 import { useState } from "react";
 import Navbar from "../../components/MainNav/Navbar";
 
-
-
 function MatchPage() {
-
-
     const [friends, setFriends] = useState(items);
     // const [filter, setFilter] = useState([]);
+   
 
     const filterItems = (category) => {
         if (category === "all") {
@@ -34,7 +29,7 @@ function MatchPage() {
     return (
         <>
             <div className="match_page">
-                <Navbar/>
+                <Navbar />
                 <header className="matchHeader">
                     <Filters filterItems={filterItems} />
                     <div className="culture_jokes_btns">
@@ -43,14 +38,14 @@ function MatchPage() {
                     </div>
                 </header>
                 <div className="result-list">
-                    <h3>Your future friend(s)</h3>
+                    <h3 className="match-page-title">Your future friend(s)</h3>
                     <div className="result-list-cards">
                         <Friends items={friends} />
-
+                       
                     </div>
+          
+
                 </div>
-              
-        
             </div>
         </>
     );
@@ -58,14 +53,4 @@ function MatchPage() {
 
 export default MatchPage;
 
-{
-    /* <div className="result-list">
-   
-    <div className="result-list-cards">
-        <ResultCard />
-        <ResultCard />
-        <ResultCard />
-        <ResultCard />
-    </div>
-</div>; */
-}
+

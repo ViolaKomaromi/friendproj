@@ -1,11 +1,29 @@
 import React from "react";
+import "../../components/ContactButton/contactpage.css";
 
-function Developer() {
+function Developer({ items }) {
     return (
-        <div>
-            <p>Name</p>
-            <p>Github</p>
-            <p>Email</p>
+        <div className="developer-cards">
+            {items.map((developer) => {
+                const { id, img, name, github, email, role } = developer;
+                return (
+                    <div className="developer-card">
+                        <div key={id}>
+                            <header>
+                                <img src={img} alt="..." />
+                                <div className="developer-card-user-headline">
+                                    <h5>{name}</h5>
+                                    <div>
+                                        <p>{github}</p>
+                                        <p>{email}</p>
+                                        <p>{role}</p>
+                                    </div>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                );
+            })}
         </div>
     );
 }
