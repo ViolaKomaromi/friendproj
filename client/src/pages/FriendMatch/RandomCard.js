@@ -38,7 +38,7 @@ function RandomCard({ randomMatch }) {
                 <div className="card-user-headline">
                     <h5>{randomMatch.fullname}</h5>
                     <div>
-                        <p>{randomMatch.birthday }</p>
+                        <p>{randomMatch.native }</p>
                         <p>{randomMatch.location}</p>
                     </div>
                 </div>

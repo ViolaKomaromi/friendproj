@@ -72,8 +72,8 @@ h3 {
     height: 5rem;
     width: 3rem;
     object-fit: contain;
-    clip-path: circle(20% at 50% 50%);
-    box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.66);
+    /* clip-path: circle(20% at 50% 50%); */
+    /* box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 0.66); */
 }
 
 .dropdown-menu {
