@@ -7,7 +7,12 @@ function ContactDeveloperCard() {
     const [developers, setDevelopers] = useState(items);
     return (
         <div className="developer-list">
-            <h3>Meet the team</h3>
+            <h3>
+                Meet
+                <br />
+                the <br />
+                team
+            </h3>
             <Developer items={developers} />
         </div>
     );
