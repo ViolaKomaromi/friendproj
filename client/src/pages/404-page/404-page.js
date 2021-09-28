@@ -36,9 +36,10 @@ const PageNotFound = () => {
     // </div>
 
     <div className='container'>
-      <img src={image} alt='Admin' />
-      <div className='row'>
-        <div className='col-md-12'>
+      {/* <img src={image} alt='Angela Merkel' /> */}
+      <div className='row justify-content-center'>
+        <div className='col-md-12 col-sm-12'>
+          <img src={image} alt='Admin' />
           <div className='error-template'>
             <h1>Oops!</h1>
             <h2>404 Not Found</h2>
