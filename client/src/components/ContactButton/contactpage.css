@@ -20,6 +20,11 @@
 .closeArea {
     padding: 1rem 2rem 0 0;
     text-align: end;
+    background: #ff7a5c;
+}
+
+.btn-close:hover {
+    filter: invert();
 }
 
 .contact-form {
@@ -29,11 +34,7 @@
     margin-bottom: 2rem;
 }
 
-.submit-form-btn {
-    background-color: crimson;
-}
-
-.submit-form-btn {
+/* .submit-form-btn {
     position: relative;
     top: 0;
     width: 20rem;
@@ -46,14 +47,31 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     transition: 0.2s ease-in-out;
+} */
+
+.submit-form-btn {
+    background: #2a2019;
+    color: whitesmoke;
+    border: none;
+    font-size: 1.4rem;
+    width: 10rem;
+}
+.submit-form-btn:hover {
+    background: #f37126;
+    color: whitesmoke;
+    border: none;
 }
 
-.submit-form-btn:hover {
+.submit-btn-section {
+    text-align: center;
+}
+
+/* .submit-form-btn:hover {
     color: whitesmoke;
     top: -5px;
-    /* font-size: 1.8rem; */
+    font-size: 1.8rem;
     transition: 0.2s ease-in-out;
-}
+} */
 
 .contact-title {
     margin-top: 2rem;
@@ -75,15 +93,15 @@
     flex-direction: column;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    margin-bottom: 1.5rem;
-    width: 350px;
+    margin-bottom: 1.6rem;
+    width: 450px;
 }
 .developer-list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    border: antiquewhite 4px solid;
+    /* border: antiquewhite 4px solid; */
     border-radius: 25px;
     /* background-color: brown; */
     padding: 1rem;
@@ -125,6 +143,9 @@
     justify-content: space-between;
     gap: 1rem;
     /* color: whitesmoke; */
+    background: rgba(255, 255, 255, 0.208);
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 .developer-card-user-headline h5 {
