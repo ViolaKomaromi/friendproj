@@ -95,6 +95,12 @@
     border-radius: 10px;
     margin-bottom: 1.6rem;
     width: 450px;
+    transition: 0.2s ease;
+}
+.developer-card:hover {
+    box-shadow: 0px 16px 17px -5px rgba(0, 0, 0, 0.106);
+    -webkit-box-shadow: 0px 16px 17px -5px rgba(0, 0, 0, 0.106);
+    -moz-box-shadow: 0px 16px 17px -5px rgba(0, 0, 0, 0.106);
 }
 .developer-list {
     display: flex;
