@@ -2,7 +2,7 @@
   position: absolute;
   background-color: #ff4459;
 } */
-
+/* 
 img {
   margin-top: 30px;
   max-width: 100%;
@@ -11,10 +11,10 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* width: 50%; */
-}
+  
+} */
 
-.error-template {
+/* .error-template {
   font-size: 20px;
   padding: 40px 15px;
   text-align: center;
@@ -42,4 +42,19 @@ img {
 .card .card-header {
   background-color: #fff;
   border-bottom: none;
+} */
+
+body {
+  background-color: #62bdb6;
+}
+.error-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.error-actions {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.error-actions .btn {
+  margin-right: 10px;
 }

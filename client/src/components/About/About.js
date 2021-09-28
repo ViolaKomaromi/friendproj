@@ -4,6 +4,8 @@ import image1 from '../About/image1.png';
 import image2 from '../About/image2.png';
 import image3 from '../About/image3.png';
 import image4 from '../About/image4.png';
+import image5 from '../About/image5.png';
+import image6 from '../About/image6.png';
 
 const AboutMe = () => {
   return (
@@ -73,19 +75,19 @@ const AboutMe = () => {
               />
             </div>
 
-            {/* <div class='col-lg-4 mb-4 mb-lg-0'>
+            <div class='col-lg-4 mb-4 mb-lg-0'>
               <img
-                src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg'
+                src={image5}
                 class='w-100 shadow-1-strong rounded mb-4'
                 alt=''
               />
 
               <img
-                src='https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg'
+                src={image6}
                 class='w-100 shadow-1-strong rounded mb-4'
                 alt=''
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
