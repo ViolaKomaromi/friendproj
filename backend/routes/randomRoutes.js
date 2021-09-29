@@ -17,7 +17,7 @@ router.get('/', passport.authenticate('jwt',{session: false} ), async (req, res)
 
   
   const allUsers = await User.find({ native: !req.user.native});
-  const oneUser = allUsers[Math.round(Math.random() * allUsers.length)];
+  const oneUser = allUsers[Math.floor(Math.random() * allUsers.length)];
 
 
 

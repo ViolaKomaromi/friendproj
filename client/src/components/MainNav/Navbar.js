@@ -67,11 +67,7 @@ export default function Navbar() {
                         About FriendJa
                       </a>
                     </li>
-                    <li>
-                      <a className='dropdown-item' href='/contact'>
-                        Contact
-                      </a>
-                    </li>
+                    
 
                     <li>
                       <a className='dropdown-item' onClick={logout} href='/'>
