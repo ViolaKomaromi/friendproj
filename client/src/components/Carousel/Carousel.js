@@ -38,7 +38,11 @@ function Carousel() {
                         />
                         <div className="carousel-caption d-none d-md-block">
                             {/* <h5>Second slide label</h5> */}
+<<<<<<< HEAD
                             <p>Do you want to learn some more facts about german culture? </p>
+=======
+                            <p>Do you want to learn some more about german culture?</p>
+>>>>>>> 5015e7bb4b7bf9a381387eeed309f9dfd96d4eb5
                         </div>
                     </div>
                     <div className="carousel-item">
@@ -49,7 +53,11 @@ function Carousel() {
                         />
                         <div className="carousel-caption d-none d-md-block">
                             {/* <h5>Third slide label</h5> */}
+<<<<<<< HEAD
                             <p>Do you want to be part of a modern way of making friends?</p>
+=======
+                            <p>Do you want to be part of a new way of making friends?</p>
+>>>>>>> 5015e7bb4b7bf9a381387eeed309f9dfd96d4eb5
                         </div>
                     </div>
                 </div>
