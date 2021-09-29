@@ -170,12 +170,12 @@ const MailBox = () => {
               </a>
             </div>
             <div className='btn-group'>
-              <a className='btn mini btn-success' href='javascript:;'>
+              <a className='btn mini btn-success' href='/'>
                 <i className='fa fa-phone'></i>
               </a>
             </div>
             <div className='btn-group'>
-              <a className='btn mini btn-info' href='javascript:;'>
+              <a className='btn mini btn-info' href='/'>
                 <i className='fa fa-cog'></i>
               </a>
             </div>
@@ -357,7 +357,7 @@ const MailBox = () => {
                     <i className='fa fa-star'></i>
                   </td>
                   <td className='view-message dont-show'>FriendJa</td>
-                  <td className='view-message'>Welcome to FriendJa</td>
+                  <td className='view-message'>We have found a new match</td>
                   <td className='view-message inbox-small-cells'></td>
                   <td className='view-message text-right'>April 01</td>
                 </tr>
@@ -369,12 +369,10 @@ const MailBox = () => {
                     <i className='fa fa-star inbox-started'></i>
                   </td>
                   <td className='view-message dont-show'>
-                    Freelancer.com{' '}
-                    <span className='label label-danger pull-right'>
-                      urgent
-                    </span>
+                    FriendJa{' '}
+                    <span className='label label-danger pull-right'></span>
                   </td>
-                  <td className='view-message'>Stop wasting your visitors </td>
+                  <td className='view-message'>We have found a new match </td>
                   <td className='view-message inbox-small-cells'></td>
                   <td className='view-message text-right'>May 23</td>
                 </tr>
@@ -385,10 +383,8 @@ const MailBox = () => {
                   <td className='inbox-small-cells'>
                     <i className='fa fa-star inbox-started'></i>
                   </td>
-                  <td className='view-message dont-show'>WOW Slider </td>
-                  <td className='view-message'>
-                    New WOW Slider v7.8 - 67% off
-                  </td>
+                  <td className='view-message dont-show'>FriendJa </td>
+                  <td className='view-message'>We have found a new match</td>
                   <td className='view-message inbox-small-cells'>
                     <i className='fa fa-paperclip'></i>
                   </td>
@@ -401,10 +397,8 @@ const MailBox = () => {
                   <td className='inbox-small-cells'>
                     <i className='fa fa-star inbox-started'></i>
                   </td>
-                  <td className='view-message dont-show'>LinkedIn Pulse</td>
-                  <td className='view-message'>
-                    The One Sign Your Co-Worker Will Stab
-                  </td>
+                  <td className='view-message dont-show'>FriendJa</td>
+                  <td className='view-message'>We have found a new match</td>
                   <td className='view-message inbox-small-cells'>
                     <i className='fa fa-paperclip'></i>
                   </td>
@@ -418,13 +412,11 @@ const MailBox = () => {
                     <i className='fa fa-star'></i>
                   </td>
                   <td className='view-message dont-show'>
-                    Drupal Community
-                    <span className='label label-success pull-right'>
-                      megazine
-                    </span>
+                    FriendJa
+                    <span className='label label-success pull-right'></span>
                   </td>
                   <td className='view-message view-message'>
-                    Welcome to the Drupal Community
+                    We have found a new match
                   </td>
                   <td className='view-message inbox-small-cells'></td>
                   <td className='view-message text-right'>March 04</td>
@@ -436,9 +428,9 @@ const MailBox = () => {
                   <td className='inbox-small-cells'>
                     <i className='fa fa-star'></i>
                   </td>
-                  <td className='view-message dont-show'>Facebook</td>
+                  <td className='view-message dont-show'>FriendJa</td>
                   <td className='view-message view-message'>
-                    Somebody requested a new password{' '}
+                    We have found a new match{' '}
                   </td>
                   <td className='view-message inbox-small-cells'></td>
                   <td className='view-message text-right'>June 13</td>
@@ -451,11 +443,11 @@ const MailBox = () => {
                     <i className='fa fa-star'></i>
                   </td>
                   <td className='view-message dont-show'>
-                    Skype{' '}
-                    <span className='label label-info pull-right'>family</span>
+                    FriendJa{' '}
+                    <span className='label label-info pull-right'></span>
                   </td>
                   <td className='view-message view-message'>
-                    Password successfully changed
+                    We have found a new match
                   </td>
                   <td className='view-message inbox-small-cells'></td>
                   <td className='view-message text-right'>March 24</td>
@@ -467,8 +459,8 @@ const MailBox = () => {
                   <td className='inbox-small-cells'>
                     <i className='fa fa-star inbox-started'></i>
                   </td>
-                  <td className='view-message dont-show'>Google+</td>
-                  <td className='view-message'>alireza, do you know</td>
+                  <td className='view-message dont-show'>FriendJa</td>
+                  <td className='view-message'>We have found a new match</td>
                   <td className='view-message inbox-small-cells'></td>
                   <td className='view-message text-right'>March 09</td>
                 </tr>
@@ -479,10 +471,8 @@ const MailBox = () => {
                   <td className='inbox-small-cells'>
                     <i className='fa fa-star inbox-started'></i>
                   </td>
-                  <td className='dont-show'>Zoosk </td>
-                  <td className='view-message'>
-                    7 new singles we think you'll like
-                  </td>
+                  <td className='dont-show'>FriendJa </td>
+                  <td className='view-message'>We have found a new match</td>
                   <td className='view-message inbox-small-cells'>
                     <i className='fa fa-paperclip'></i>
                   </td>
@@ -495,10 +485,8 @@ const MailBox = () => {
                   <td className='inbox-small-cells'>
                     <i className='fa fa-star'></i>
                   </td>
-                  <td className='view-message dont-show'>LinkedIn </td>
-                  <td className='view-message'>
-                    Alireza: Nokia Networks, System Group and{' '}
-                  </td>
+                  <td className='view-message dont-show'>FriendJa </td>
+                  <td className='view-message'>We have found a new match </td>
                   <td className='view-message inbox-small-cells'>
                     <i className='fa fa-paperclip'></i>
                   </td>
@@ -511,14 +499,14 @@ const MailBox = () => {
                   <td className='inbox-small-cells'>
                     <i className='fa fa-star'></i>
                   </td>
-                  <td className='dont-show'>Facebook</td>
+                  <td className='dont-show'>FriendJa</td>
                   <td className='view-message view-message'>
-                    Your account was recently logged into
+                    We have found a new match
                   </td>
                   <td className='view-message inbox-small-cells'></td>
                   <td className='view-message text-right'>March 14</td>
                 </tr>
-                <tr className=''>
+                {/* <tr className=''>
                   <td className='inbox-small-cells'>
                     <input type='checkbox' className='mail-checkbox' />
                   </td>
@@ -547,8 +535,8 @@ const MailBox = () => {
                   </td>
                   <td className='view-message inbox-small-cells'></td>
                   <td className='view-message text-right'>July 14</td>
-                </tr>
-                <tr className=''>
+                </tr> */}
+                {/* <tr className=''>
                   <td className='inbox-small-cells'>
                     <input type='checkbox' className='mail-checkbox' />
                   </td>
@@ -577,7 +565,7 @@ const MailBox = () => {
                     <i className='fa fa-paperclip'></i>
                   </td>
                   <td className='view-message text-right'>April 14</td>
-                </tr>
+                </tr> */}
                 <tr className=''>
                   <td className='inbox-small-cells'>
                     <input type='checkbox' className='mail-checkbox' />
@@ -585,10 +573,8 @@ const MailBox = () => {
                   <td className='inbox-small-cells'>
                     <i className='fa fa-star'></i>
                   </td>
-                  <td className='view-message dont-show'>Bertina </td>
-                  <td className='view-message'>
-                    IMPORTANT: Don't lose your domains!
-                  </td>
+                  <td className='view-message dont-show'>FriendJa </td>
+                  <td className='view-message'>Welcome to FriendJa</td>
                   <td className='view-message inbox-small-cells'>
                     <i className='fa fa-paperclip'></i>
                   </td>

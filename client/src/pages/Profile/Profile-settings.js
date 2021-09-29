@@ -25,8 +25,8 @@ export default function Profile({ profile }) {
                         <div className="col-xl-12 col-md-8">
                             <div className="cardC user-card-full1">
                                 <div className="row m-l-0 m-r-0">
-                                    <div className="col-sm-4 bg-c-lite-green2 user-profile1">
-                                        <div className="card-block2 text-center text-white">
+                                    <div className="col-sm-4 bg-c-lite-green2 user-profile">
+                                        <div className="card-block text-center text-white">
                                             <div className="m-b-25"> <img src={logo} className="img-radius2" alt="User-Profile-Image" /> </div>
                                             <h6 className="f-w-600">William Timlin</h6>
                                             <p>Web Designer</p> <i className=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
