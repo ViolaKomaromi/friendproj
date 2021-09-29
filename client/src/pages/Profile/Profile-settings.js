@@ -19,21 +19,21 @@ export default function Profile({ profile }) {
             <Navbar />
             <div className="page-content page-container" id="page-content">
                 <h2 className="profile-page-title">Your Profile</h2>
-                <div className="padding">
+                <div className="padding1">
 
-                    <div className="row container d-flex justify-content-center">
+                    <div className="row container3 d-flex justify-content-center">
                         <div className="col-xl-12 col-md-8">
-                            <div className="cardC user-card-full">
+                            <div className="cardC user-card-full1">
                                 <div className="row m-l-0 m-r-0">
-                                    <div className="col-sm-4 bg-c-lite-green user-profile">
-                                        <div className="card-block text-center text-white">
-                                            <div className="m-b-25"> <img src={logo} className="img-radius" alt="User-Profile-Image" /> </div>
+                                    <div className="col-sm-4 bg-c-lite-green2 user-profile1">
+                                        <div className="card-block2 text-center text-white">
+                                            <div className="m-b-25"> <img src={logo} className="img-radius2" alt="User-Profile-Image" /> </div>
                                             <h6 className="f-w-600">William Timlin</h6>
                                             <p>Web Designer</p> <i className=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                                         </div>
                                     </div>
                                     <div className="col-sm-8">
-                                        <div className="card-block">
+                                        <div className="card-block2">
                                             <h6 className="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
                                             <div className="row">
                                                 <div className="col-sm-6">
@@ -56,7 +56,7 @@ export default function Profile({ profile }) {
                                                     <h6 className="text-muted f-w-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, assumenda.</h6>
                                                 </div>
                                             </div>
-                                            <ul className="social-link list-unstyled m-t-40 m-b-10">
+                                            <ul className="social-link2 list-unstyled m-t-40 m-b-10">
                                                 <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="facebook" data-abc="true"><i className="mdi mdi-facebook feather icon-facebook facebook" aria-hidden="true"></i></a></li>
                                                 <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="twitter" data-abc="true"><i className="mdi mdi-twitter feather icon-twitter twitter" aria-hidden="true"></i></a></li>
                                                 <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="instagram" data-abc="true"><i className="mdi mdi-instagram feather icon-instagram instagram" aria-hidden="true"></i></a></li>
