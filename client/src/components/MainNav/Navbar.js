@@ -29,7 +29,7 @@ export default function Navbar() {
                 <li className='nav-item dropdown'>
                   <a
                     // className="nav-link dropdown-toggle"
-                    href='/'
+                    href='#'
                     id='navbarDropdownMenuLink'
                     role='button'
                     data-bs-toggle='dropdown'
@@ -51,11 +51,7 @@ export default function Navbar() {
                         Profile
                       </a>
                     </li>
-                    <li>
-                      <a className='dropdown-item' href='/contact'>
-                        Contact
-                      </a>
-                    </li>
+
                     <li>
                       <a className='dropdown-item' href='/friendlist'>
                         Friend List
@@ -69,6 +65,11 @@ export default function Navbar() {
                     <li>
                       <a className='dropdown-item' href='/about'>
                         About FriendJa
+                      </a>
+                    </li>
+                    <li>
+                      <a className='dropdown-item' href='/contact'>
+                        Contact
                       </a>
                     </li>
 

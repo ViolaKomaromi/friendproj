@@ -1,16 +1,18 @@
+/*  
+.d-flex{
+  height: 100vh;
  
 
-/* body {
-    background-color: #f9f9fa;
-   margin-top: 10%;
-    
+} */
+/* .padding1 {
+    padding: 0.5rem !important;
+    height: 40vh;
+  width: 100%;
+  
 } */
 
-.padding {
-    padding: 3rem !important
-}
-
-.user-card-full {
+.user-card-full1 {
+   
     overflow: hidden;
    
 }
@@ -33,47 +35,51 @@
     margin-left: 0px
 }
 
-.user-card-full .user-profile {
-    border-radius: 5px 0 0 5px
+.user-card-full1 .user-profile1 {
+    border-radius: 5px 0 0 5px;
+   
 }
 
-.bg-c-lite-green {
+.bg-c-lite-green2 {
+    
     background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
     background: linear-gradient(to right, #ee5a6f, #f29263)
 }
 
-.user-profile {
+.user-profile1{
     padding: 20px 0
 }
 
-.card-block {
-    padding: 1.25rem
+.card-block2 {
+    padding: 1rem
 }
 
 .m-b-25 {
-    margin-bottom: 25px
+    margin-bottom: 15px
 }
 
-.img-radius {
-    border-radius: 5px
+.img-radius2 {
+    border-radius: 5px;
+    height:70%;
+    width:100%;
 }
 
 h6 {
-    font-size: 14px
+    font-size: 1.5rem;
 }
 
-.card .card-block p {
+.cardC .card-block2 p {
     line-height: 25px
 }
 
 @media only screen and (min-width: 1400px) {
     p {
-        font-size: 14px
+        font-size: 1.1rem;
     }
 }
 
-.card-block {
-    padding: 1.25rem
+.card-block2 {
+    padding: 0.5rem
 }
 
 .b-b-default {
@@ -88,7 +94,7 @@ h6 {
     padding-bottom: 5px !important
 }
 
-.card .card-block p {
+.cardC .card-block2 p {
     line-height: 25px
 }
 
@@ -98,7 +104,7 @@ h6 {
 
 .text-muted {
     color: #57595a !important;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 .b-b-default {
@@ -107,7 +113,7 @@ h6 {
 
 .f-w-600 {
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .m-b-20 {
@@ -125,19 +131,19 @@ h6 {
 .m-b-10,
 p {
     margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .m-t-40 {
     margin-top: 20px
 }
 
-.user-card-full .social-link li {
+.user-card-full .social-link2 li {
     display: inline-block;
     height: 30px;
 }
 
-.user-card-full .social-link li a {
+.user-card-full .social-link2 li a {
     font-size: 20px;
     margin: 0 10px 0 0;
     -webkit-transition: all 0.3s ease-in-out;
