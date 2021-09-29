@@ -18,7 +18,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className='col-lg-6 col-xm-12'>
-          <h1 className='about-heading'>About FriendJa</h1>
+          <h3 className='about-heading'>About FriendJa</h3>
           <p>
             Are you new in Germany and haven't really found many friends yet? Do
             you want to learn some more facts about german culture? Do you want

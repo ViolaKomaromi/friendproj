@@ -15,8 +15,10 @@ body {
 }
 
 .about-heading {
-  color: var(--primary-orange);
-  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  padding-right: 190px;
+  /* text-transform: uppercase; */
 }
 
 @media (max-width: 468px) {
