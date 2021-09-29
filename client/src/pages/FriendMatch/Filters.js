@@ -13,24 +13,10 @@ import Logout from "../../components/LandingTwo/Logout";
 import { Filter } from "react-bootstrap-icons";
 import MatchPage from "./MatchPage";
 
-function Filters({ filterItems }) {
+function Filters({ filterItems, random }) {
     const [native, setNative] = useState("");
-    const [showResult, setShowResult] = useState(null);
 
-    const random = async (e) => {
-        e.preventDefault();
-
-        try {
-            const res = await axios.get("/random");
-
-            console.log("there is your match 🟢");
-            console.log(res.data);
-            setShowResult(res.data);
-        } catch (error) {
-            console.log("Error happened", error);
-        }
-    };
-
+    
     return (
         <div className="filterComponent">
             <div className="filterText">
@@ -66,9 +52,9 @@ function Filters({ filterItems }) {
                     <p>Match Me</p>
                 </button>
             </div>
-            {/* <Logout /> */}
+            
 
-            {showResult != null ? <RandomCard randomMatch={showResult} /> : <p></p>}
+     
         </div>
     );
 }
