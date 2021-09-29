@@ -53,7 +53,7 @@ export default function Profile({ profile }) {
                                                 </div>
                                                 <div className="col-sm-6">
                                                     <p className="m-b-10 f-w-600">About me</p>
-                                                    <h6 className="text-muted f-w-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, assumenda.</h6>
+                                                    <h6 className="text-muted f-w-400">Nicht alles, was zählt, ist zählbar, und nicht alles, was zählbar ist, zählt.</h6>
                                                 </div>
                                             </div>
                                             <ul className="social-link2 list-unstyled m-t-40 m-b-10">

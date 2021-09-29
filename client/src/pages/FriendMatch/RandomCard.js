@@ -40,8 +40,10 @@ function RandomCard({ randomMatch }) {
 
             <div className="card-body">
                 <p className="card-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium natus earum! Eligendi dolore architecto facere nobis. Culpa,
-                    repudiandae enim?
+                When the going gets tough, the tough get going.
+                </p>
+                <p className="card-text">
+                Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.
                 </p>
             </div>
             <footer>
