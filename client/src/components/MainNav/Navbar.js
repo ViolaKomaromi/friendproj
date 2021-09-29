@@ -48,11 +48,7 @@ export default function Navbar() {
                                                 Profile
                                             </a>
                                         </li>
-                                        <li>
-                                            <a className="dropdown-item" href="/contact">
-                                                Contact
-                                            </a>
-                                        </li>
+                                       
                                         <li>
                                             <a className="dropdown-item" href="/friendlist">
                                                 Friend List
@@ -66,6 +62,11 @@ export default function Navbar() {
                                         <li>
                                             <a className="dropdown-item" href="/about">
                                                 About FriendJa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a className="dropdown-item" href="/contact">
+                                                Contact
                                             </a>
                                         </li>
 
