@@ -34,11 +34,12 @@ function RandomCard({ randomMatch }) {
 
         <div className="card" style={{ width: "15rem" }}>
             <header>
-                <img src={img} alt="..." />
+                <img src={randomMatch.avatar} alt="..." />
                 <div className="card-user-headline">
                     <h5>{randomMatch.fullname}</h5>
                     <div>
                         <p>{randomMatch.native }</p>
+                        {/* <p>{new Date (randomMatch.birthday).toLocaleDateString() }</p> */}
                         <p>{randomMatch.location}</p>
                     </div>
                 </div>
