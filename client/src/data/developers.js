@@ -9,7 +9,7 @@ const menu = [
     },
     {
         id: 2,
-        img: "../image/drum.png",
+        img: "/image/drum.png",
         name: "Anneli Telling",
         github: "https://github.com/AnneliTel",
         email: "annelitelling@gmail.com",
