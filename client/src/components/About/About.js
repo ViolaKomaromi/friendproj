@@ -8,10 +8,17 @@ import image4 from '../About/image4.png';
 import image5 from '../About/image5.png';
 import image6 from '../About/image6.png';
 
+
+
+
 const AboutMe = () => {
+
   return (
     <div className='container py-5'>
+      
       <div className='row'>
+      <a href="/" className="m-b-10 f-w-600" onClick="history.go(-1); return false;">Go back</a> 
+
         <div className='col-lg-6 col-xm-12'>
           <div className='photo-wrap mb-5'>
             <img className='profile-img' src={image} alt='author...' />
