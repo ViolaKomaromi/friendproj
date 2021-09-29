@@ -156,6 +156,8 @@
 
 .card img {
     height: 11rem;
+    width: 10rem;
+    object-fit: cover;
     clip-path: circle(39% at 50% 50%);
 }
 
