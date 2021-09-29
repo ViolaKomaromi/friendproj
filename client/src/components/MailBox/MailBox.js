@@ -1,5 +1,6 @@
 import React from 'react';
 //import image1 from './image1.jpeg';
+import Navbar from '../MainNav/Navbar';
 
 const MailBox = () => {
   return (
@@ -18,10 +19,10 @@ const MailBox = () => {
             </a>
             <div className='user-name'>
               <h5>
-                <a href='/'>Angela Zare</a>
+                <a href='/'>Adriana Campos</a>
               </h5>
               <span>
-                <a href='/'>angela-zare@Gmail.com</a>
+                <a href='/'>adriana.campos@Gmail.com</a>
               </span>
             </div>
             <a className='mail-dropdown pull-right' href='/'>
@@ -318,7 +319,7 @@ const MailBox = () => {
                     <i className='fa fa-star'></i>
                   </td>
                   <td className='view-message  dont-show'>FriendJa</td>
-                  <td className='view-message '>New friend request</td>
+                  <td className='view-message '>We have found a new match</td>
                   <td className='view-message  inbox-small-cells'>
                     <i className='fa fa-paperclip'></i>
                   </td>
@@ -332,7 +333,7 @@ const MailBox = () => {
                     <i className='fa fa-star'></i>
                   </td>
                   <td className='view-message dont-show'>FriendJa </td>
-                  <td className='view-message'>New friend request</td>
+                  <td className='view-message'>We have found a new match</td>
                   <td className='view-message inbox-small-cells'></td>
                   <td className='view-message text-right'>March 15</td>
                 </tr>
@@ -344,7 +345,7 @@ const MailBox = () => {
                     <i className='fa fa-star'></i>
                   </td>
                   <td className='view-message dont-show'>FriendJa</td>
-                  <td className='view-message'>New friend request </td>
+                  <td className='view-message'>We have found a new match </td>
                   <td className='view-message inbox-small-cells'></td>
                   <td className='view-message text-right'>March 15</td>
                 </tr>
@@ -628,6 +629,7 @@ const MailBox = () => {
           </div>
         </aside>
       </div>
+      <Navbar />
     </div>
   );
 };

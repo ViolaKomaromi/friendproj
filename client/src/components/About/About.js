@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../MainNav/Navbar';
 import image from '../About/friends_2.jpeg';
 import image1 from '../About/image1.png';
 import image2 from '../About/image2.png';
@@ -91,6 +92,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
+      <Navbar />
     </div>
   );
 };

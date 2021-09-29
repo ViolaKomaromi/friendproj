@@ -1,3 +1,9 @@
+.inbox-head form {
+  padding: 0 1rem;
+}
+.App > .container {
+  margin-top: 7em;
+}
 .mail-box {
   border-collapse: collapse;
   border-spacing: 0;
@@ -371,4 +377,9 @@ ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+}
+
+.inbox-head,
+.mail-box .sm-side .user-head {
+  min-height: 103px;
 }
