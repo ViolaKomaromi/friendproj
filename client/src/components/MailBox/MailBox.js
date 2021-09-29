@@ -170,12 +170,12 @@ const MailBox = () => {
               </a>
             </div>
             <div className='btn-group'>
-              <a className='btn mini btn-success' href='javascript:;'>
+              <a className='btn mini btn-success' href='/'>
                 <i className='fa fa-phone'></i>
               </a>
             </div>
             <div className='btn-group'>
-              <a className='btn mini btn-info' href='javascript:;'>
+              <a className='btn mini btn-info' href='/'>
                 <i className='fa fa-cog'></i>
               </a>
             </div>
