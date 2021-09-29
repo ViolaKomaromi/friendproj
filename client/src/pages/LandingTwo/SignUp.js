@@ -35,8 +35,6 @@ export default function SignUp() {
             native: native,
         };
 
-    
-
         try {
             var res = await axios.post("/user/register", userToRegister);
             if (res.status == 200) {
@@ -70,7 +68,7 @@ export default function SignUp() {
                             <div className="modal-body sign-up-body">
                                 <div>
                                     <img
-                                        className="login-img"
+                                        className="signUp-img"
                                         src="https://images.unsplash.com/photo-1477327665424-41aeff75a2e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
                                         alt=""
                                     />
