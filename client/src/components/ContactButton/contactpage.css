@@ -143,8 +143,14 @@
     justify-content: space-between;
 }
 
-.developer-card img {
+/* .developer-card img {
     height: 11rem;
+    clip-path: circle(40% at 50% 50%);
+} */
+
+.dev-image {
+    height: 11rem;
+    object-fit: cover;
     clip-path: circle(40% at 50% 50%);
 }
 

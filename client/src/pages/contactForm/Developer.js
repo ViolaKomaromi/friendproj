@@ -10,7 +10,7 @@ function Developer({ items }) {
                     <div className="developer-card">
                         <div key={id}>
                             <header>
-                                <img src={img} alt="..." />
+                                <img className="dev-image" src={img} alt="..." />
                                 <div className="developer-card-user-headline">
                                     <h5>{name}</h5>
                                     <div>
