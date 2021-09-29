@@ -16,7 +16,7 @@ function FriendList() {
             <div>
                 {value.length === 0 && <h1>Nobody in your friends list!?</h1>}
             <div className="container-friendlist">
-                <h2 className='title'>My Friends List</h2>
+                <h2 className='frlist-title'>My Friends List</h2>
                 <div>
                     {value.map((item) => {
                         return <ListOfFriends {...item} key={item.id} />;
