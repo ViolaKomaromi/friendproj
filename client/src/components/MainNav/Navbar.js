@@ -59,7 +59,7 @@ export default function Navbar() {
                                             </a>
                                         </li>
                                         <li>
-                                            <a className="dropdown-item" href="/inbox">
+                                            <a className="dropdown-item" href="/mailbox">
                                                 Inbox
                                             </a>
                                         </li>

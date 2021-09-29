@@ -23,7 +23,7 @@ export default function Profile({ profile }) {
 
                     <div className="row container d-flex justify-content-center">
                         <div className="col-xl-12 col-md-8">
-                            <div className="card user-card-full">
+                            <div className="cardC user-card-full">
                                 <div className="row m-l-0 m-r-0">
                                     <div className="col-sm-4 bg-c-lite-green user-profile">
                                         <div className="card-block text-center text-white">
@@ -42,7 +42,7 @@ export default function Profile({ profile }) {
                                                 </div>
                                                 <div className="col-sm-6">
                                                     <p className="m-b-10 f-w-600">Hobbies</p>
-                                                    <h6 className="text-muted f-w-400">Draving, Swiming, Knitting 😄  </h6>
+                                                    <h6 className="text-muted f-w-400"> Swimming, Knitting 😄  </h6>
                                                 </div>
                                             </div>
                                             <h6 className="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">🌞</h6>
