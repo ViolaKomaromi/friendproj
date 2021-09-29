@@ -49,7 +49,8 @@ export default function Login() {
                                 <div>
                                     <img
                                         className="login-img"
-                                        src="https://images.unsplash.com/photo-1607749111659-e1c8e05f5f24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJpZW5kc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                        src="https://images.unsplash.com/photo-1588160049682-9761fcf4d70a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGZyaWVuZHN8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                        // src="https://images.unsplash.com/photo-1607749111659-e1c8e05f5f24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJpZW5kc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                                         alt=""
                                     />
                                 </div>

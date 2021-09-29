@@ -5,15 +5,15 @@ const menu = [
         name: "Viola Komaromi",
         github: "https://github.com/ViolaKomaromi",
         email: "violaristic@yahoo.com",
-        role: "backend"
+        role: "backend",
     },
     {
         id: 2,
-        img: "../image/anneli.png",
+        img: "../image/drum.png",
         name: "Anneli Telling",
         github: "https://github.com/AnneliTel",
         email: "annelitelling@gmail.com",
-        role: "Frontend"
+        role: "Frontend",
     },
     {
         id: 3,
