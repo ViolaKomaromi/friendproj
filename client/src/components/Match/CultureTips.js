@@ -35,6 +35,8 @@ function CultureTips() {
                         <br />
                         <div className="modal-body culture-txt">
                         Germans love dubbing - replacing original audio dialogue from one language to german. They love dubbing films, radio ads, audiobooks, and learning materials. </div>
+                        <div className="modal-body culture-txt">
+                        The most beloved type of beer in Germany is Pilsner. </div>
                     </div>
                 </div>
             </div>
