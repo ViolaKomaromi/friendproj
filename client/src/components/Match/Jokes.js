@@ -1,5 +1,7 @@
 import React from "react";
 import * as Icon from "react-bootstrap-icons";
+import JokesCard from "../CultureJokes/JokesCard";
+import "../CultureJokes/jokescard.css";
 
 function Jokes() {
     return (
@@ -19,7 +21,9 @@ function Jokes() {
                         <div className="modal-header">
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div className="modal-body">Here's a joke!</div>
+                        <div className="modal-body">
+                            <JokesCard />
+                        </div>
                     </div>
                 </div>
             </div>

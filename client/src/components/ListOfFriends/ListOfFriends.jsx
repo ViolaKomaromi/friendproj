@@ -7,7 +7,7 @@ const ListOfFriends = ({ id, full_name, location, image, friendcount }) => {
     return (
         <div>
             <section className="imagebox w3-button">
-                <div>
+                <div className="fr-imgbox">
                     <img src={`${image}`} alt={full_name} className="frlist-image" />
                 </div>
                 <div className="fr-imagetext">

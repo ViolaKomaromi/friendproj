@@ -1,0 +1,27 @@
+
+.culturecard {
+    /* width: 100vw; */
+    height: 70vh;
+    background: radial-gradient(53.86% 75.87% at 58.54% 46.14%, #fab790e3 0%, #ff7a5cd0 100%);
+    /* background: #ff8469dc; */
+    padding: 30px;
+    font-size: 0.5em;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(63, 60, 60, 0.329);
+    overflow: auto;
+}
+.culture-txt {
+    font-size: 30px;
+    text-align: justify;
+    border-bottom: 1px dotted;
+    margin-right: 5px;
+    line-height: 40px;
+}
+.culture_close-btn {
+    font-size: 20px;
+}
+
+/* .joke-img {
+    height: 11rem;
+    object-fit: cover;
+} */

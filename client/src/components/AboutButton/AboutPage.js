@@ -30,9 +30,11 @@ function AboutPage() {
         <div className='modal-dialog modal-fullscreen'>
           <div className='modal-content'>
             <div className='modal-header'>
+
               <h5 className='modal-title' id='aboutModalLabel'>
                 How FriendJa works
               </h5>
+             
               <button
                 type='button'
                 className='btn-close'

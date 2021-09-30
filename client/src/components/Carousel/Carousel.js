@@ -26,7 +26,7 @@ function Carousel() {
                             alt="..."
                         />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Find friends!?</h5>
+                            <h5>Want to find friends?</h5>
                             <p>Are you new in Germany and haven't really found many friends yet?</p>
                         </div>
                     </div>
