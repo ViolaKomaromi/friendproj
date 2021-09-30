@@ -383,3 +383,13 @@ ul {
 .mail-box .sm-side .user-head {
   min-height: 103px;
 }
+
+.inbox-title {
+  font-size: 40px;
+}
+
+/* .pull-right {
+  float: right;
+  margin-left: 70px;
+  margin-bottom: -40px;
+} */

@@ -183,18 +183,18 @@ const MailBox = () => {
         </aside>
         <aside className='lg-side'>
           <div className='inbox-head'>
-            <h3>Inbox</h3>
+            <h5 className='inbox-title'>Inbox</h5>
             <form action='/' className='pull-right position'>
-              {/* <div className='input-append'>
+              <div className='input-append'>
                 <input
                   type='text'
                   className='sr-input'
                   placeholder='Search Mail'
-                />  */}
-              {/* {<button className='btn sr-btn' type='button'>
+                />
+                <button className='btn sr-btn' type='button'>
                   <i className='fa fa-search'></i>
-                </button> */}
-              {/* </div> */}
+                </button>
+              </div>
             </form>
           </div>
           <div className='inbox-body'>
