@@ -12,3 +12,4 @@ const jokesdata = [
         jokeone: "../image/joke4.jpeg"
     }
 ]
+export default jokesdata;
