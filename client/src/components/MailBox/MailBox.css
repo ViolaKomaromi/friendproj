@@ -1,5 +1,6 @@
 .inbox-head form {
-  padding: 0 1rem;
+  padding: 0;
+  flex-direction: row-reverse;
 }
 .App > .container {
   margin-top: 7em;
