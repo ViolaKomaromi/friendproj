@@ -29,15 +29,20 @@ h1 {
     font-weight: bold;
     text-decoration: none;
 }
+.btn2_section {
+    display: flex;
+    flex-direction: row;
+}
 .btn2 {
     padding: 7px;
-    width: 100%;
+    margin: 7px;
+    width: 50%;
     font-size: 20px;
     border: none;
     outline: none;
     border-radius: 10px;
     background-color: darkseagreen;
-    box-shadow: 0 1px 5px 5px rgb(0 0 0 / 2%), 0 1px 5px 0 rgb(0 0 0 / 6%);
+    box-shadow: 0 15px 5px 5px rgb(0 0 0 / 4%), 0 1px 5px 0 rgb(0 0 0 / 9%);
 }
 .btn2:hover {
     background-color: rgb(168, 233, 168);

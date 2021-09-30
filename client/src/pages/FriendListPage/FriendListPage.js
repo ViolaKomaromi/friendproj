@@ -22,9 +22,15 @@ function FriendList() {
                         return <ListOfFriends {...item} key={item.id} />;
                     })}
                 </div>
-                <button type="button" className="btn2" onclick={() => setValue([])}>
-                Clear
-                </button>
+                <div className="btn2_section">
+                    <button type="button" className="btn2" onclick={() => setValue([])}>
+                    Rearrange
+                    </button>
+                    <br/>
+                    <button type="button" className="btn2" onclick={() => setValue([])}>
+                    Unfriend All
+                    </button>
+                    </div>
             </div>
             </div>
         </div>
